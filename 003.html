@@ -1,0 +1,48 @@
+<html>
+<body>
+<h1>LeetCode 003 Longest Substring Without Repeating Characters</h1>
+<script>
+/**
+ * @param {string} s
+ * @return {number}
+ */
+var lengthOfLongestSubstring = function(s) {
+    var longest = 0;
+    var tmp = 0;
+    var head = 0;
+    var tail = 0;
+    var length = s.length;
+    while (tail < length) {
+        var c = s[tail];
+        var index = s.substring(head, tail).indexOf(c);
+        if (index == -1) {
+            tmp++;
+        } else if (index === 0) {
+            head++;
+        } else {
+            if (tmp > longest) {
+                longest = tmp;
+            }
+            head += index + 1;
+            tmp = tail - head + 1;
+        }
+        tail++;
+        console.log(head, tail, s.substring(head, tail));
+    }
+    if (tmp > longest) {
+        longest = tmp;
+    }
+    return longest;
+};
+
+/////////////////////////////////////////////////////
+
+var s = "epqcrkeyjzbkvkrganbg"
+var s = "babcb";
+console.log(s);
+
+console.log(lengthOfLongestSubstring(s));
+
+</script>
+</body>
+</html>

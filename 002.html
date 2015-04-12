@@ -1,0 +1,79 @@
+<html>
+<body>
+<h1>LeetCode 002 Add Two Numbers</h1>
+<script>
+/**
+ * Definition for singly-linked list.
+ */
+function ListNode(val) {
+    this.val = val;
+    this.next = null;
+}
+
+/**
+ * @param {ListNode} l1
+ * @param {ListNode} l2
+ * @return {ListNode}
+ */
+var addTwoNumbers = function(l1, l2){
+    var head = new ListNode(0);
+    var prev = null;
+    var carry = 0;
+    while (l1 || l2) {
+        var cur = prev ? new ListNode(0) : head;
+        var sum = carry;
+        if (l1)
+            sum += l1.val;
+        if (l2)
+            sum += l2.val;
+        cur.val = Math.floor(sum % 10);
+        carry = Math.floor(sum / 10);
+
+        if (l1)
+            l1 = l1.next;
+        if (l2)
+            l2 = l2.next;
+        if (prev)
+            prev.next = cur;
+        prev = cur;
+    }
+    if (carry > 0)
+        prev.next = new ListNode(1);
+    return head;
+}
+
+function printList(l) {
+    var str = '';
+    while (l) {
+        str += l.val + '->';
+        l = l.next;
+    }
+    console.log(str.slice(0, -2));
+}
+
+/////////////////////////////////////////////////////
+
+var a1 = new ListNode(2);
+var a2 = new ListNode(4);
+var a3 = new ListNode(3);
+var a4 = new ListNode(3);
+
+var b1 = new ListNode(8);
+var b2 = new ListNode(6);
+var b3 = new ListNode(4);
+
+a1.next = a2;
+a2.next = a3;
+a3.next = a4;
+
+b1.next = b2;
+b2.next = b3;
+
+printList(a1);
+printList(b1);
+
+printList(addTwoNumbers(a1,b1));
+
+</script>
+</body>
+</html>

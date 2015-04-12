@@ -1,0 +1,66 @@
+<html>
+<head></head>
+<body>
+<h1>LeetCode 001 Two Sum... ...</h1>
+
+<script>
+/**
+ * @param {number[]} numbers
+ * @param {number} target
+ * @return {number[]} two integers in an array, ie: [index1, index2]
+ */
+
+function twoSum(numbers, target) {
+//  brute force
+    for(var index1 = 0; index1 < numbers.length; index1++) {
+        var index2 = numbers.lastIndexOf(target - numbers[index1]);
+        if(index2 > index1)
+            return [index1 + 1, index2 + 1];
+    }
+};
+
+function twoSum2(numbers, target) {
+// sort, then scan from two ends
+    var b = numbers.slice(0).sort(function(a,b){return a-b;});
+    for (var i = 0, j = b.length - 1; i < j; ) {
+        if (b[i] + b[j] < target) {
+            i++;
+        } else if (b[i] + b[j] > target) {
+            j--;
+        } else {
+            var index1 = numbers.indexOf(b[i]) + 1;
+            var index2 = numbers.lastIndexOf(b[j]) + 1;
+            if (index1 < index2)
+                return [index1, index2];
+            else
+                return [index2, index1];
+        }
+    }
+};
+
+function twoSum3(numbers, target) {
+// hash
+    var h = {};
+    for (var i = 0; i < numbers.length; i++) {
+        h[numbers[i]] = i;
+    }
+    for (var index1 = 0; index1 < numbers.length; index1++) {
+        var index2 = h[target - numbers[index1]];
+        if (index2 && index1 < index2)
+            return [index1 + 1, index2 + 1];
+    }
+};
+
+//var numbers = [1, 2, 3];
+//var numbers = [3, 4, 2];
+var numbers = [3, 2, 5, 3];
+//var numbers = [-1, -2, -3, -4, -5];
+var target = 6;
+
+var twoSum = twoSum3(numbers, target);
+console.log(numbers);
+console.log(twoSum);
+
+</script>
+</body>
+</html>

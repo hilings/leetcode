@@ -1,0 +1,67 @@
+<html>
+<body>
+<h1>LeetCode 005 Longest Palindromic Substring, JavaScript ... ...</h1>
+<script>
+/**
+ * @param {string} s
+ * @returns {string}
+ */
+var longestPalindrome = function(s) {
+    var slen = s.length;
+    if (slen <= 1)
+        return s;
+
+    var longest_start = 0;
+    var longest_len = 1;
+
+    for (var i = 1; i < slen; i++) {
+        // palindrome even length
+        var p = i;
+        var q = p - 1;
+        while (q >= 0 && p < slen && s[q] == s[p]) {
+            p++;
+            q--;
+        }
+        var tlen = p - q - 1;
+        if (tlen > longest_len) {
+            longest_start = q + 1;
+            longest_len = tlen;
+        }
+
+        // palindrome odd length
+        p = i;
+        q = p - 2;
+        while (q >= 0 && p < slen && s[q] == s[p]) {
+            p++;
+            q--;
+        }
+        tlen = p - q - 1;
+        if (tlen > longest_len) {
+            longest_start = q + 1;
+            longest_len = tlen;
+        }
+    }
+    return s.slice(longest_start, longest_start + longest_len);
+};
+
+/////////////////////////////////////////////////////
+
+var s = "";
+s = "a";
+s = "aa";
+s = "ab";
+a = "abc";
+s = "abb";
+s = "aba";
+s = "aaa";
+s = "forgeeksskeegfor";
+s = "cabcbabcbabcba";
+s = "habacdedcabag";
+s = "ABCBAHELLOHOWRACECARAREYOUIAMAIDOINGGOOD";
+
+console.log(s)
+console.log(longestPalindrome(s));
+
+</script>
+</body>
+</html>
