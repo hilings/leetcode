@@ -1,0 +1,56 @@
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<h1>LeetCode 008 String to Integer (atoi), JavaScript ... ...</h1>
+<script>
+/**
+ * @param {string} str
+ * @return {number}
+ */
+var myAtoi = function(str) {
+    var s = str.trim();
+    var len = s.length;
+    var sign = 1;
+    var i = 0;
+    if (['+', '-'].indexOf(s[i]) > -1) {
+        sign = s[i] == '+' ? 1 : -1;
+        i++;
+    }
+    var z = 0;
+    while (i < len && s[i] >= '0' && s[i] <= '9') {
+        z = z * 10 + parseInt(s[i], 10);
+        i++;
+    }
+    if (z > 2147483647) {
+        return sign == 1 ? 2147483647 : -2147483648;
+    }
+    return sign * z;
+};
+
+/////////////////////////////////////////////////////
+/**
+ * @param {string} str
+ * @return {number}
+ */
+var myAtoi2 = function(str) {
+    var z = parseInt(str) || 0;
+    if (z > 2147483647)
+        return 2147483647;
+    if (z < -2147483648)
+        return -2147483648;
+    return z;
+};
+
+/////////////////////////////////////////////////////
+
+console.log("LeetCode 008 String to Integer (atoi), JavaScript ... ...");
+
+var s = "2147483648";
+console.log(s);
+console.log(myAtoi2(s));
+
+</script>
+</body>
+</html>

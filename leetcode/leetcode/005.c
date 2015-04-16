@@ -11,6 +11,7 @@
 #include <stdlib.h>
 
 char *longestPalindrome(char *s) {
+// central expansion
     int slen = (int)strlen(s);
     if (slen <= 1) {
         return s;
@@ -51,6 +52,47 @@ char *longestPalindrome(char *s) {
     return substring;
 }
 
+char *longestPalindrome2(char *s) {
+// Manacher's algorithm
+    int slen = (int)strlen(s);
+    if (slen <= 1)
+        return s;
+    
+    int tlen = 2*slen + 4;
+    char *T = (char*)malloc(sizeof(char)*tlen);
+    strcpy(T, "^#");
+    for (int i = 0; i < slen; i++) {
+        T[i*2+2] = s[i];
+        T[i*2+3] = '#';
+    }
+    strcat(T, "$");
+    
+    int P[tlen];
+    P[0] = 0;
+    int R = 0;
+    int C = 0;
+    int maxC = 0;
+    for (int i = 1; i < tlen - 1; i++) {
+        if (i >= R) {
+            P[i] = 0;
+        } else {
+            P[i] = (R-i < P[2*C-i]) ? R-i : P[2*C-i];
+        }
+        while (T[i+P[i]+1] == T[i-P[i]-1]) {
+            P[i]++;
+        }
+        if (i + P[i] > R) {
+            C = i;
+            R = i + P[i];
+            if (P[i] > P[maxC])
+                maxC = C;
+        }
+    }
+    char *res = (char*)malloc(sizeof(char)*(P[maxC]+1));
+    strncat(res, s + (maxC-P[maxC]-1) / 2, P[maxC]);
+    return res;
+}
+
 int main(int argc, const char * argv[]) {
     // insert code here...
     printf("LeetCode 005 Longest Palindromic Substring, C ... ...\n");
@@ -68,7 +110,7 @@ int main(int argc, const char * argv[]) {
     //char s[] = "habacdedcabag";
     //char s[] = "ABCBAHELLOHOWRACECARAREYOUIAMAIDOINGGOOD";
 
-    char * res = longestPalindrome(s);
+    char * res = longestPalindrome2(s);
     printf("%s\n", res);
 
     return 0;

@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<h1>LeetCode 009 Palindrome Number, JavaScript ... ...</h1>
+<script>
+
+/**
+ * @param {number} x
+ * @return {boolean}
+ */
+var isPalindrome = function(x) {
+    if (x < 0)
+        return false;
+    var shade = 1;
+    while (x >= shade * 10) {
+        shade *= 10;
+    }
+    while (shade >= 10 && Math.floor(x / shade) == x % 10) {
+        x %= shade;
+        x = Math.floor(x / 10);
+        shade = Math.floor(shade / 100);
+    }
+    return shade < 10;
+};
+
+var isPalindrome2 = function(x) {
+    return x.toString().split("").reverse().join("") == x;
+};
+
+/////////////////////////////////////////////////////
+
+console.log("LeetCode 009 Palindrome Number, JavaScript ... ...");
+var x = 121;
+console.log(x);
+console.log(isPalindrome2(x));
+
+</script>
+</body>
+</html>

@@ -7,9 +7,11 @@
 //
 
 #include <iostream>
+//#include <string>
 using namespace std;
 
 class Solution {
+// central expansion
 public:
     string longestPalindrome(string s) {
         int slen = (int)s.length();
@@ -52,13 +54,38 @@ public:
 };
 
 class Solution2 {
+// Manacher's algorithm
 public:
-    int extend(int P[], int i) {
-        return 0;
-    }
-    
     string longestPalindrome(string s) {
-        return "abc";
+        int slen = (int)s.length();
+        if (slen <= 1)
+            return s;
+
+        string T = "^#";
+        for (int i = 0; i < slen; i++) {
+            T += s.substr(i, 1) + "#";
+        }
+        T += "$";
+        
+        int tlen = (int)T.length();
+        int P[tlen];
+        P[0] = 0;
+        int R = 0;
+        int C = 0;
+        int maxC = 0;
+        for (int i = 1; i < tlen - 1; i++) {
+            P[i] = (i >= R) ? 0 : min(R-i, P[2*C-i]);
+            while (T[i+P[i]+1] == T[i-P[i]-1]) {
+                P[i]++;
+            }
+            if (i + P[i] > R) {
+                C = i;
+                R = i + P[i];
+                if (P[i] > P[maxC])
+                    maxC = C;
+            }
+        }
+        return s.substr((maxC-P[maxC]-1) / 2, P[maxC]);
     }
 };
 
@@ -66,18 +93,16 @@ public:
 int main(int argc, const char * argv[]) {
     // insert code here...
     cout << "LeetCode 005 Longest Palindromic Substring, C++ ... ...\n";
-    
-    string s = "";
-    s = "a#b#";
+
+    string s = "bbbbb";
     //s = "forgeeksskeegfor";
     //s = "cabcbabcbabcba";
     //s = "habacdedcabag";
-    //s = "abacdgfdcaba";
+    //s = "abcbabc";
     //s = "ABCBAHELLOHOWRACECARAREYOUIAMAIDOINGGOOD";
-    Solution sol;
+    Solution2 sol;
     
-    cout << "s: " << s << "\n";
-    cout << "Calculating...\n" << sol.longestPalindrome(s) << "\n";
-
+    cout << s << "\n";
+    cout << sol.longestPalindrome(s) << "\n";
     return 0;
 }

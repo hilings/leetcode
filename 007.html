@@ -1,0 +1,31 @@
+<html>
+<body>
+<h1>LeetCode 007 Reverse Integer, JavaScript ... ...</h1>
+<script>
+/**
+ * @param {number} x
+ * @returns {number}
+ */
+var reverse = function(x) {
+    if (x < 0)
+        return -reverse(-x);
+    var z = 0;
+    while (x != 0) {
+        z = z * 10 + x % 10;
+        x = Math.floor(x/10);
+    }
+    if (z > 2147483647 || z < -2147483648) {
+        return 0;
+    }
+    return z;
+};
+
+/////////////////////////////////////////////////////
+
+var x = -1534236469;
+console.log(x);
+console.log(reverse(x));
+
+</script>
+</body>
+</html>

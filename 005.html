@@ -7,6 +7,7 @@
  * @returns {string}
  */
 var longestPalindrome = function(s) {
+// central expansion
     var slen = s.length;
     if (slen <= 1)
         return s;
@@ -45,6 +46,45 @@ var longestPalindrome = function(s) {
 };
 
 /////////////////////////////////////////////////////
+/**
+ * @param {string} s
+ * @return {string}
+ */
+var longestPalindrome2 = function(s) {
+// Manacher's algorithm
+    var slen = s.length;
+    if (slen <= 1)
+        return s;
+
+    var T = "^#";
+    for (var i = 0; i < slen; i++) {
+        T += s[i] + "#";
+    }
+    T += "$";
+
+    var tlen = T.length;
+    var P = [0];
+    var C = 0;
+    var R = 0;
+    var maxC = 0;
+    for (i = 1; i < tlen - 1; i++) {
+        P[i] = i >= R ? 0 : Math.min(R-i, P[2*C-i]);
+        while (T[i+P[i]+1] == T[i-P[i]-1]) {
+            P[i]++;
+        }
+        if (i + P[i] > R) {
+            C = i;
+            R = i + P[i];
+            if (P[i] > P[maxC]) {
+                maxC = i;
+            }
+        }
+    }
+    var start = (maxC - P[maxC] - 1) / 2;
+    return s.slice(start, start + P[maxC]);
+};
+
+/////////////////////////////////////////////////////
 
 var s = "";
 s = "a";
@@ -60,7 +100,7 @@ s = "habacdedcabag";
 s = "ABCBAHELLOHOWRACECARAREYOUIAMAIDOINGGOOD";
 
 console.log(s)
-console.log(longestPalindrome(s));
+console.log(longestPalindrome2(s));
 
 </script>
 </body>

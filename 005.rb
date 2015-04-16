@@ -4,6 +4,7 @@
 # @param {String} s
 # @returns {String}
 def longest_palindrome(s)
+# central expansion
   slen = s.size
   return s if slen <= 1
 
@@ -41,23 +42,47 @@ def longest_palindrome(s)
 end
 
 #####################################################
+# @param {String} s
+# @return {String}
+def longest_palindrome2(s)
+# Manacher's algorithm
+  slen = s.size
+  return s if slen <= 1
 
-s = "";
-s = "a";
-s = "aa";
-s = "ab";
-s = "abc";
-s = "abb";
-s = "aba";
-s = "aaa";
-s = "forgeeksskeegfor";
-s = "cabcbabcbabcba";
-s = "habacdedcabag";
-s = "ABCBAHELLOHOWRACECARAREYOUIAMAIDOINGGOOD";
+  t = "^#"
+  s.each_char do |cc|
+    t += cc + '#'
+  end
+  t += '$'
+
+  tlen = t.size
+  p = Array.new(tlen, 0)
+  r = 0
+  c = 0
+  maxC = 0
+  (1...tlen-1).each do |i|
+    p[i] = i >= r ? 0 : [r-i, p[2*c-i]].min
+    while t[i+p[i]+1] == t[i-p[i]-1]
+      p[i] += 1
+    end
+    if i + p[i] > r
+      c = i
+      r = i + p[i]
+      maxC = i if p[i] > p[maxC]
+    end
+  end
+  s[(maxC-p[maxC]-1)/2, p[maxC]]
+end
+
+#####################################################
+
+s = "abc"
+#s = "forgeeksskeegfor"
+#s = "cabcbabcbabcba"
+#s = "habacdedcabag"
+#s = "ABCBAHELLOHOWRACECARAREYOUIAMAIDOINGGOOD"
 
 puts s
 
-puts longest_palindrome(s)
-
-
+puts longest_palindrome2(s)
 

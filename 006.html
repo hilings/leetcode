@@ -1,0 +1,40 @@
+<html>
+<body>
+<h1>LeetCode 006 ZigZag Conversion, JavaScript ... ...</h1>
+<script>
+/**
+ * @param {string} s
+ * @param {number} nRows
+ * @returns {string}
+ */
+var convert = function(s, nRows) {
+    if (nRows == 1) {
+        return s;
+    }
+    var len = s.length;
+    var str = "";
+    for (var r = 0; r < nRows; r++) {
+        for (var i = r; i < len; i += 2*nRows-2) {
+            str += s[i];
+            if (r != 0 && r != nRows - 1) {
+                var t = i + 2*nRows - 2 - 2*r;
+                if (t < len) {
+                    str += s[t];
+                }
+            }
+        }
+    }
+    return str;
+};
+
+/////////////////////////////////////////////////////
+
+var s = "0123456789";
+var nRows = 4;
+
+console.log(s)
+console.log(convert(s, nRows));
+
+</script>
+</body>
+</html>
