@@ -1,0 +1,49 @@
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<h1>LeetCode 013 Roman to Integer, JavaScript ... ...</h1>
+<script>
+/**
+ * @param {string} s
+ * @return {number}
+ */
+var romanToInt = function(s) {
+    var n = [  1,   5,  10,  50, 100, 500, 1000];
+    var c = ['I', 'V', 'X', 'L', 'C', 'D', 'M' ];
+
+    var num = 0;
+    var nlen = n.length;
+    var i = nlen - 1;
+    var slen = s.length;
+    var p = 0;
+    while (p < slen) {
+        if (i+2 < nlen && s[p] == c[i+2]) {
+            num = num - n[i]*2 + n[i+2];
+            i--;
+            p++;
+        } else if (i+1 < nlen && s[p] == c[i+1]) {
+            num = num - n[i]*2 + n[i+1];
+            i--;
+            p++;
+        } else if (s[p] == c[i]) {
+            num += n[i];
+            p++;
+        } else {
+            i--;
+        }
+    }
+    return num;
+};
+
+/////////////////////////////////////////////////////
+
+console.log("LeetCode 013 Roman to Integer, JavaScript ... ...");
+var s = "IX";
+console.log(s);
+console.log(romanToInt(s));
+
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+<body>
+<h1>LeetCode 012 Integer to Roman, JavaScript ... ...</h1>
+<script>
+/**
+ * @param {number} num
+ * @return {string}
+ */
+var intToRoman = function(num) {
+    var n = [  1,    4,   5,    9,  10,   40,  50,   90, 100,  400, 500,  900, 1000]
+    var c = ["I", "IV", "V", "IX", "X", "XL", "L", "XC", "C", "CD", "D", "CM", "M" ]
+    var str = "";
+    var i = n.length - 1;
+    while (num > 0) {
+        if (num < n[i]) {
+            i--;
+            continue;
+        }
+        str += c[i];
+        num -= n[i];
+    }
+    return str;
+};
+
+/////////////////////////////////////////////////////
+
+for(var i = 0; i< 15; i++) {
+    console.log(i, intToRoman(i));
+}
+
+</script>
+</body>
+</html>

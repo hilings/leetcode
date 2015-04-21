@@ -1,0 +1,92 @@
+<html>
+<body>
+<h1>LeetCode 010 Regular Expression Matching, JavaScript ... ...</h1>
+<script>
+/**
+ * @param {string} s
+ * @param {string} p
+ * @return {boolean}
+ */
+var isMatch = function(s, p) {
+    var l1 = s.length;
+    var l2 = p.length;
+    var i = 0;
+    var j = 0;
+    while (i < l1 && j <l2) {
+        if (j+1 < l2 && p[j+1] == '*') {
+            if (s[i] != p[j] && p[j] != '.') {
+                j+=2;
+            } else if (isMatch(s.slice(i), p.slice(j+2))) {
+                return true;
+            } else if (s[i] == p[j] || p[j] == '.') {
+                i++;
+            } else {
+                return false;
+            }
+        } else if (s[i] == p[j] || p[j] == '.') {
+            i++;
+            j++;
+        } else {
+            return false;
+        }
+    }
+    if (i < l1) {
+        return false;
+    }
+    while (j < l2) {
+        if (j+1 < l2 && p[j+1] == '*') {
+            j+=2;
+        }
+    }
+    return j == l2;
+};
+
+/////////////////////////////////////////////////////
+/**
+ * @param {string} s
+ * @param {string} p
+ * @return {boolean}
+ */
+var isMatch2 = function(s, p) {
+    var l1 = s.length;
+    var l2 = p.length;
+    var m = [true];
+    for (var i = 0; i < l1; i++) {
+        m.push(false);
+    }
+    var c;
+    for (var j = 0; j < l2; j++) {
+        if (j+1 < l2 && p[j+1] == '*') {
+            continue;
+        } else if (p[j] == '*') {
+            c = p[j-1];
+            for (i = 1; i <= l1; i++) {
+                m[i] = m[i] || (m[i-1] && (s[i-1] == c || c == '.'));
+            }
+        } else {
+            c = p[j];
+            for (i = l1; i > 0; i--) {
+                m[i] = m[i-1] && (s[i-1] == c || c == '.');
+            }
+            m[0] = false;
+        }
+    }
+    return m[l1];
+};
+
+/////////////////////////////////////////////////////
+
+var s = "aaa";
+var p = "a*a";
+s = "ab";
+p = ".*..c*";
+s = "baccbbcbcacacbbc";
+p = "c*.*b*c*ba*b*b*.a*";
+
+console.log(s);
+console.log(p);
+console.log(isMatch2(s, p));
+
+</script>
+</body>
+</html>

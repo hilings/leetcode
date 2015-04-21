@@ -1,0 +1,27 @@
+<html>
+<body>
+<h1>LeetCode 011 Container With Most Water, JavaScript ... ...</h1>
+<script>
+/**
+ * @param {number[]} height
+ * @return {number}
+ */
+var maxArea = function(height) {
+    var i = 0, j = height.length - 1;
+    var maxA = 0;
+    while (i < j) {
+        maxA = Math.max(maxA, (j-i) * Math.min(height[i], height[j]));
+        height[i] < height[j] ? i++ : j--;
+    }
+    return maxA;
+};
+
+/////////////////////////////////////////////////////
+
+var height = [1, 2, 1];
+console.log(height);
+console.log(maxArea(height));
+
+</script>
+</body>
+</html>

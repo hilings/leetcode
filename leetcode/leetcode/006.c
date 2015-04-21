@@ -47,4 +47,3 @@ int main(int arg, char *argv[]) {
     printf("%s\n", convert(s, nRows));
     return 0;
 }
-
