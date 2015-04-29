@@ -37,7 +37,7 @@ int romanToInt(char* s) {
 
 int main(int arg, char *argv[]) {
     // insert code here...
-    printf("LeetCode 012 Integer to Roman, C ... ...\n");
+    printf("LeetCode 013 Roman to Integer, C ... ...\n");
 
     char *s = "I";
     printf("%s %d\n", s, romanToInt(s));

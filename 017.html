@@ -1,0 +1,45 @@
+<html>
+<body>
+<h1>LeetCode 017 Letter Combinations of a Phone Number, JavaScript ... ...</h1>
+<script>
+/**
+ * @param {string} digits
+ * @return {string[]}
+ */
+var letterCombinations = function(digits) {
+    var map = ["", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"];
+    var v = [];
+    for (var i = 0; i < digits.length; i++) {
+        var d = parseInt(digits[i], 10);
+        var letters = map[d];
+        var num = v.length;
+        var j, k;
+        if (num == 0) {
+            for (j = 0; j < letters.length; j++) {
+                v.push(letters[j]);
+            }
+        } else {
+            for (j = 0; j < letters.length-1; j++) {
+                for (k = 0; k < num; k++) {
+                    v.push(v[k]);
+                }
+            }
+            for (j = 0; j < letters.length; j++) {
+                for (k = 0; k < num; k++) {
+                    v[num*j+k] += letters[j];
+                }
+            }
+        }
+    }
+    return v;
+};
+
+/////////////////////////////////////////////////////
+
+var digits = "23";
+console.log(digits);
+console.log(letterCombinations(digits));
+
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+<body>
+<h1>LeetCode 014 Longest Common Prefix, JavaScript ... ...</h1>
+<script>
+/**
+ * @param {string[]} strs
+ * @return {string}
+ */
+var longestCommonPrefix = function(strs) {
+    if (strs.length == 0)
+        return "";
+    var prefix = "";
+    for (var i = 0; i < strs[0].length; i++) {
+        var c = strs[0][i];
+        for (var j = 0; j < strs.length; j++) {
+            if (i >= strs[j].length || strs[j][i] != c)
+                return prefix;
+        }
+        prefix += c;
+    }
+    return prefix;
+};
+
+/////////////////////////////////////////////////////
+
+var strs = ["abc", "abd", "abe"];
+console.log(strs);
+console.log(longestCommonPrefix(strs));
+
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+<body>
+<h1>LeetCode 020 Valid Parentheses, JavaScript ... ...</h1>
+<script>
+/**
+ * @param {string} s
+ * @return {boolean}
+ */
+var isValid = function(s) {
+    var stack = [];
+    var p = -1;
+    for (var i = 0; i < s.length; i++) {
+        if (p == -1)
+            stack[++p] = s[i];
+        else if ( (s[i] == ')' && stack[p] == '(') || (s[i] == ']' && stack[p] == '[') || (s[i] == '}' && stack[p] == '{') )
+            p--;
+        else
+            stack[++p] = s[i];
+    }
+    return p == -1;
+};
+
+/////////////////////////////////////////////////////
+console.log("LeetCode 020 Valid Parentheses, JavaScript ... ...");
+
+var s = "([])";
+console.log(s);
+console.log(isValid(s));
+
+</script>
+</body>
+</html>

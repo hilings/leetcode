@@ -1,0 +1,65 @@
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<h1>LeetCode 019 Remove Nth Node From End of List, JavaScript ... ...</h1>
+<script>
+
+/**
+ * Definition for singly-linked list.
+ */
+function ListNode(val) {
+    this.val = val;
+    this.next = null;
+}
+
+/**
+ * @param {ListNode} head
+ * @param {number} n
+ * @return {ListNode}
+ */
+var removeNthFromEnd = function(head, n) {
+    var q = head;
+    for (var i = 0; i < n; i++)
+        q = q.next;
+    if (!q)
+        return head.next;
+    var p = head;
+    while (q.next) {
+        q = q.next;
+        p = p.next;
+    }
+    p.next = p.next.next;
+    return head;
+};
+
+function printList(head) {
+    while(head.next) {
+        console.log(head.val);
+        head = head.next;
+    }
+    console.log(head.val);
+}
+
+/////////////////////////////////////////////////////
+
+console.log("LeetCode 019 Remove Nth Node From End of List, JavaScript ... ...");
+
+var a1 = new ListNode(1);
+var a2 = new ListNode(2);
+var a3 = new ListNode(3);
+var a4 = new ListNode(4);
+var a5 = new ListNode(5);
+a1.next = a2;
+a2.next = a3;
+a3.next = a4;
+a4.next = a5;
+var n = 5;
+
+printList(a1);
+printList(removeNthFromEnd(a1, n));
+
+</script>
+</body>
+</html>
