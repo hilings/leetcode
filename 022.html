@@ -1,0 +1,42 @@
+<html>
+<body>
+<h1>LeetCode 022 Generate Parentheses, JavaScript ... ...</h1>
+<script>
+/**
+ * @param {number} n
+ * @return {string[]}
+ */
+var generateParenthesis = function(n) {
+    var v = [];
+    if (n == 0)
+        return v;
+    v.push('(');
+    while (v[0].length < 2*n) {
+        s = v.shift();
+        var l = 0;
+        var r = 0;
+        for (var i = 0; i < s.length; i++) {
+            if (s[i] == '(')
+                l++;
+            else
+                r++;
+        }
+        if (l<n)
+            v.push(s+'(');
+        if (l>r)
+            v.push(s+')');
+    }
+    return v;
+};
+
+/////////////////////////////////////////////////////
+console.log("LeetCode 022 Generate Parentheses, JavaScript ... ...");
+
+for (var i = 0; i < 9; i++) {
+    console.log(i);
+    console.log(generateParenthesis(i).length);
+}
+
+</script>
+</body>
+</html>
