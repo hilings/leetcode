@@ -1,0 +1,51 @@
+<html>
+<body>
+<h1>LeetCode 029 Divide Two Integers, JavaScript ...</h1>
+<h2>2015-05-04</h2>
+<script>
+/**
+ * @param {number} dividend
+ * @param {number} divisor
+ * @return {number}
+ */
+var divide = function(dividend, divisor) {
+    if (divisor == 0)
+        return 0;
+    var sign = dividend > 0 ^ divisor > 0;
+    if (dividend < 0)
+        dividend = -dividend;
+    if (divisor < 0)
+        divisor = -divisor;
+    var INT_MAX = 2147483647;
+    var d = [divisor];
+    var i;
+    for (i = 1; d[i-1] < dividend && d[i-1] < INT_MAX; i++)
+        d[i] = d[i-1] + d[i-1];
+    i--;
+    var res = 0;
+    while (dividend >= divisor) {
+        while (d[i] > dividend && i > 0)
+            i--;
+        var r = 1;
+        for (var j = 0; j < i; j++)
+            r += r;
+        res += r;
+        dividend -= d[i];
+    }
+    if (sign)
+        res = -res;
+    return Math.min(res, INT_MAX);
+};
+
+/////////////////////////////////////////////////////
+
+var INT_MAX = Math.pow(2, 31) - 1;
+var INT_MIN = -Math.pow(2, 31);
+var dividend = INT_MIN;
+var divisor = -1;
+console.log(dividend, "/", divisor, "=", divide(dividend, divisor));
+console.log();
+
+</script>
+</body>
+</html>

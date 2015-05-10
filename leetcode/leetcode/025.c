@@ -70,17 +70,17 @@ int main(int arg, char *argv[]) {
     // insert code here...
     printf("LeetCode 025 Reverse Nodes in k-Group, C ...\n\n");
 
-    struct ListNode *a1 = 0;//(struct ListNode*)malloc(sizeof(struct ListNode));
+    struct ListNode *a1 = (struct ListNode*)malloc(sizeof(struct ListNode));
     struct ListNode *a2 = (struct ListNode*)malloc(sizeof(struct ListNode));
     struct ListNode *a3 = (struct ListNode*)malloc(sizeof(struct ListNode));
     struct ListNode *a4 = (struct ListNode*)malloc(sizeof(struct ListNode));
     struct ListNode *a5 = (struct ListNode*)malloc(sizeof(struct ListNode));
-    //a1->val = 1;
+    a1->val = 1;
     a2->val = 2;
     a3->val = 3;
     a4->val = 4;
     a5->val = 5;
-    //a1->next = a2;
+    a1->next = a2;
     a2->next = a3;
     a3->next = a4;
     a4->next = a5;

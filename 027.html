@@ -1,0 +1,35 @@
+<html>
+<body>
+<h1>LeetCode 027 Remove Element, JavaScript ...</h1>
+<h2>2015-05-03</h2>
+<script>
+/**
+ * @param {number[]} A
+ * @param {number} elem
+ * @returns {number}
+ */
+var removeElement = function(A, elem) {
+    var n = A.length;
+    var k = n - 1;
+    for (var i = 0; i <= k; i++) {
+        if (A[i] == elem) {
+            while (k > i && A[k] == elem)
+                k--;
+            if (i < k)
+                A[i] = A[k];
+            k--;
+        }
+    }
+    console.log(k+1);
+    return k+1;
+};
+
+/////////////////////////////////////////////////////
+var a = [1, 2, 2];
+var elem = 2;
+
+removeElement(a, elem);
+
+</script>
+</body>
+</html>

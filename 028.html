@@ -1,0 +1,77 @@
+<html>
+<body>
+<h1>LeetCode 028 Implement strStr(), JavaScript ...</h1>
+<h2>2015-05-03</h2>
+<script>
+/**
+ * @param {string} haystack
+ * @param {string} needle
+ * @return {number}
+ */
+var strStr = function(haystack, needle) {
+    if (needle.length == 0)
+        return 0;
+    for (var i = 0; i < haystack.length; i++) {
+        if (haystack[i] != needle[0])
+            continue;
+        var k = i;
+        for (var j = 0; j < needle.length; j++) {
+            if (k == haystack.length)
+                return -1;
+            if (haystack[k] == needle[j])
+                k++;
+            else
+                break;
+        }
+        if (j == needle.length)
+            return i;
+    }
+    return -1;
+};
+
+var strStr0 = function(haystack, needle) {
+    return haystack.indexOf(needle);
+}
+
+var strStr2 = function(haystack, needle) {  // KMP
+    var l2 = needle.length;
+    if (l2 == 0)
+        return 0;
+    var T = [-1];
+    for (var j = 1; j < l2; j++) {
+        if (T[j-1] > -1 && needle[j-1] == needle[T[j-1]])
+            T[j] = T[j-1] + 1;
+        else
+            T[j] = 0;
+        console.log(needle[j], T[j]);
+    }
+    var l1 = haystack.length;
+    var i = 0;
+    j = 0;
+    while (i + j < l1) {
+        if (haystack[i+j] == needle[j]) {
+            if (j == l2 - 1)
+                return i;
+            else
+                j++;
+        } else {
+            if (T[j] > -1) {
+                i = i + j - T[j];
+                j = T[j];
+            } else {
+                i++;
+                j = 0;
+            }
+        }
+    }
+    return -1;
+}
+
+/////////////////////////////////////////////////////
+var haystack = "ABC ABCDAB ABCDABCDABDE"
+var needle = "ABCDABD"
+console.log(strStr2(haystack, needle));
+
+</script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<html>
+<body>
+<h1>LeetCode 030 Substring with Concatenation of All Words, JavaScript ...</h1>
+<h2>2015-05-09</h2>
+<script>
+/**
+ * @param {string} s
+ * @param {string[]} words
+ * @return {number[]}
+ */
+var findSubstring = function(s, words) {
+    var v = [];
+    var num = words.length;
+    if (num == 0)
+        return v;
+    var size = words[0].length;
+    if (size == 0)
+        return v;
+    var len = s.length;
+    var sublen = size * num;
+    var dict = [];
+    var j;
+    for (j = 0; j < num; j++) {
+        dict[words[j]] = dict[words[j]] ? dict[words[j]] + 1 : 1;
+    }
+    console.log(dict);
+    for (j = 0; j < size; j++) {
+        var tdict = [];
+        var left = j;
+        for (var i = j; i <= len-size; i+=size) {
+            var word = s.slice(i,i+size);
+            if (word in dict) {
+                tdict[word] = tdict[word] ? tdict[word] + 1 : 1;
+                while (tdict[word] > dict[word]) {
+                    tdict[s.slice(left,left+size)] -= 1;
+                    left += size;
+                }
+                if (i - left == sublen - size) {
+                    v.push(left);
+                    tdict[s.slice(left,left+size)] -= 1;
+                    left += size;
+                }
+            } else {
+                left = i + size;
+                tdict = [];
+            }
+        }
+    }
+    return v;
+};
+
+/////////////////////////////////////////////////////
+var s = "barfoothefoobarman";
+var words = ["foo", "bar"];
+
+console.log(findSubstring(s, words));
+
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+<body>
+<h1>LeetCode 000 XXX, JavaScript ... ...</h1>
+<h2>2015-05-02</h2>
+<script>
+/**
+ * @param {number[]} A
+ * @return {number}
+ */
+var removeDuplicates = function(A) {
+    var size = A.length;
+    if (size == 0)
+        return 0;
+    var k = 1;
+    for (var i = 1; i < size; i++) {
+        if (A[i] != A[i-1]) {
+            if (k < i)
+                A[k] = A[i];
+            k++;
+        }
+    }
+    console.log(k);
+    return k;
+};
+
+/////////////////////////////////////////////////////
+var a = [1, 2, 3, 3];
+
+removeDuplicates(a);
+
+</script>
+</body>
+</html>
