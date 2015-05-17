@@ -1,0 +1,125 @@
+<html>
+<body>
+<h1>LeetCode 037 Sudoku Solver, JavaScript ...</h1>
+<h2>2015-05-14</h2>
+<script>
+/**
+ * @param {character[][]} board
+ * @return {void} Do not return anything, modify board in-place instead.
+ */
+var candidate = [];
+var solveSudoku = function(board) {
+    for (var co = 0; co < 81; co++) {
+        candidate.push(0);
+        if (board[Math.floor(co/9)][co%9] == '.')
+            for (var k = 1; k <= 9; k++)
+                if (isValid(board, co, k))
+                    candidate[co] |= 1<<k;
+        if (candidate[co])
+            console.log(Math.floor(co/9), co%9, candidate[co]);
+    }
+    co = uniqueCandidate(board);
+    console.log(Math.floor(co/9), co%9);
+    while (co > -1) {
+        var i = Math.floor(co/9);
+        var j = co%9;
+        var d = binaryToDigit(candidate[co]);
+        board[i][j] = String.fromCharCode('0'.charCodeAt(0)+d);
+        for (k = 0; k < 9; k++) {
+            candidate[9*i+k] &= ~(1<<d);
+            candidate[9*k+j] &= ~(1<<d);
+            candidate[9*(Math.floor(i/3)*3+Math.floor(k/3)) + Math.floor(j/3)*3+k%3] &= ~(1<<d);
+        }
+        co = uniqueCandidate(board);
+    }
+    solve(board, 0);
+    return;
+};
+function solve(board, co) {
+    if (co == 81)
+        return true;
+
+    var i = Math.floor(co/9);
+    var j = co%9;
+    if (board[i][j] != '.')
+        return solve(board, co+1);
+    for (var k = 1; k <= 9; k++) {
+        if (isValid(board, co, k)) {
+            board[i][j] = String.fromCharCode('0'.charCodeAt(0)+k);
+            if (solve(board, co+1))
+                return true;
+            board[i][j] = '.';
+        }
+    }
+    return false;
+}
+function isValid(board, co, c) {
+    var i = Math.floor(co/9);
+    var j = co%9;
+    for (var k = 0; k < 9; k++) {
+        if (board[i][k] == c || board[k][j] == c || board[Math.floor(i/3)*3+Math.floor(k/3)][Math.floor(j/3)*3+k%3] == c)
+            return false;
+    }
+    return true;
+}
+function uniqueCandidate(board) {
+    for (var co = 0; co < 81; co++) {
+        if ([2, 4, 8, 16, 32, 63, 128, 256, 512].indexOf(candidate[co]) > -1)
+            return co;
+    }
+    return -1;
+}
+function binaryToDigit(a) {
+    for (var i = 1; i <= 9; i++) {
+        if ((a>>i) == 1)
+            return i;
+    }
+    return 0;
+}
+
+function printBoard(board) {
+    for (var i = 0; i < 9; i++) {
+        console.log(board[i]);
+    }
+    console.log('');
+}
+
+
+/////////////////////////////////////////////////////
+
+var board = [
+"53..7....",
+"6..195...",
+".98....6.",
+"8...6...3",
+"4..8.3..1",
+"7...2...6",
+".6....28.",
+"...419..5",
+"....8..79"
+];
+/*
+board = [
+"..9748...",
+"7........",
+".2.1.9...",
+"..7...24.",
+".64.1.59.",
+".98...3..",
+"...8.3.2.",
+"........6",
+"...2759.."
+];
+*/
+
+for (var i = 0; i < 9; i++) {
+    board[i] = board[i].split('');
+}
+printBoard(board);
+
+solveSudoku(board);
+printBoard(board);
+
+</script>
+</body>
+</html>

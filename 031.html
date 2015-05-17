@@ -1,0 +1,43 @@
+<html>
+<body>
+<h1>LeetCode 031 XXXNext Permutation, JavaScript ...</h1>
+<h2>2015-05-10</h2>
+<script>
+/**
+ * @param {number[]} nums
+ * @return {void} Do not return anything, modify nums in-place instead.
+ */
+var nextPermutation = function(nums) {
+    var n = nums.length;
+    if (n <= 1)
+        return;
+    var i = n - 2;
+    while (i >= 0 && nums[i] >= nums[i+1])
+        i--;
+    if (i >= 0) {
+        var next = i + 1;
+        for (var j = i + 1; j < n; j++)
+            if (nums[j] > nums[i] && nums[j] < nums[next])
+                next = j;
+        var tmp = nums[i];
+        nums[i] = nums[next];
+        nums[next] = tmp;
+    }
+    var arr = nums.slice(i+1).sort(function(a,b){return a-b;});
+    nums.splice(i+1, n-i);
+    for (var key in arr)
+        nums.push(arr[key]);
+};
+
+/////////////////////////////////////////////////////
+var nums = [11,12,0,27,3,11,21,9,0,15,26,27,17,24,0,16,4,17,14,8,15,8,2,16,10,6,6,24,16,2,18,19,6,10,17,10,21,0,11,13,7,7,2,16,24,25,2,20,12,9,20,19];
+console.log(nums);
+
+for (var i = 0; i < 1; i++) {
+    nextPermutation(nums);
+    console.log(nums);
+}
+
+</script>
+</body>
+</html>

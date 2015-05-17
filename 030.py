@@ -1,6 +1,6 @@
-#   000
-#   XXX
-#   2015-04-28
+#   030
+#   Substring with Concatenation of All Words
+#   2015-05-08
 #####################################################
 import collections
 import copy

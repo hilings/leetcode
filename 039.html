@@ -1,0 +1,50 @@
+<html>
+<body>
+<h1>LeetCode 039 Combination Sum, JavaScript ...</h1>
+<h2>2015-05-16</h2>
+<script>
+/**
+ * @param {number[]} candidates
+ * @param {number} target
+ * @return {number[][]}
+ */
+var combinationSum = function(candidates, target) {
+    candidates.sort(function(a,b){return a-b;});
+    return solve(candidates, target, candidates.length-1);
+};
+
+function solve(candidates, target, limit) {
+    var v = [];
+    if (target < candidates[0])
+        return v;
+    for (var i = 0; i <= limit; i++) {
+        if (candidates[i] == target) {
+            v.push([target]);
+            limit = i-1;
+            break;
+        }
+    }
+    for (i = 0; i <= limit; i++) {
+        if (candidates[i] == target)
+            break;
+        var tmp = solve(candidates, target - candidates[i], i);
+        for (var j = 0, l = tmp.length; j < l; j++) {
+            tmp[j].push(candidates[i]);
+            v.push(tmp[j]);
+        }
+    }
+    return v;
+}
+
+/////////////////////////////////////////////////////
+
+var candidates = [3,12,9,11,6,7,8,5,4];
+var target = 15;
+console.log(candidates);
+console.log(target);
+var v = combinationSum(candidates, target);
+v.forEach(function(value, index, array){console.log(value)});
+
+</script>
+</body>
+</html>

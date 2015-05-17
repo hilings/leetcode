@@ -1,6 +1,6 @@
-#    008
-#    String to Integer (atoi)
-#    2015-04-14
+#   008
+#   String to Integer (atoi)
+#   2015-04-14
 #####################################################
 class Solution:
     # @param str, a string

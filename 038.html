@@ -1,0 +1,40 @@
+<html>
+<body>
+<h1>LeetCode 038 Count and Say, JavaScript ...</h1>
+<h2>2015-05-</h2>
+<script>
+/**
+ * @param {number} n
+ * @return {string}
+ */
+var countAndSay = function(n) {
+    var s = "1";
+    for (var i = 1; i < n; i++) {
+        console.log(i, s);
+        var tmp = "";
+        var count = 1;
+        var j;
+        var l = s.length;
+        for (j = 1; j < l; j++) {
+            if (s[j] == s[j-1])
+                count++;
+            else {
+                tmp += count+s[j-1];
+                count = 1;
+            }
+        }
+        tmp += count + s[j-1];
+        s = tmp;
+    }
+    console.log(n, s);
+    return s;
+};
+
+/////////////////////////////////////////////////////
+
+var n = 5;
+countAndSay(n);
+
+</script>
+</body>
+</html>

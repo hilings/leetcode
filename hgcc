@@ -1,0 +1,12 @@
+clear
+
+echo -e "gcc $1 ...\n"
+
+gcc $1
+
+./a.out
+
+echo
+
+rm a.out
+

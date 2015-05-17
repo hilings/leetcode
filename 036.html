@@ -1,0 +1,66 @@
+<html>
+<body>
+<h1>LeetCode 036 Valid Sudoku, JavaScript ...</h1>
+<h2>2015-05-11</h2>
+<script>
+/**
+ * @param {character[][]} board
+ * @return {boolean}
+ */
+var isValidSudoku = function(board) {
+    for (var i = 0; i < 9; i++) {
+        var set1 = [];
+        var set2 = [];
+        var set3 = [];
+        for (var j = 0; j < 9; j++) {
+            var c = board[i][j];    //  check row
+            if (c != '.') {
+                if (set1.indexOf(c) > -1)
+                    return false;
+                set1.push(c);
+            }
+            c = board[j][i];    //  check row
+            if (c != '.') {
+                if (set2.indexOf(c) > -1)
+                    return false;
+                set2.push(c);
+            }
+            c = board[Math.floor(i/3)*3 + Math.floor(j/3)][i%3*3 + j%3];    //  check row
+            if (c != '.') {
+                if (set3.indexOf(c) > -1)
+                    return false;
+                set3.push(c);
+            }
+        }
+    }
+    return true;
+};
+
+function printBoard(board) {
+    for (var i = 0; i < 9; i++) {
+        console.log(board[i]);
+    }
+}
+
+/////////////////////////////////////////////////////
+var board = [
+"53..7....",
+"6..195...",
+".98....6.",
+"8...6...3",
+"4..8.3..1",
+"7...2...6",
+".6....28.",
+"...419..5",
+"....8..79"
+];
+for (var i = 0; i < 9; i++) {
+    board[i] = board[i].split('');
+}
+printBoard(board);
+
+console.log(isValidSudoku(board));
+
+</script>
+</body>
+</html>
