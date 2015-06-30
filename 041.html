@@ -1,0 +1,37 @@
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<h1>LeetCode 041 First Missing Positive, JavaScript ...</h1>
+<h2>2015-05-18</h2>
+<script>
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var firstMissingPositive = function(nums) {
+    var n = nums.length;
+    for (var i = 0; i < n; i++) {
+        if (nums[i] > 0 && nums[i] <= n && nums[i]-1 != i) {
+            var tmp = nums[nums[i]-1];
+            nums[nums[i]-1] = nums[i];
+            nums[i] = tmp;
+        }
+        if (nums[i] > 0 && nums[i]-1 < i && nums[nums[i]-1] != nums[i])
+            i--;
+    }
+    for (i = 0; i < n; i++)
+        if (nums[i] != i+1)
+            return i+1;
+    return n+1;
+};
+
+/////////////////////////////////////////////////////
+
+var nums = [3, 4, -1, 1];
+console.log(firstMissingPositive(nums));
+
+</script>
+</body>
+</html>

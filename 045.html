@@ -1,0 +1,35 @@
+<html>
+<body>
+<h1>LeetCode 045 Jump Game II, JavaScript ...</h1>
+<h2>2015-06-29</h2>
+<script>
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var jump = function(nums) {
+    var size = nums.length;
+    v = [0];
+    for (var i = 1; i < size; i++) {
+        v.push(-1);
+    }
+    for (i = 0; i < size; i++) {
+        for (var j = Math.min(size-1, i+nums[i]); j > i; j--) {
+            if (v[j] == -1 || v[i]+1 < v[j])
+                v[j] = v[i]+1;
+            if (j == size-1)
+                return v[j];
+            if (j+nums[j] >= size-1)
+                return v[j]+1;
+        }
+    }
+    return v[size-1];
+};
+
+/////////////////////////////////////////////////////
+var nums = [2,3,1,1,4];
+console.log(jump(nums));
+
+</script>
+</body>
+</html>

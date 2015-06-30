@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<h1>LeetCode 043 Multiply Strings, JavaScript ...</h1>
+<h2>2015-05-20</h2>
+<script>
+/**
+ * @param {string} num1
+ * @param {string} num2
+ * @return {string}
+ */
+var multiply = function(num1, num2) {
+    var l1 = num1.length;
+    var l2 = num2.length;
+    var s = [];
+    for (var i = 0; i < l1+l2; i++)
+        s[i] = 0;
+    for (i = l1-1; i >= 0; i--) {
+        var carry = 0;
+        for (var j = l2-1; j >= 0; j--) {
+            var tmp = s[i+j+1] + num1[i] * num2[j] + carry;
+            s[i+j+1] = tmp % 10;
+            carry = Math.floor(tmp/10);
+        }
+        s[i] += carry;
+    }
+    for (i = 0; i < l1+l2; i++)
+        if (s[i] != 0)
+            return s.slice(i).join('');
+    return "0";
+};
+
+/////////////////////////////////////////////////////
+
+var num1 = "9";
+var num2 = "99";
+console.log(multiply(num1, num2));
+
+</script>
+</body>
+</html>

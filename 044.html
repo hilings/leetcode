@@ -1,0 +1,48 @@
+<html>
+<body>
+<h1>LeetCode 044 Wildcard Matching, JavaScript ...</h1>
+<h2>2015-06-23</h2>
+<script>
+/**
+ * @param {string} s
+ * @param {string} p
+ * @return {boolean}
+ */
+var isMatch = function(s, p) {
+    var l1 = s.length;
+    var l2 = p.length;
+    var ast = 0;
+    for (var j = 0; j < l2; j++) {
+        if (p[j] == '*')
+            ast++;
+    }
+    if (l1 < l2 - ast)
+        return false;
+
+    var m = [true];
+    for (var i = 0; i < l1; i++) {
+        m.push(false);
+    }
+    for (j = 0; j <l2; j++) {
+        if (p[j] == '*') {
+            for (i = 1; i <= l1; i++) {
+                m[i] = m[i-1] || m[i];
+            }
+        } else {
+            for (i = l1; i > 0; i--) {
+                m[i] = m[i-1] && (s[i-1] == p[j] || p[j] == '?')
+            }
+            m[0] = false;
+        }
+    }
+    return m[l1];
+};
+/////////////////////////////////////////////////////
+var s = "abc";
+var p = "*ab*";
+console.log(s, p);
+console.log(isMatch(s, p));
+
+</script>
+</body>
+</html>
