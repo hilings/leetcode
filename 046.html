@@ -1,0 +1,34 @@
+<html>
+<body>
+<h1>LeetCode 046 Permutations, JavaScript ...</h1>
+<h2>2015-07-06</h2>
+<script>
+/**
+ * @param {number[]} nums
+ * @return {number[][]}
+ */
+var permute = function(nums) {
+    var v = [[nums[0]]];
+    while (v[0].length < nums.length) {
+        var a = v.shift();
+        var l = a.length;
+        for (var i = 0; i <= l; i++) {
+            var c = a.slice(0);
+            c.splice(i, 0, nums[l]);
+            v.push(c);
+        }
+    }
+    return v;
+};
+
+/////////////////////////////////////////////////////
+var nums = [1,2,3];
+console.log(nums + "\n");
+var v = permute(nums);
+for (var i = 0; i < v.length; i++) {
+    console.log(v[i]);
+}
+
+</script>
+</body>
+</html>

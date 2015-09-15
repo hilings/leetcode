@@ -72,6 +72,8 @@
 		C1950E3C1AF3270C00C4C2B8 /* 024.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 024.cpp; sourceTree = "<group>"; };
 		C1950E3E1AF3275400C4C2B8 /* 024.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 024.c; sourceTree = "<group>"; };
 		C1950E401AF327A900C4C2B8 /* 025.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 025.cpp; sourceTree = "<group>"; };
+		C19CA7841BA3DCBA00FA323B /* 050.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 050.cpp; sourceTree = "<group>"; };
+		C19CA7861BA7CAFE00FA323B /* 050.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 050.c; sourceTree = "<group>"; };
 		C19F664F1ADE06140008F5D9 /* 009.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 009.cpp; sourceTree = "<group>"; };
 		C19F66511ADE29C20008F5D9 /* 009.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 009.c; sourceTree = "<group>"; };
 		C1A3F1061ADF477E00461CE0 /* 010.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 010.cpp; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 		C1A94DC41AF08BD90082E4F8 /* 021.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 021.cpp; sourceTree = "<group>"; };
 		C1AD688C1AE4EA86002B3A8D /* 013.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 013.cpp; sourceTree = "<group>"; };
 		C1AD688E1AE4F179002B3A8D /* 013.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 013.c; sourceTree = "<group>"; };
+		C1ADDE291B9929F7000C71AE /* 047.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 047.c; sourceTree = "<group>"; };
 		C1BB1DCC1AD9D29A00FB8C70 /* 005.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 005.c; sourceTree = "<group>"; };
 		C1C54FAB1B0C1F6E00CA64BF /* 043.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 043.cpp; sourceTree = "<group>"; };
 		C1C54FAD1B0C4C1A00CA64BF /* 043.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 043.c; sourceTree = "<group>"; };
@@ -94,6 +97,10 @@
 		C1D136D41ADB67D500FA2BF9 /* 007.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 007.c; sourceTree = "<group>"; };
 		C1D136D71ADB71C400FA2BF9 /* 008.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 008.cpp; sourceTree = "<group>"; };
 		C1D1D1461B02E2FC007DCF14 /* 037.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 037.cpp; sourceTree = "<group>"; };
+		C1D54C471B9D11BA0062497A /* 048.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 048.cpp; sourceTree = "<group>"; };
+		C1D54C491B9D121C0062497A /* 048.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 048.c; sourceTree = "<group>"; };
+		C1D54C4B1B9D12440062497A /* 049.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 049.cpp; sourceTree = "<group>"; };
+		C1D54C4D1B9D23430062497A /* 049.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 049.c; sourceTree = "<group>"; };
 		C1DB30CC1B046172009E06AF /* 037.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 037.c; sourceTree = "<group>"; };
 		C1DC59FD1AD75435007D82C7 /* 005.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 005.cpp; sourceTree = "<group>"; };
 		C1DE82D91AE42D8F0093701E /* 011.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 011.cpp; sourceTree = "<group>"; };
@@ -106,6 +113,9 @@
 		C1E960651AD4C197008D1C63 /* leetcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = leetcode; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1E9606F1AD4C1A6008D1C63 /* 003.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 003.cpp; sourceTree = "<group>"; };
 		C1E960711AD4C207008D1C63 /* 003.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 003.c; sourceTree = "<group>"; };
+		C1EBE14A1B42561E00A070F4 /* 046.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 046.cpp; sourceTree = "<group>"; };
+		C1EBE14C1B4394B100A070F4 /* 046.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 046.c; sourceTree = "<group>"; };
+		C1EBE1501B4BA58600A070F4 /* 047.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 047.cpp; sourceTree = "<group>"; };
 		C1EC123D1B00953600CDA308 /* 033.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 033.cpp; sourceTree = "<group>"; };
 		C1F9EDF91AE4E18B00A1AB72 /* 012.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 012.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -226,6 +236,16 @@
 				C15025A31B3A69A500CCA528 /* 044.c */,
 				C15025A51B3A773900CCA528 /* 045.cpp */,
 				C106D2BC1B412A7E00DCE667 /* 045.c */,
+				C1EBE14A1B42561E00A070F4 /* 046.cpp */,
+				C1EBE14C1B4394B100A070F4 /* 046.c */,
+				C1EBE1501B4BA58600A070F4 /* 047.cpp */,
+				C1ADDE291B9929F7000C71AE /* 047.c */,
+				C1D54C471B9D11BA0062497A /* 048.cpp */,
+				C1D54C491B9D121C0062497A /* 048.c */,
+				C1D54C4B1B9D12440062497A /* 049.cpp */,
+				C1D54C4D1B9D23430062497A /* 049.c */,
+				C19CA7841BA3DCBA00FA323B /* 050.cpp */,
+				C19CA7861BA7CAFE00FA323B /* 050.c */,
 				C1184B5F1AF5E5A400E0BFB8 /* template.cpp */,
 				C1184B611AF5F4AD00E0BFB8 /* template.c */,
 			);

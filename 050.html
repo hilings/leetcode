@@ -1,0 +1,32 @@
+<html>
+<body>
+<h1>LeetCode 050 Pow(x, n), JavaScript ...</h1>
+<h2>2015-09-14</h2>
+<script>
+/**
+ * @param {number} x
+ * @param {number} n
+ * @return {number}
+ */
+var myPow = function(x, n) {
+    if (n == 0)
+        return 1;
+    if (n < 1) {
+        x = 1/x;
+        n = -n;
+    }
+    var result = 1;
+    while (n > 0) {
+        result *= n&1>0 ? x : 1;
+        x *= x;
+        n = n>>1;
+    }
+    return result;
+};
+
+/////////////////////////////////////////////////////
+console.log(myPow(2.5, 2));
+
+</script>
+</body>
+</html>

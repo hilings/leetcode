@@ -1,0 +1,31 @@
+<html>
+<body>
+<h1>LeetCode 049 Group Anagrams, JavaScript ...</h1>
+<h2>2015-09-10</h2>
+<script>
+/**
+ * @param {string[]} strs
+ * @return {string[][]}
+ */
+var groupAnagrams = function(strs) {
+    var dict = {};
+    for (var index in strs) {
+        key = strs[index].split('').sort().join('');
+        if (!dict[key])
+            dict[key] = [];
+        dict[key].push(strs[index]);
+    }
+    var values = []
+    for (var key in dict) {
+        values.push(dict[key].sort());
+    }
+    return values;
+};
+
+/////////////////////////////////////////////////////
+var strs = ["eat", "tea", "tan", "ate", "nat", "bat"];
+console.log(groupAnagrams(strs));
+
+</script>
+</body>
+</html>

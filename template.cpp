@@ -2,7 +2,7 @@
 //  000.cpp
 //  leetcode
 //
-//  Created by Hang Zhang on 4/28/15.
+//  Created by Hang Zhang on 09/10/15.
 //  Copyright (c) 2015 Hilings Studio. All rights reserved.
 //
 #include <iostream>

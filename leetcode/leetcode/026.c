@@ -33,7 +33,7 @@ int removeDuplicates(int A[], int n) {
 
 int main(int arg, char *argv[]) {
     // insert code here...
-    printf("LeetCode 000 XXX, C ...\n\n");
+    printf("LeetCode 026 Remove Duplicates from Sorted Array, C ...\n\n");
 
     int a[] = {1, 2, 3, 3};
     int n = sizeof(a) / sizeof(int);
