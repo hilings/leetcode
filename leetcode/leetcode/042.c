@@ -7,6 +7,7 @@
 //
 
 #include <stdio.h>
+
 int trap(int* height, int heightSize) {
     if (heightSize == 0)
         return 0;

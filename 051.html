@@ -1,0 +1,43 @@
+<html>
+<body>
+<h1>LeetCode 051 N-Queens, JavaScript ...</h1>
+<h2>2015-12-06</h2>
+<script>
+/**
+ * @param {number} n
+ * @return {string[][]}
+ */
+var solveNQueens = function(n) {
+    var solutionset = [];
+    solve(solutionset, [], n, 0, 0, 0);
+    return solutionset;
+};
+
+function solve(solutionset, solution, n, c, d1, d2) {
+    var row = solution.length;
+    if (row == n) {
+        ts = []
+        for (var i = 0; i < n; i++)
+            ts.push(''+Array(solution[i]+1).join('.') + 'Q' + Array(n-solution[i]).join('.'));
+        solutionset.push(ts);
+        return;
+    }
+    for (var col = 0; col < n; col++)
+        if (validate(solution, n, col, c, d1, d2))
+            solve(solutionset, solution.concat([col]), n, (1<<col)|c, (1<<(row-col+n))|d1, (1<<(row+col))|d2);
+}
+
+function validate(solution, n, col, c, d1, d2) {
+    var row = solution.length;
+    if ((1<<col)&c || (1<<(row-col+n))&d1 || (1<<(row+col))&d2 )
+        return false;
+    return true;
+}
+
+/////////////////////////////////////////////////////
+
+console.log(solveNQueens(8).length);
+
+</script>
+</body>
+</html>

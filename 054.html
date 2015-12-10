@@ -1,0 +1,47 @@
+<html>
+<body>
+<h1>LeetCode 054 Spiral Matrix, JavaScript ...</h1>
+<h2>2015-12-09</h2>
+<script>
+/**
+ * @param {number[][]} matrix
+ * @return {number[]}
+ */
+var spiralOrder = function(matrix) {
+    v = [];
+    if (matrix.length == 0)
+        return v;
+    push(matrix, 0, 0, matrix.length-1, matrix[0].length-1);
+    return v;
+};
+
+function push(matrix, a, b, c, d) {
+    if (a > c || b > d)
+        return;
+    for (var i = b; i <= d; i++)
+        v.push(matrix[a][i]);
+    for (i = a+1; i<= c; i++)
+        v.push(matrix[i][d]);
+    if (a == c || b == d)
+        return;
+    for (i = d-1; i >= b; i--)
+        v.push(matrix[c][i]);
+    for (i = c-1; i > a; i--)
+        v.push(matrix[i][b]);
+    push(matrix, a+1, b+1, c-1, d-1);
+}
+
+/////////////////////////////////////////////////////
+
+var matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+
+console.log(matrix);
+console.log(spiralOrder(matrix));
+
+</script>
+</body>
+</html>

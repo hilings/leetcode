@@ -1,0 +1,30 @@
+<html>
+<body>
+<h1>LeetCode 055 Jump Game, JavaScript ...</h1>
+<h2>2015-12-09</h2>
+<script>
+/**
+ * @param {number[]} nums
+ * @return {boolean}
+ */
+var canJump = function(nums) {
+    var til = nums[0];
+    for (var i = 0; i <= til; i++) {
+        if (i+nums[i] > til)
+            til = i+nums[i];
+        if (til >= nums.length-1)
+            return true;
+    }
+    return false;
+};
+
+/////////////////////////////////////////////////////
+
+var nums = [2,3,1,1,4];
+nums = [3,2,1,0,4];
+
+console.log(canJump(nums));
+
+</script>
+</body>
+</html>

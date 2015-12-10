@@ -1,0 +1,40 @@
+<html>
+<body>
+<h1>LeetCode 052 N-Queens II, JavaScript ...</h1>
+<h2>2015-12-07</h2>
+<script>
+/**
+ * @param {number} n
+ * @return {number}
+ */
+var totalNQueens = function(n) {
+    count = 0;
+    solve([], n, 0, 0, 0);
+    return count;
+};
+
+function solve(solution, n, c, d1, d2) {
+    var row = solution.length;
+    if (row == n) {
+        count++;
+        return;
+    }
+    for (var col = 0; col < n; col++)
+        if (validate(solution, n, col, c, d1, d2))
+            solve(solution.concat([col]), n, (1<<col)|c, (1<<(row-col+n))|d1, (1<<(row+col))|d2);
+}
+
+function validate(solution, n, col, c, d1, d2) {
+    var row = solution.length;
+    if ((1<<col)&c || (1<<(row-col+n))&d1 || (1<<(row+col))&d2 )
+        return false;
+    return true;
+}
+
+/////////////////////////////////////////////////////
+
+console.log(totalNQueens(8));
+
+</script>
+</body>
+</html>

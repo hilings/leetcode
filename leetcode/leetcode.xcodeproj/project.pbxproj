@@ -19,6 +19,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C10034831C15623400CBF107 /* 052.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 052.cpp; sourceTree = "<group>"; };
 		C106D2BC1B412A7E00DCE667 /* 045.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 045.c; sourceTree = "<group>"; };
 		C11023561AE60B5100B34679 /* 015.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 015.cpp; sourceTree = "<group>"; };
 		C11023581AE7492200B34679 /* 015.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 015.c; sourceTree = "<group>"; };
@@ -72,10 +73,17 @@
 		C1950E3C1AF3270C00C4C2B8 /* 024.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 024.cpp; sourceTree = "<group>"; };
 		C1950E3E1AF3275400C4C2B8 /* 024.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 024.c; sourceTree = "<group>"; };
 		C1950E401AF327A900C4C2B8 /* 025.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 025.cpp; sourceTree = "<group>"; };
+		C19526441C16A12400DFF1B5 /* 053.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 053.cpp; sourceTree = "<group>"; };
+		C19526461C17F6F700DFF1B5 /* 053.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 053.c; sourceTree = "<group>"; };
+		C19526481C17FBCE00DFF1B5 /* 054.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 054.cpp; sourceTree = "<group>"; };
+		C195264A1C1811A000DFF1B5 /* 054.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 054.c; sourceTree = "<group>"; };
 		C19CA7841BA3DCBA00FA323B /* 050.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 050.cpp; sourceTree = "<group>"; };
 		C19CA7861BA7CAFE00FA323B /* 050.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 050.c; sourceTree = "<group>"; };
+		C19CA7881BA7D08200FA323B /* 051.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 051.cpp; sourceTree = "<group>"; };
 		C19F664F1ADE06140008F5D9 /* 009.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 009.cpp; sourceTree = "<group>"; };
 		C19F66511ADE29C20008F5D9 /* 009.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 009.c; sourceTree = "<group>"; };
+		C1A1B35D1C1926C400607E16 /* 055.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 055.cpp; sourceTree = "<group>"; };
+		C1A1B35F1C192B9400607E16 /* 055.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 055.c; sourceTree = "<group>"; };
 		C1A3F1061ADF477E00461CE0 /* 010.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 010.cpp; sourceTree = "<group>"; };
 		C1A94DC01AF071680082E4F8 /* 020.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 020.cpp; sourceTree = "<group>"; };
 		C1A94DC21AF077470082E4F8 /* 020.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 020.c; sourceTree = "<group>"; };
@@ -246,6 +254,14 @@
 				C1D54C4D1B9D23430062497A /* 049.c */,
 				C19CA7841BA3DCBA00FA323B /* 050.cpp */,
 				C19CA7861BA7CAFE00FA323B /* 050.c */,
+				C19CA7881BA7D08200FA323B /* 051.cpp */,
+				C10034831C15623400CBF107 /* 052.cpp */,
+				C19526441C16A12400DFF1B5 /* 053.cpp */,
+				C19526461C17F6F700DFF1B5 /* 053.c */,
+				C19526481C17FBCE00DFF1B5 /* 054.cpp */,
+				C195264A1C1811A000DFF1B5 /* 054.c */,
+				C1A1B35D1C1926C400607E16 /* 055.cpp */,
+				C1A1B35F1C192B9400607E16 /* 055.c */,
 				C1184B5F1AF5E5A400E0BFB8 /* template.cpp */,
 				C1184B611AF5F4AD00E0BFB8 /* template.c */,
 			);
@@ -278,7 +294,7 @@
 		C1E9605D1AD4C197008D1C63 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Hilings Studio";
 				TargetAttributes = {
 					C1E960641AD4C197008D1C63 = {
@@ -333,6 +349,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;

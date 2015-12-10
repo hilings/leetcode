@@ -7,6 +7,7 @@
 //
 
 #include <stdio.h>
+
 int firstMissingPositive(int* nums, int numsSize) {
     for (int i = 0; i < numsSize; i++) {
         if (nums[i] > 0 && nums[i] <= numsSize && nums[i]-1 != i) {

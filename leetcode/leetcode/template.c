@@ -2,13 +2,14 @@
 //  template.c
 //  leetcode
 //
-//  Created by Hang Zhang on 5/2/15.
+//  Created by Hang Zhang on 12/9/15.
 //  Copyright (c) 2015 Hilings Studio. All rights reserved.
 //
 
 #include <stdio.h>
 //#include <stdlib.h>
 //#include <string.h>
+//#include <stdbool.h>
 
 
 int main(int arg, char *argv[]) {
