@@ -1,5 +1,5 @@
 //
-//  003.cpp
+//  003.c
 //  leetcode
 //
 //  Created by Hang Zhang on 4/7/15.

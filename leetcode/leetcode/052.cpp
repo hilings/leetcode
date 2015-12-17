@@ -1,8 +1,8 @@
 //
-//  template.cpp
+//  052.cpp
 //  leetcode
 //
-//  Created by Hang Zhang on 12/06/15.
+//  Created by Hang Zhang on 12/6/15.
 //  Copyright (c) 2015 Hilings Studio. All rights reserved.
 //
 
