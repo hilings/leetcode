@@ -1,5 +1,8 @@
 clear
 
+date
+echo
+
 echo -e "g++ $1 ...\n"
 
 g++ -std=c++11 $1

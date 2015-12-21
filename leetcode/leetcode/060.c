@@ -3,7 +3,7 @@
 //  leetcode
 //
 //  Created by Hang Zhang on 12/16/15.
-//  Copyright © 2015 Hilings Studio. All rights reserved.
+//  Copyright (c) 2015 Hilings Studio. All rights reserved.
 //
 
 #include <stdio.h>

@@ -1,5 +1,8 @@
 clear
 
+date
+echo
+
 echo -e "gcc $1 ...\n"
 
 gcc $1
