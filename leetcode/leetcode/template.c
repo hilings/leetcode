@@ -2,7 +2,7 @@
 //  template.c
 //  leetcode
 //
-//  Created by Hang Zhang on 12/15/15.
+//  Created by Hang Zhang on 1/15/16.
 //  Copyright © 2015 Hilings Studio. All rights reserved.
 //
 
