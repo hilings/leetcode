@@ -154,6 +154,11 @@
 		C1EBE14C1B4394B100A070F4 /* 046.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 046.c; sourceTree = "<group>"; };
 		C1EBE1501B4BA58600A070F4 /* 047.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 047.cpp; sourceTree = "<group>"; };
 		C1EC123D1B00953600CDA308 /* 033.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 033.cpp; sourceTree = "<group>"; };
+		C1F053201C3CBE6600597978 /* 076.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 076.cpp; sourceTree = "<group>"; };
+		C1F053221C3CBEB800597978 /* 077.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 077.cpp; sourceTree = "<group>"; };
+		C1F053241C3CC2A000597978 /* 078.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 078.cpp; sourceTree = "<group>"; };
+		C1F053261C3CC2B900597978 /* 079.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 079.cpp; sourceTree = "<group>"; };
+		C1F053281C3CC2F700597978 /* 080.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 080.cpp; sourceTree = "<group>"; };
 		C1F7A0901C229B0500E82AD7 /* 063.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 063.cpp; sourceTree = "<group>"; };
 		C1F7A0921C23BB6000E82AD7 /* 063.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 063.c; sourceTree = "<group>"; };
 		C1F7A0941C23C20900E82AD7 /* 064.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 064.cpp; sourceTree = "<group>"; };
@@ -332,6 +337,11 @@
 				C133B9AC1C37B4AB009C6F56 /* 073.cpp */,
 				C18F496B1C386F5500FE5E8D /* 074.cpp */,
 				C1A2179F1C3B9B950095874E /* 075.cpp */,
+				C1F053201C3CBE6600597978 /* 076.cpp */,
+				C1F053221C3CBEB800597978 /* 077.cpp */,
+				C1F053241C3CC2A000597978 /* 078.cpp */,
+				C1F053261C3CC2B900597978 /* 079.cpp */,
+				C1F053281C3CC2F700597978 /* 080.cpp */,
 				C1184B5F1AF5E5A400E0BFB8 /* template.cpp */,
 				C1184B611AF5F4AD00E0BFB8 /* template.c */,
 			);
