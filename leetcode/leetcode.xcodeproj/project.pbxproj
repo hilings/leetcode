@@ -125,6 +125,12 @@
 		C1AD688C1AE4EA86002B3A8D /* 013.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 013.cpp; sourceTree = "<group>"; };
 		C1AD688E1AE4F179002B3A8D /* 013.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 013.c; sourceTree = "<group>"; };
 		C1ADDE291B9929F7000C71AE /* 047.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 047.c; sourceTree = "<group>"; };
+		C1AFE0DB1C40A78E001858C8 /* 091.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 091.cpp; sourceTree = "<group>"; };
+		C1AFE0DE1C40A888001858C8 /* 092.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 092.cpp; sourceTree = "<group>"; };
+		C1AFE0E01C40A8DD001858C8 /* 093.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 093.cpp; sourceTree = "<group>"; };
+		C1AFE0E21C40BF30001858C8 /* 094.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 094.cpp; sourceTree = "<group>"; };
+		C1AFE0E41C40D38D001858C8 /* tree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tree.cpp; sourceTree = "<group>"; };
+		C1AFE0E71C40E09D001858C8 /* 095.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 095.cpp; sourceTree = "<group>"; };
 		C1BB1DCC1AD9D29A00FB8C70 /* 005.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 005.c; sourceTree = "<group>"; };
 		C1C54FAB1B0C1F6E00CA64BF /* 043.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 043.cpp; sourceTree = "<group>"; };
 		C1C54FAD1B0C4C1A00CA64BF /* 043.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 043.c; sourceTree = "<group>"; };
@@ -362,6 +368,12 @@
 				C149A0971C40A698009DDEBD /* 088.cpp */,
 				C149A0991C40A6DA009DDEBD /* 089.cpp */,
 				C149A09B1C40A6FE009DDEBD /* 090.cpp */,
+				C1AFE0DB1C40A78E001858C8 /* 091.cpp */,
+				C1AFE0DE1C40A888001858C8 /* 092.cpp */,
+				C1AFE0E01C40A8DD001858C8 /* 093.cpp */,
+				C1AFE0E21C40BF30001858C8 /* 094.cpp */,
+				C1AFE0E71C40E09D001858C8 /* 095.cpp */,
+				C1AFE0E41C40D38D001858C8 /* tree.cpp */,
 				C1184B5F1AF5E5A400E0BFB8 /* template.cpp */,
 				C1184B611AF5F4AD00E0BFB8 /* template.c */,
 			);
