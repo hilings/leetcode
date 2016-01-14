@@ -29,6 +29,7 @@ int main(int arg, char *argv[]) {
     Solution sol;
 
     int n = 19;
+
     int r = sol.numTrees(n);
     cout << r;
 
