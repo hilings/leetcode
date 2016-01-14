@@ -165,6 +165,7 @@
 		C1E960651AD4C197008D1C63 /* leetcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = leetcode; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1E9606F1AD4C1A6008D1C63 /* 003.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 003.cpp; sourceTree = "<group>"; };
 		C1E960711AD4C207008D1C63 /* 003.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 003.c; sourceTree = "<group>"; };
+		C1E9839C1C44E14F0016D53D /* 096.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 096.cpp; sourceTree = "<group>"; };
 		C1EB4B311C1A8EFF002DEE27 /* 056.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 056.c; sourceTree = "<group>"; };
 		C1EBE14A1B42561E00A070F4 /* 046.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 046.cpp; sourceTree = "<group>"; };
 		C1EBE14C1B4394B100A070F4 /* 046.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 046.c; sourceTree = "<group>"; };
@@ -373,6 +374,7 @@
 				C1AFE0E01C40A8DD001858C8 /* 093.cpp */,
 				C1AFE0E21C40BF30001858C8 /* 094.cpp */,
 				C1AFE0E71C40E09D001858C8 /* 095.cpp */,
+				C1E9839C1C44E14F0016D53D /* 096.cpp */,
 				C1AFE0E41C40D38D001858C8 /* tree.cpp */,
 				C1184B5F1AF5E5A400E0BFB8 /* template.cpp */,
 				C1184B611AF5F4AD00E0BFB8 /* template.c */,
