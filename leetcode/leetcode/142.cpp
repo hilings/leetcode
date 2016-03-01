@@ -1,15 +1,14 @@
 //
-//  list.cpp
+//  142.cpp
 //  leetcode
 //
-//  Created by Hang Zhang on 1/15/16.
+//  Created by Hang Zhang on 2/27/16.
 //  Copyright © 2016 Hilings Studio. All rights reserved.
 //
 
 #include <iostream>
 #include <vector>
 using namespace std;
-
 /**
  * Definition for singly-linked list.
  */
@@ -38,17 +37,44 @@ public:
         }
         cout << "(null)\n";
     }
+
+    ListNode *detectCycle(ListNode *head) {
+        if (!head)
+            return NULL;
+        ListNode *p = head, *q = head;
+        do {
+            p = p->next;
+            q = q->next;
+            if (q)
+                q = q->next;
+        } while (q && q != p);
+        if (!q)
+            return q;
+        p = head;
+        while (p != q) {
+            p = p->next;
+            q = q->next;
+        }
+        return p;
+    }
 };
 
 int main(int arg, char *argv[]) {
     // insert code here...
-    cout << "LeetCode XXX List, C++ ...\n\n";
+    cout << "LeetCode 142. Linked List Cycle II, C++ ...\n\n";
     Solution sol;
 
-    vector<int> nodes {1,2,3,4,5,6,7};
+    vector<int> nodes {1,2};
     ListNode *head = sol.buildL(nodes);
+    head->next->next = head;
     
-    sol.printL(head);
+    //sol.printL(head);
+    
+    ListNode* r = sol.detectCycle(head);
+    if (r)
+        cout << r->val << '\n';
+    else
+        cout << "(null)\n";
     
     return 0;
 }

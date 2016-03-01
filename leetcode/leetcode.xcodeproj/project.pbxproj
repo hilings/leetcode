@@ -74,6 +74,11 @@
 		C1520C381ADCF3710028946F /* 008.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 008.c; sourceTree = "<group>"; };
 		C153332F1AFFD030000E2940 /* 032.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 032.cpp; sourceTree = "<group>"; };
 		C15333311B008095000E2940 /* 032.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 032.c; sourceTree = "<group>"; };
+		C154C6701C852AC30091F1B9 /* 145.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 145.cpp; sourceTree = "<group>"; };
+		C156AC201C83831F006204AB /* 144.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 144.cpp; sourceTree = "<group>"; };
+		C159020E1C827F15008A633C /* 141.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 141.cpp; sourceTree = "<group>"; };
+		C15902101C827FC8008A633C /* 142.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 142.cpp; sourceTree = "<group>"; };
+		C15902121C828018008A633C /* 143.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 143.cpp; sourceTree = "<group>"; };
 		C15F09771B05B12500D368FA /* 038.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 038.cpp; sourceTree = "<group>"; };
 		C15F09791B05BC8200D368FA /* 038.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 038.c; sourceTree = "<group>"; };
 		C15FFFFC1AE5DEF800EE2940 /* 014.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 014.cpp; sourceTree = "<group>"; };
@@ -465,6 +470,11 @@
 				C19A5EF81C80088C00DD6B23 /* 138.cpp */,
 				C17A85341C80171700307017 /* 139.cpp */,
 				C1C48F6E1C827E9C002DA338 /* 140.cpp */,
+				C159020E1C827F15008A633C /* 141.cpp */,
+				C15902101C827FC8008A633C /* 142.cpp */,
+				C15902121C828018008A633C /* 143.cpp */,
+				C156AC201C83831F006204AB /* 144.cpp */,
+				C154C6701C852AC30091F1B9 /* 145.cpp */,
 				C1F9F3321C78E1730028A8AB /* graph.cpp */,
 				C1A85B341C49E0A8005BF9C6 /* list.cpp */,
 				C1AFE0E41C40D38D001858C8 /* tree.cpp */,
