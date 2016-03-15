@@ -27,6 +27,7 @@ VALUES
 SELECT * FROM Logs;
 
 #####################################################
+# Write your MySQL query statement below
 
 SELECT DISTINCT t2.cur
 FROM (
@@ -40,4 +41,20 @@ FROM (
     FROM Logs, (SELECT @prev1 := NULL, @prev2 := NULL) r
 ) t2
 WHERE t2.cur IS NOT NULL;
+
+
+#####################################################
+# Write your MySQL query statement below
+
+SELECT Num
+FROM (
+    SELECT
+        Num,
+        CASE
+            WHEN @prev = Num THEN @count := @count + 1
+            WHEN @prev := Num THEN @count := 1
+        END count
+    FROM Logs, (SELECT @prev := NULL, @count := 0) r
+) t
+WHERE count = 3;
 

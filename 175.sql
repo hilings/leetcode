@@ -6,9 +6,9 @@ DROP TABLE IF EXISTS `Person`;
 
 
 CREATE TABLE `Person` (
-    `PersonId` INT(4) NOT NULL AUTO_INCREMENT,
-    `FirstName` VARCHAR(8),
-    `LastName` VARCHAR(8),
+    `PersonId` INT(4) UNSIGNED NOT NULL AUTO_INCREMENT,
+    `FirstName` VARCHAR(32),
+    `LastName` VARCHAR(32),
     PRIMARY KEY (`PersonId`)
 ) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
@@ -29,10 +29,10 @@ DROP TABLE IF EXISTS `Address`;
 
 
 CREATE TABLE `Address` (
-    `AddressId` INT(4) NOT NULL AUTO_INCREMENT,
+    `AddressId` INT(4) UNSIGNED NOT NULL AUTO_INCREMENT,
     `PersonId` INT(4),
-    `City` VARCHAR(8),
-    `State` VARCHAR(8),
+    `City` VARCHAR(32),
+    `State` VARCHAR(32),
     PRIMARY KEY (`AddressId`)
 ) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
@@ -47,9 +47,24 @@ VALUES
 SELECT * FROM Address;
 
 #####################################################
+# Write your MySQL query statement below
 
 SELECT FirstName, LastName, City, State
 FROM Person
 LEFT JOIN Address
     ON Person.PersonId = Address.PersonId;
+
+
+#####################################################
+# Write your MySQL query statement below
+
+SELECT
+    p.FirstName,
+    p.LastName,
+    a.City,
+    a.State
+FROM Person p
+LEFT JOIN Address a
+    ON p.PersonId = a.PersonId
+;
 

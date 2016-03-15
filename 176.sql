@@ -6,7 +6,7 @@ DROP TABLE IF EXISTS `Employee`;
 
 
 CREATE TABLE `Employee` (
-    `Id` TINYINT(4) UNSIGNED NOT NULL AUTO_INCREMENT,
+    `Id` INT(4) UNSIGNED NOT NULL AUTO_INCREMENT,
     `Salary` INT(8),
     PRIMARY KEY (`Id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
@@ -23,6 +23,7 @@ VALUES
 SELECT * FROM Employee;
 
 #####################################################
+# Write your MySQL query statement below
 
 SELECT MAX(Salary)
 FROM Employee

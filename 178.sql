@@ -31,6 +31,7 @@ VALUES
 SELECT * FROM Scores;
 
 #####################################################
+# Write your MySQL query statement below
 
 SELECT
     Score,
