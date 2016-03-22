@@ -1,5 +1,4 @@
-#   183
-#   Customers Who Never Order
+#   183.Customers Who Never Order
 #####################################################
 
 DROP TABLE IF EXISTS `Customers`;

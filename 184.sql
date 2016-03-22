@@ -1,16 +1,16 @@
-#   184
-#   Department Highest Salary
+#   184.Department Highest Salary
 #####################################################
 
 DROP TABLE IF EXISTS `Employee`;
 
 
 CREATE TABLE `Employee` (
-    `Id` INT NOT NULL AUTO_INCREMENT,
+    `Id` INT(4) UNSIGNED NOT NULL AUTO_INCREMENT,
     `Name` VARCHAR(16),
-    `Salary` INT,
-    `DepartmentId` INT,
-    PRIMARY KEY (`Id`)
+    `Salary` INT(8),
+    `DepartmentId` INT(4),
+    PRIMARY KEY (`Id`),
+    KEY (`DepartmentId`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
 
@@ -31,8 +31,8 @@ DROP TABLE IF EXISTS `Department`;
 
 
 CREATE TABLE `Department` (
-    `Id` INT NOT NULL AUTO_INCREMENT,
-    `Name` VARCHAR(8),
+    `Id` INT(4) UNSIGNED NOT NULL AUTO_INCREMENT,
+    `Name` VARCHAR(16),
     PRIMARY KEY (`Id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
@@ -47,6 +47,7 @@ VALUES
 SELECT * FROM Department;
 
 #####################################################
+# Write your MySQL query statement below
 
 SELECT
     d.Name Department,
@@ -65,4 +66,28 @@ JOIN (
 JOIN Department d
     ON d.Id = e.DepartmentId
 ORDER BY Salary DESC;
+
+
+#####################################################
+# Write your MySQL query statement below
+
+SELECT
+    t.Name Department,
+    e.Name Employee,
+    e.Salary Salary
+FROM Employee e
+JOIN (
+    SELECT
+        d.Id,
+        d.Name,
+        MAX(e.Salary) ms
+    FROM Department d
+    JOIN Employee e
+        ON e.DepartmentId = d.Id
+    GROUP BY d.Id
+) t
+    ON e.DepartmentId = t.Id
+    AND e.Salary = t.ms
+ORDER BY e.Salary DESC;
+
 

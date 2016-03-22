@@ -1,16 +1,16 @@
-#   185
-#   Department Top Three Salaries
+#   185.Department Top Three Salaries
 #####################################################
 
 DROP TABLE IF EXISTS `Employee`;
 
 
 CREATE TABLE `Employee` (
-    `Id` INT NOT NULL AUTO_INCREMENT,
+    `Id` INT(4) UNSIGNED NOT NULL AUTO_INCREMENT,
     `Name` VARCHAR(16),
-    `Salary` INT,
-    `DepartmentId` INT,
-    PRIMARY KEY (`Id`)
+    `Salary` INT(8),
+    `DepartmentId` INT(4),
+    PRIMARY KEY (`Id`),
+    KEY (`DepartmentId`)    
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
 
@@ -33,8 +33,8 @@ DROP TABLE IF EXISTS `Department`;
 
 
 CREATE TABLE `Department` (
-    `Id` INT NOT NULL AUTO_INCREMENT,
-    `Name` VARCHAR(8),
+    `Id` INT(4) UNSIGNED NOT NULL AUTO_INCREMENT,
+    `Name` VARCHAR(16),
     PRIMARY KEY (`Id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
@@ -49,6 +49,7 @@ VALUES
 SELECT * FROM Department;
 
 #####################################################
+# Write your MySQL query statement below
 
 SELECT
     d.Name Department,
@@ -68,4 +69,32 @@ JOIN Department d
 GROUP BY e.Id
 HAVING count(*) <= 3
 ORDER BY d.Id, e.Salary DESC;
+
+
+#####################################################
+# Write your MySQL query statement below
+
+SELECT
+    d.Name Department,
+    t.Name Employee,
+    t.Salary Salary
+FROM Department d
+JOIN (
+    SELECT
+        e.DepartmentId,
+        e.Name,
+        e.Salary,
+        CASE
+            WHEN @previd = e.DepartmentId AND e.Salary = @prevsalary THEN @rank := @rank
+            WHEN @previd = e.DepartmentId AND e.Salary < @prevsalary THEN @rank := @rank + 1
+            ELSE @rank := 1
+        END rank,
+        @previd := e.DepartmentId,
+        @prevsalary := e.Salary
+    FROM Employee e, (SELECT @previd := NULL, @prevsalary := NULL, @rank := 0) r
+    ORDER BY e.DepartmentId, e.Salary DESC
+) t
+    ON d.Id = t.DepartmentId
+    AND t.rank <= 3;
+
 

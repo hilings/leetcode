@@ -1,13 +1,12 @@
-#   181
-#   Employees Earning More Than Their Managers
+#   181.Employees Earning More Than Their Managers
 #####################################################
 
 DROP TABLE IF EXISTS `Employee`;
 
 
 CREATE TABLE `Employee` (
-    `Id` TINYINT(4) UNSIGNED NOT NULL AUTO_INCREMENT,
-    `Name` VARCHAR(32),
+    `Id` INT(4) UNSIGNED NOT NULL AUTO_INCREMENT,
+    `Name` VARCHAR(16),
     `Salary` INT(8),
     `ManagerId` SMALLINT(4),
     PRIMARY KEY (`Id`)
@@ -26,6 +25,7 @@ VALUES
 SELECT * FROM Employee;
 
 #####################################################
+# Write your MySQL query statement below
 
 SELECT t1.Name
 FROM Employee t1
@@ -36,9 +36,12 @@ WHERE t1.Salary > (
 );
 
 
-SELECT t1.Name
+#####################################################
+# Write your MySQL query statement below
+
+SELECT t1.Name Employee
 FROM Employee t1
 JOIN Employee t2
     ON t1.ManagerId = t2.id
-WHERE t1.Salary > t2.Salary;
+    AND t1.Salary > t2.Salary;
 
