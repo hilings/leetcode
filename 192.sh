@@ -1,9 +1,11 @@
-#   192
-#   Word Frequency
+#   192. Word Frequency
+#   2016-03-21
 #####################################################
+echo "the day is sunny the the
+the sunny is is" > words.txt
 
-printf "the day is sunny the the\nthe sunny is is\n" > words.txt
-
+#####################################################
+# Read from the file words.txt and output the word frequency list to stdout.
 #IFS=' '
 declare -A DICT
 
@@ -24,4 +26,14 @@ done | sort -nr | while read LINE; do
 done
 
 
+#####################################################
+# Read from the file words.txt and output the word frequency list to stdout.
+
+cat words.txt | tr -s ' ' '\n' | sort | uniq -c | sort -r | awk '{print $2, $1}'
+
+
+#####################################################
+#   cleanup
+
 rm words.txt
+
