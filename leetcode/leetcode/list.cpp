@@ -38,6 +38,16 @@ public:
         }
         cout << "(null)\n";
     }
+    ListNode* reverse(ListNode* head) {
+        ListNode *prev = NULL, *p = head;
+        while (p) {
+            ListNode *t = p->next;
+            p->next = prev;
+            prev = p;
+            p = t;
+        }
+        return prev;
+    }
 };
 
 int main(int arg, char *argv[]) {
@@ -47,8 +57,10 @@ int main(int arg, char *argv[]) {
 
     vector<int> nodes {1,2,3,4,5,6,7};
     ListNode *head = sol.buildL(nodes);
-    
     sol.printL(head);
-    
+
+    ListNode *r = sol.reverse(head);    //reverse
+    sol.printL(r);
+
     return 0;
 }

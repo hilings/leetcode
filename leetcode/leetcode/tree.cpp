@@ -2,13 +2,14 @@
 //  tree.cpp
 //  leetcode
 //
-//  Created by Hang Zhang on 1/8/16.
+//  Created by Hang Zhang on 4/28/16.
 //  Copyright © 2016 Hilings Studio. All rights reserved.
 //
 
 #include <iostream>
 #include <vector>
 #include <deque>
+#include <stack>
 using namespace std;
 
 /**
@@ -20,13 +21,6 @@ struct TreeNode {
     TreeNode *right;
     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
-
-void printV(vector<int> v) {
-    for (auto a: v) {
-        cout << a << ' ';
-    }
-    cout << '\n';
-}
 
 class Solution {
     void building(deque<TreeNode*>q, vector<int>& nodes) {
@@ -52,16 +46,6 @@ class Solution {
         q.pop_front();
         building(q, nodes);
     }
-
-    void inT(vector<int> &v, TreeNode* root) {
-    // recursive inorder traverse, into vector
-        if (!root)
-            return;
-        inT(v, root->left);
-        v.push_back(root->val);
-        inT(v, root->right);
-    }
-
 public:
     TreeNode* build(vector<int> nodes) {
     // build tree from serialization
@@ -70,13 +54,6 @@ public:
         nodes.erase(nodes.begin());
         building(q, nodes);
         return root;
-    }
-
-    vector<int> inorderTraversal(TreeNode* root) {
-    // recursive inorder traverse, into vector
-        vector<int> v;
-        inT(v, root);
-        return v;
     }
 
     void printT(TreeNode *root) {
@@ -105,7 +82,95 @@ public:
         }
         cout << '\n';
     }
-    
+
+    void preTr(TreeNode* root) {    // pre order traversal, recursive
+        if (!root)
+            return;
+        cout << root->val << ' ';
+        preTr(root->left);
+        preTr(root->right);
+    }
+    void preTi(TreeNode *root) {    // pre order traversal, iterative
+        stack<TreeNode*> stk;
+        TreeNode *cur = root;
+        while (cur || !stk.empty()) {
+            if (cur) {
+                cout << cur->val << ' ';
+                if (cur->right)
+                    stk.push(cur->right);
+                cur = cur->left;
+            } else {
+                cur = stk.top();
+                stk.pop();
+            }
+        }
+    }
+
+    void inTr(TreeNode* root) { // in order traversal, recursive
+        if (!root)
+            return;
+        inTr(root->left);
+        cout << root->val << ' ';
+        inTr(root->right);
+    }
+    void inTi(TreeNode* root) { // in order traversal, iterative
+        stack<TreeNode*> stk;
+        TreeNode* cur = root;
+        while (cur || !stk.empty()) {
+            if (cur) {
+                stk.push(cur);
+                cur = cur->left;
+            } else {
+                cout << stk.top()->val << ' ';
+                cur = stk.top()->right;
+                stk.pop();
+            }
+        }
+    }
+
+    void postTr(TreeNode* root) {   // post order traversal, recursive
+        if (!root)
+            return;
+        postTr(root->left);
+        postTr(root->right);
+        cout << root->val << ' ';
+    }
+    void postTi(TreeNode* root) {   // post order traversal, iterative
+        stack<TreeNode*> stk;
+        TreeNode *cur = root, *prev = NULL;
+        while (cur || !stk.empty()) {
+            if (cur) {
+                stk.push(cur);
+                cur = cur->left;
+            } else if (stk.top()->right && prev != stk.top()->right) {
+                cur = stk.top()->right;
+            } else {
+                cout << stk.top()->val << ' ';
+                prev = stk.top();
+                stk.pop();
+            }
+        }
+    }
+
+    void traversalByLevel(TreeNode* root) {
+        if (!root)
+            return;
+        deque<TreeNode*> q {root};
+        while (!q.empty()) {
+            int n = (int)q.size();
+            for (int i = 0; i < n; i++) {
+                TreeNode* cur = q.front();
+                cout << cur->val << ' ';
+                if (cur->left)
+                    q.push_back(cur->left);
+                if (cur->right)
+                    q.push_back(cur->right);
+                q.pop_front();
+            }
+        }
+        cout << '\n';
+    }
+
 };
 
 int main(int arg, char *argv[]) {
@@ -117,8 +182,24 @@ int main(int arg, char *argv[]) {
     vector<int> nodes {1,2,3,0,0,4,0,0,5};
     TreeNode *root = sol.build(nodes);
 
-    vector<int> r = sol.inorderTraversal(root);
-    printV(r);
-    
+    cout << "\n\npre order traversal, recursive\n";
+    sol.preTr(root);
+    cout << "\n\npre order traversal, iterative\n";
+    sol.preTi(root);
+
+    cout << "\n\nin order traversal, recursive\n";
+    sol.inTr(root);
+    cout << "\n\nin order traversal, iterative\n";
+    sol.inTi(root);
+
+    cout << "\n\npost order traversal, recursive\n";
+    sol.postTr(root);
+    cout << "\n\npost order traversal, iterative\n";
+    sol.postTi(root);
+
+    cout << "\n\ntraversal by level\n";
+    sol.traversalByLevel(root);
+
+
     return 0;
 }
