@@ -29,6 +29,12 @@
 		C10AD4AD1C48C621005070B3 /* 104.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 104.cpp; sourceTree = "<group>"; };
 		C10AD4AF1C48C63F005070B3 /* 105.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 105.cpp; sourceTree = "<group>"; };
 		C10B1E681C4DD30A004CE4D6 /* 121.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 121.cpp; sourceTree = "<group>"; };
+		C10D87421CF144BF00D88852 /* 257.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 257.cpp; sourceTree = "<group>"; };
+		C10D87461CF145B000D88852 /* 258.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 258.cpp; sourceTree = "<group>"; };
+		C10D87481CF1462D00D88852 /* 260.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 260.cpp; sourceTree = "<group>"; };
+		C10D874A1CF1468E00D88852 /* 263.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 263.cpp; sourceTree = "<group>"; };
+		C10D874C1CF146B900D88852 /* 264.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 264.cpp; sourceTree = "<group>"; };
+		C10D874E1CF146E200D88852 /* 268.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 268.cpp; sourceTree = "<group>"; };
 		C11023561AE60B5100B34679 /* 015.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 015.cpp; sourceTree = "<group>"; };
 		C11023581AE7492200B34679 /* 015.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 015.c; sourceTree = "<group>"; };
 		C110E8591C7C3C5700AEF69C /* 134.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 134.cpp; sourceTree = "<group>"; };
@@ -80,6 +86,8 @@
 		C13E02721CA38BCC008C573F /* 198.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 198.cpp; sourceTree = "<group>"; };
 		C13E02751CA38BE9008C573F /* 199.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 199.cpp; sourceTree = "<group>"; };
 		C13E02771CA38C4A008C573F /* 200.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 200.cpp; sourceTree = "<group>"; };
+		C13E6A311CF1432900F2E46C /* 241.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 241.cpp; sourceTree = "<group>"; };
+		C13E6A331CF143F300F2E46C /* 242.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 242.cpp; sourceTree = "<group>"; };
 		C14126F41C8969EF00999FC4 /* 150.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 150.cpp; sourceTree = "<group>"; };
 		C144EAB51C47529000463012 /* 101.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 101.cpp; sourceTree = "<group>"; };
 		C1479A391AFAF62700A4936D /* 030.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 030.cpp; sourceTree = "<group>"; tabWidth = 4; wrapsLines = 1; };
@@ -615,6 +623,14 @@
 				C1C29E261CEAB0550017DC96 /* 238.cpp */,
 				C16ABFA01CEC21A0008FADC4 /* 239.cpp */,
 				C16ABFA21CEC21BC008FADC4 /* 240.cpp */,
+				C13E6A311CF1432900F2E46C /* 241.cpp */,
+				C13E6A331CF143F300F2E46C /* 242.cpp */,
+				C10D87421CF144BF00D88852 /* 257.cpp */,
+				C10D87461CF145B000D88852 /* 258.cpp */,
+				C10D87481CF1462D00D88852 /* 260.cpp */,
+				C10D874A1CF1468E00D88852 /* 263.cpp */,
+				C10D874C1CF146B900D88852 /* 264.cpp */,
+				C10D874E1CF146E200D88852 /* 268.cpp */,
 				C1A85B341C49E0A8005BF9C6 /* list.cpp */,
 				C1AFE0E41C40D38D001858C8 /* tree.cpp */,
 				C1F9F3321C78E1730028A8AB /* graph.cpp */,

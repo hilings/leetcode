@@ -33,7 +33,7 @@ char* multiply(char* num1, char* num2) {
 
 int main(int arg, char *argv[]) {
     // insert code here...
-    printf("LeetCode 000 XXX, C ...\n\n");
+    printf("LeetCode 43. Multiply Strings, C ...\n\n");
 
     char num1[] = "12";
     char num2[] = "23";

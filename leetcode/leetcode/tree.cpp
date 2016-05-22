@@ -23,36 +23,27 @@ struct TreeNode {
 };
 
 class Solution {
-    void building(deque<TreeNode*>q, vector<int>& nodes) {
-    // build tree from serialization
-        if (nodes.empty())
-            return;
-        if (nodes.front() != 0) {
-            TreeNode *left = new TreeNode(nodes.front());
-            q.front()->left = left;
-            q.push_back(left);
-        }
-        nodes.erase(nodes.begin());
-
-        if (nodes.empty())
-            return;
-        if (nodes.front() != 0) {
-            TreeNode *right = new TreeNode(nodes.front());
-            q.front()->right = right;
-            q.push_back(right);
-        }
-        nodes.erase(nodes.begin());
-
-        q.pop_front();
-        building(q, nodes);
-    }
 public:
     TreeNode* build(vector<int> nodes) {
-    // build tree from serialization
-        TreeNode *root = new TreeNode(nodes.front());
+        // build tree from serialization
+        TreeNode *root = new TreeNode(nodes[0]);
         deque<TreeNode*> q {root};
-        nodes.erase(nodes.begin());
-        building(q, nodes);
+        int i = 1;
+        while (i < nodes.size()) {
+            if (nodes[i] != -1) {
+                TreeNode* left = new TreeNode(nodes[i]);
+                q.front()->left = left;
+                q.push_back(left);
+            }
+            i++;
+            if (i < nodes.size() && nodes[i] != -1) {
+                TreeNode* right = new TreeNode(nodes[i]);
+                q.front()->right = right;
+                q.push_back(right);
+            }
+            i++;
+            q.pop_front();
+        }
         return root;
     }
 
