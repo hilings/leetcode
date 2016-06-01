@@ -10,6 +10,7 @@
 #include <vector>
 #include <deque>
 #include <stack>
+#include <unordered_map>
 using namespace std;
 
 /**
@@ -162,6 +163,31 @@ public:
         cout << '\n';
     }
 
+
+    TreeNode* buildFromVector(vector<int>& nodes) {
+        // build tree from array
+        // where each index represent a unique tree node,
+        // and the corresponding item represent its parent
+
+        TreeNode* root;
+        unordered_map<int,TreeNode*> um;
+        for (int i = 0; i < (int)nodes.size(); i++) {
+            if (um.find(i) == um.end())
+                um[i] = new TreeNode(i);
+            if (um.find(nodes[i]) == um.end())
+                um[nodes[i]] = new TreeNode(nodes[i]);
+
+            if (nodes[i] == 0)
+                root = um[i];
+            else if (um[nodes[i]]->left)
+                um[nodes[i]]->right = um[i];
+            else
+                um[nodes[i]]->left = um[i];
+        }
+        return root;
+    }
+
+
 };
 
 int main(int arg, char *argv[]) {
@@ -190,6 +216,12 @@ int main(int arg, char *argv[]) {
 
     cout << "\n\ntraversal by level\n";
     sol.traversalByLevel(root);
+
+
+    vector<int> nodes2 {2,5,5,1,1,0};
+
+    TreeNode* root2 = sol.buildFromVector(nodes2);
+    sol.printT(root2);
 
 
     return 0;
