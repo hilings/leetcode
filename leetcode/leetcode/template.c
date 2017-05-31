@@ -2,8 +2,8 @@
 //  template.c
 //  leetcode
 //
-//  Created by Hang Zhang on 1/15/16.
-//  Copyright © 2015 Hilings Studio. All rights reserved.
+//  Created by Hang Zhang on 3/14/17.
+//  Copyright © 2017 Hilings Studio. All rights reserved.
 //
 
 #include <stdio.h>
