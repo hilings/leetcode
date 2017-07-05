@@ -35,10 +35,10 @@ public:
 
     vector<pair<int, int>> kSmallestPairs(vector<int>& nums1, vector<int>& nums2, int k) {	// priority_queue
         vector<pair<int,int>> r;
-        auto mycmp = [](const pair<int,int>& a, const pair<int,int>& b) {
+        auto cmp = [](const pair<int,int>& a, const pair<int,int>& b) {
             return a.first+a.second > b.first+b.second;
         };
-        priority_queue<pair<int,int>, vector<pair<int,int>>, decltype(mycmp)> minHeap(mycmp);
+        priority_queue<pair<int,int>, vector<pair<int,int>>, decltype(cmp)> minHeap(cmp);
 
         for (int a: nums1) {
             for (int b: nums2) {
@@ -83,10 +83,10 @@ public:
         vector<pair<int,int>> r;
         if (nums1.empty() || nums2.empty())
             return r;
-        auto mycmp = [&nums1, &nums2](const pair<int,int>& a, const pair<int,int>& b) {
+        auto cmp = [&nums1, &nums2](const pair<int,int>& a, const pair<int,int>& b) {
             return nums1[a.first]+nums2[a.second] > nums1[b.first]+nums2[b.second];
         };
-        priority_queue<pair<int,int>, vector<pair<int,int>>, decltype(mycmp)> minHeap(mycmp);
+        priority_queue<pair<int,int>, vector<pair<int,int>>, decltype(cmp)> minHeap(cmp);
         minHeap.push(pair<int,int> (0, 0));
 
         while (!minHeap.empty() && k--) {
