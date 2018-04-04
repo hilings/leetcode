@@ -21,6 +21,8 @@
 /* Begin PBXFileReference section */
 		C10034831C15623400CBF107 /* 052.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 052.cpp; sourceTree = "<group>"; };
 		C100FF751EFCA07D008CF9AF /* 402_remove_k_digits.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 402_remove_k_digits.cpp; sourceTree = "<group>"; };
+		C1024AC82074391A00941F86 /* 477_Total_Hamming_Distance.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 477_Total_Hamming_Distance.cpp; sourceTree = "<group>"; };
+		C1024ACA2074453700941F86 /* 479_Largest_Palindrome_Product.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 479_Largest_Palindrome_Product.cpp; sourceTree = "<group>"; };
 		C104505F205C3E8100DC0263 /* 442_Find_All_Duplicates_in_an_Array.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 442_Find_All_Duplicates_in_an_Array.cpp; sourceTree = "<group>"; };
 		C105D248206C462F0007A5F5 /* 466_Count_The_Repetitions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 466_Count_The_Repetitions.cpp; sourceTree = "<group>"; };
 		C1067C111C716DD800308AEE /* 127.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 127.cpp; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 		C16ABFA01CEC21A0008FADC4 /* 239.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 239.cpp; sourceTree = "<group>"; };
 		C16ABFA21CEC21BC008FADC4 /* 240.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 240.cpp; sourceTree = "<group>"; };
 		C16B02651C756C540036113C /* 131.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 131.cpp; sourceTree = "<group>"; };
+		C16BBC2B2075499800D47E52 /* 480_Sliding_Window_Median.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 480_Sliding_Window_Median.cpp; sourceTree = "<group>"; };
 		C170341D1CF1572200DCCCE1 /* 279.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 279.cpp; sourceTree = "<group>"; };
 		C17228EA1C1937AF0030DD4A /* 056.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 056.cpp; sourceTree = "<group>"; };
 		C17262661EF35F8E00A89E39 /* 394_decode_string.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 394_decode_string.cpp; sourceTree = "<group>"; };
@@ -374,6 +377,8 @@
 		C1D559491C6FFAC50001910B /* 126.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 126.cpp; sourceTree = "<group>"; };
 		C1D567481D24B96F00AAAF72 /* 313.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 313.cpp; sourceTree = "<group>"; };
 		C1D5674A1D24B98900AAAF72 /* 315.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 315.cpp; sourceTree = "<group>"; };
+		C1D5815A2073EEB10022CBC3 /* 475_Heaters.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 475_Heaters.cpp; sourceTree = "<group>"; };
+		C1D5815C2073F8480022CBC3 /* 476_Number_Complement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 476_Number_Complement.cpp; sourceTree = "<group>"; };
 		C1D603301E788EFC003DEE53 /* 382.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 382.cpp; sourceTree = "<group>"; };
 		C1D6EDA71E010CC200FCFF38 /* 342.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 342.cpp; sourceTree = "<group>"; };
 		C1D6EDA91E010D0900FCFF38 /* 343.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 343.cpp; sourceTree = "<group>"; };
@@ -431,6 +436,9 @@
 		C1EBE14C1B4394B100A070F4 /* 046.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 046.c; sourceTree = "<group>"; };
 		C1EBE1501B4BA58600A070F4 /* 047.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 047.cpp; sourceTree = "<group>"; };
 		C1EC123D1B00953600CDA308 /* 033.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 033.cpp; sourceTree = "<group>"; };
+		C1EC293120729E2F009E2144 /* 472_Concatenated_Words.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 472_Concatenated_Words.cpp; sourceTree = "<group>"; };
+		C1EC29332072B29E009E2144 /* 473_Matchsticks_to_Square.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 473_Matchsticks_to_Square.cpp; sourceTree = "<group>"; };
+		C1EC29352072E7FD009E2144 /* 474. Ones and Zeroes 474. Ones and Zeroes 474.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "474. Ones and Zeroes 474. Ones and Zeroes 474.cpp"; sourceTree = "<group>"; };
 		C1ECA6761CF4112500370803 /* 282.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 282.cpp; sourceTree = "<group>"; };
 		C1F053201C3CBE6600597978 /* 076.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 076.cpp; sourceTree = "<group>"; };
 		C1F053221C3CBEB800597978 /* 077.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 077.cpp; sourceTree = "<group>"; };
@@ -914,6 +922,14 @@
 				C105D248206C462F0007A5F5 /* 466_Count_The_Repetitions.cpp */,
 				C124784A206EB3EB00774906 /* 467_Unique_Substrings_in_Wraparound_String.cpp */,
 				C1BD026F206EF06E004A1F60 /* 468_Validate_IP_Address.cpp */,
+				C1EC293120729E2F009E2144 /* 472_Concatenated_Words.cpp */,
+				C1EC29332072B29E009E2144 /* 473_Matchsticks_to_Square.cpp */,
+				C1EC29352072E7FD009E2144 /* 474. Ones and Zeroes 474. Ones and Zeroes 474.cpp */,
+				C1D5815A2073EEB10022CBC3 /* 475_Heaters.cpp */,
+				C1D5815C2073F8480022CBC3 /* 476_Number_Complement.cpp */,
+				C1024AC82074391A00941F86 /* 477_Total_Hamming_Distance.cpp */,
+				C1024ACA2074453700941F86 /* 479_Largest_Palindrome_Product.cpp */,
+				C16BBC2B2075499800D47E52 /* 480_Sliding_Window_Median.cpp */,
 				C113E7CE1EDAA0240010356B /* dp.cpp */,
 				C1A85B341C49E0A8005BF9C6 /* list.cpp */,
 				C1AFE0E41C40D38D001858C8 /* tree.cpp */,
