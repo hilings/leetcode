@@ -317,6 +317,7 @@
 		C1A85B301C49E031005BF9C6 /* 109.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 109.cpp; sourceTree = "<group>"; };
 		C1A85B321C49E07E005BF9C6 /* 110.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 110.cpp; sourceTree = "<group>"; };
 		C1A85B341C49E0A8005BF9C6 /* list.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = list.cpp; sourceTree = "<group>"; };
+		C1A87CBF216227D200F30416 /* 516_Longest_Palindromic_Subsequence.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 516_Longest_Palindromic_Subsequence.cpp; sourceTree = "<group>"; };
 		C1A94DC01AF071680082E4F8 /* 020.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 020.cpp; sourceTree = "<group>"; };
 		C1A94DC21AF077470082E4F8 /* 020.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 020.c; sourceTree = "<group>"; };
 		C1A94DC41AF08BD90082E4F8 /* 021.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 021.cpp; sourceTree = "<group>"; };
@@ -379,6 +380,7 @@
 		C1CA1F141C27F36100A71E89 /* 066.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 066.cpp; sourceTree = "<group>"; };
 		C1CA62461AF86EDE00C51AAC /* 029.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 029.c; sourceTree = "<group>"; };
 		C1CCAF311F032EAA00573886 /* 403_frog_jump.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 403_frog_jump.cpp; sourceTree = "<group>"; };
+		C1CCEB812163088000B55128 /* 517_Super_Washing_Machines.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 517_Super_Washing_Machines.cpp; sourceTree = "<group>"; };
 		C1CD1DD21E7222FB004E92FD /* 376.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 376.cpp; sourceTree = "<group>"; };
 		C1CD1DD41E722507004E92FD /* 377.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 377.cpp; sourceTree = "<group>"; };
 		C1CD1DD61E722564004E92FD /* 378.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 378.cpp; sourceTree = "<group>"; };
@@ -396,6 +398,7 @@
 		C1D1D1461B02E2FC007DCF14 /* 037.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 037.cpp; sourceTree = "<group>"; };
 		C1D2869C1C473AED0054CDFF /* 100.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 100.cpp; sourceTree = "<group>"; };
 		C1D326E31C75A5AC00404558 /* 132.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 132.cpp; sourceTree = "<group>"; };
+		C1D4A7B42162249B00FCE300 /* 515_Find_Largest_Value_in_Each_Tree_Row.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 515_Find_Largest_Value_in_Each_Tree_Row.cpp; sourceTree = "<group>"; };
 		C1D4BBD21EDB7CFA00E02952 /* 388.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 388.cpp; sourceTree = "<group>"; };
 		C1D54C471B9D11BA0062497A /* 048.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 048.cpp; sourceTree = "<group>"; };
 		C1D54C491B9D121C0062497A /* 048.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 048.c; sourceTree = "<group>"; };
@@ -415,6 +418,7 @@
 		C1D6EDAF1E010DE900FCFF38 /* 347.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 347.cpp; sourceTree = "<group>"; };
 		C1D6EDB11E010E9500FCFF38 /* 349.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 349.cpp; sourceTree = "<group>"; };
 		C1D6EDB31E010EBF00FCFF38 /* 350.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 350.cpp; sourceTree = "<group>"; };
+		C1D948D721636FA5005343C3 /* 518_Coin_Change_2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 518_Coin_Change_2.cpp; sourceTree = "<group>"; };
 		C1D94D141EF33E7D006E80D3 /* 393_utf8_validation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 393_utf8_validation.cpp; sourceTree = "<group>"; };
 		C1DB30CC1B046172009E06AF /* 037.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 037.c; sourceTree = "<group>"; };
 		C1DC59FD1AD75435007D82C7 /* 005.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 005.cpp; sourceTree = "<group>"; };
@@ -469,6 +473,8 @@
 		C1EC293120729E2F009E2144 /* 472_Concatenated_Words.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 472_Concatenated_Words.cpp; sourceTree = "<group>"; };
 		C1EC29332072B29E009E2144 /* 473_Matchsticks_to_Square.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 473_Matchsticks_to_Square.cpp; sourceTree = "<group>"; };
 		C1ECA6761CF4112500370803 /* 282.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 282.cpp; sourceTree = "<group>"; };
+		C1ED3DD921645A660072A1F1 /* 519_Random_Flip_Matrix.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 519_Random_Flip_Matrix.cpp; sourceTree = "<group>"; };
+		C1EE728021646D88003747AB /* 520_Detect_Capital.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 520_Detect_Capital.cpp; sourceTree = "<group>"; };
 		C1F053201C3CBE6600597978 /* 076.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 076.cpp; sourceTree = "<group>"; };
 		C1F053221C3CBEB800597978 /* 077.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 077.cpp; sourceTree = "<group>"; };
 		C1F053241C3CC2A000597978 /* 078.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 078.cpp; sourceTree = "<group>"; };
@@ -490,8 +496,10 @@
 		C1F7A0981C23C2E400E82AD7 /* 065.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 065.cpp; sourceTree = "<group>"; };
 		C1F7A09A1C25457A00E82AD7 /* 065.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 065.c; sourceTree = "<group>"; };
 		C1F804B41C4DEC5400BB887E /* 122.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 122.cpp; sourceTree = "<group>"; };
+		C1F98CEF215F273000EB93BB /* 513_Find_Bottom_Left_Tree_Value.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 513_Find_Bottom_Left_Tree_Value.cpp; sourceTree = "<group>"; };
 		C1F9EDF91AE4E18B00A1AB72 /* 012.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 012.c; sourceTree = "<group>"; };
 		C1F9F3321C78E1730028A8AB /* graph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = graph.cpp; sourceTree = "<group>"; };
+		C1FD625F215F2C5A00122CE1 /* 514_Freedom_Trail.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 514_Freedom_Trail.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -990,6 +998,14 @@
 				C11D0EA8215CC6A9002D1028 /* 506_Relative_Ranks.cpp */,
 				C1C3AA2E215DDDEE001422A8 /* 507_Perfect_Number.cpp */,
 				C13CE757215E1BD40023DDAF /* 508_Most_Frequent_Subtree_Sum.cpp */,
+				C1F98CEF215F273000EB93BB /* 513_Find_Bottom_Left_Tree_Value.cpp */,
+				C1FD625F215F2C5A00122CE1 /* 514_Freedom_Trail.cpp */,
+				C1D4A7B42162249B00FCE300 /* 515_Find_Largest_Value_in_Each_Tree_Row.cpp */,
+				C1A87CBF216227D200F30416 /* 516_Longest_Palindromic_Subsequence.cpp */,
+				C1CCEB812163088000B55128 /* 517_Super_Washing_Machines.cpp */,
+				C1D948D721636FA5005343C3 /* 518_Coin_Change_2.cpp */,
+				C1ED3DD921645A660072A1F1 /* 519_Random_Flip_Matrix.cpp */,
+				C1EE728021646D88003747AB /* 520_Detect_Capital.cpp */,
 				C113E7CE1EDAA0240010356B /* dp.cpp */,
 				C1A85B341C49E0A8005BF9C6 /* list.cpp */,
 				C1AFE0E41C40D38D001858C8 /* tree.cpp */,
