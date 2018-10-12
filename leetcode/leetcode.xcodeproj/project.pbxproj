@@ -216,6 +216,8 @@
 		C16BAA51214CA3D600B24EB1 /* 470_Implement_Rand10()_Using_Rand7().cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "470_Implement_Rand10()_Using_Rand7().cpp"; sourceTree = "<group>"; };
 		C16BAD0D216D964C00933DF3 /* 547_Friend_Circles.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 547_Friend_Circles.cpp; sourceTree = "<group>"; };
 		C16BBC2B2075499800D47E52 /* 480_Sliding_Window_Median.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 480_Sliding_Window_Median.cpp; sourceTree = "<group>"; };
+		C16DF832216F56EE00EA42A4 /* 561_Array_Partition_I.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 561_Array_Partition_I.cpp; sourceTree = "<group>"; };
+		C16DF834216F5E6400EA42A4 /* 563_Binary_Tree_Tilt.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 563_Binary_Tree_Tilt.cpp; sourceTree = "<group>"; };
 		C170341D1CF1572200DCCCE1 /* 279.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 279.cpp; sourceTree = "<group>"; };
 		C17228EA1C1937AF0030DD4A /* 056.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 056.cpp; sourceTree = "<group>"; };
 		C17262661EF35F8E00A89E39 /* 394_decode_string.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 394_decode_string.cpp; sourceTree = "<group>"; };
@@ -413,6 +415,9 @@
 		C1CE869A20532FE7000FFFC1 /* 435_non_overlapping_intervals.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 435_non_overlapping_intervals.cpp; sourceTree = "<group>"; };
 		C1D00B351E0BA45D00450E2B /* 355.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 355.cpp; sourceTree = "<group>"; };
 		C1D00B371E0BA4F500450E2B /* 357.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 357.cpp; sourceTree = "<group>"; };
+		C1D01F6B217090AE00AA695B /* 565_Array_Nesting.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 565_Array_Nesting.cpp; sourceTree = "<group>"; };
+		C1D01F6D2170964100AA695B /* 566_Reshape_the_Matrix.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 566_Reshape_the_Matrix.cpp; sourceTree = "<group>"; };
+		C1D01F6F21709BD100AA695B /* 567_Permutation_in_String.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 567_Permutation_in_String.cpp; sourceTree = "<group>"; };
 		C1D06C241C1E3B5D00C102CC /* 057.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 057.cpp; sourceTree = "<group>"; };
 		C1D06C281C1FF33100C102CC /* 057.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 057.c; sourceTree = "<group>"; };
 		C1D136CE1ADB2EF600FA2BF9 /* 006.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 006.c; sourceTree = "<group>"; };
@@ -511,6 +516,7 @@
 		C1F15A0A20C607C700C4B574 /* 486_Predict_the_Winner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 486_Predict_the_Winner.cpp; sourceTree = "<group>"; };
 		C1F2B3781CF57553007C240D /* 283.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 283.cpp; sourceTree = "<group>"; };
 		C1F2B37A1CF5756C007C240D /* 284.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 284.cpp; sourceTree = "<group>"; };
+		C1F2BBA221703B2C0035E0F0 /* 564_Find_the_Closest_Palindrome.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 564_Find_the_Closest_Palindrome.cpp; sourceTree = "<group>"; };
 		C1F3C7441C49E13300C1A256 /* 111.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 111.cpp; sourceTree = "<group>"; };
 		C1F3C7461C49E17D00C1A256 /* 112.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 112.cpp; sourceTree = "<group>"; };
 		C1F3C7481C49E19E00C1A256 /* 113.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 113.cpp; sourceTree = "<group>"; };
@@ -1064,6 +1070,12 @@
 				C1B1F7EF216E0FC70043F377 /* 558_Quad_Tree_Intersection.cpp */,
 				C17F0D04216F4DCB00C5B25B /* 559_Maximum_Depth_of_N-ary_Tree.cpp */,
 				C17F0D06216F507300C5B25B /* 560_Subarray_Sum_Equals_K.cpp */,
+				C16DF832216F56EE00EA42A4 /* 561_Array_Partition_I.cpp */,
+				C16DF834216F5E6400EA42A4 /* 563_Binary_Tree_Tilt.cpp */,
+				C1F2BBA221703B2C0035E0F0 /* 564_Find_the_Closest_Palindrome.cpp */,
+				C1D01F6B217090AE00AA695B /* 565_Array_Nesting.cpp */,
+				C1D01F6D2170964100AA695B /* 566_Reshape_the_Matrix.cpp */,
+				C1D01F6F21709BD100AA695B /* 567_Permutation_in_String.cpp */,
 				C113E7CE1EDAA0240010356B /* dp.cpp */,
 				C1A85B341C49E0A8005BF9C6 /* list.cpp */,
 				C1AFE0E41C40D38D001858C8 /* tree.cpp */,
@@ -1100,7 +1112,7 @@
 		C1E9605D1AD4C197008D1C63 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Hilings Studio";
 				TargetAttributes = {
 					C1E960641AD4C197008D1C63 = {
@@ -1144,14 +1156,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1188,14 +1206,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
