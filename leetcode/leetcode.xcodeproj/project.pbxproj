@@ -86,6 +86,7 @@
 		C1227C071D13B77F0015CFA7 /* 304.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 304.cpp; sourceTree = "<group>"; };
 		C1232AD01E14B5970006815F /* 368.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 368.cpp; sourceTree = "<group>"; };
 		C124784A206EB3EB00774906 /* 467_Unique_Substrings_in_Wraparound_String.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 467_Unique_Substrings_in_Wraparound_String.cpp; sourceTree = "<group>"; };
+		C1249C602170B8E80045F10D /* 575_Distribute_Candies.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 575_Distribute_Candies.cpp; sourceTree = "<group>"; };
 		C125A3571CF6BC9A00AC3312 /* 287.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 287.cpp; sourceTree = "<group>"; };
 		C125A3591CF6BCDE00AC3312 /* 289.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 289.cpp; sourceTree = "<group>"; };
 		C125A35B1CF6BCF500AC3312 /* 290.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 290.cpp; sourceTree = "<group>"; };
@@ -101,6 +102,7 @@
 		C13202801CDB0B0F008F6D24 /* 217.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 217.cpp; sourceTree = "<group>"; };
 		C13202821CDB0B2D008F6D24 /* 218.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 218.cpp; sourceTree = "<group>"; };
 		C13202841CDB0B46008F6D24 /* 219.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 219.cpp; sourceTree = "<group>"; };
+		C13340642171860D00E48983 /* 576_Out_of_Boundary_Paths.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 576_Out_of_Boundary_Paths.cpp; sourceTree = "<group>"; };
 		C133B9AC1C37B4AB009C6F56 /* 073.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 073.cpp; sourceTree = "<group>"; };
 		C13404EC216DE71E0030CD80 /* 556_Next_Greater_Element_III.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 556_Next_Greater_Element_III.cpp; sourceTree = "<group>"; };
 		C13449221C9A7ABF004C3691 /* 187.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 187.cpp; sourceTree = "<group>"; };
@@ -275,6 +277,7 @@
 		C18A9DFA1C3E03BA00D1AD74 /* 082.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 082.cpp; sourceTree = "<group>"; };
 		C18A9DFC1C3E03E300D1AD74 /* 083.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 083.cpp; sourceTree = "<group>"; };
 		C18A9DFE1C3E03FF00D1AD74 /* 084.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 084.cpp; sourceTree = "<group>"; };
+		C18B60032170A22800B70938 /* 572_Subtree_of_Another_Tree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 572_Subtree_of_Another_Tree.cpp; sourceTree = "<group>"; };
 		C18C5C491C2902F800A48BA3 /* 068.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 068.cpp; sourceTree = "<group>"; };
 		C18C5C4B1C29037000A48BA3 /* 068.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 068.c; sourceTree = "<group>"; };
 		C18E021D20C0BB3A00AF5360 /* 481_Magical_String.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 481_Magical_String.cpp; sourceTree = "<group>"; };
@@ -1076,6 +1079,9 @@
 				C1D01F6B217090AE00AA695B /* 565_Array_Nesting.cpp */,
 				C1D01F6D2170964100AA695B /* 566_Reshape_the_Matrix.cpp */,
 				C1D01F6F21709BD100AA695B /* 567_Permutation_in_String.cpp */,
+				C18B60032170A22800B70938 /* 572_Subtree_of_Another_Tree.cpp */,
+				C1249C602170B8E80045F10D /* 575_Distribute_Candies.cpp */,
+				C13340642171860D00E48983 /* 576_Out_of_Boundary_Paths.cpp */,
 				C113E7CE1EDAA0240010356B /* dp.cpp */,
 				C1A85B341C49E0A8005BF9C6 /* list.cpp */,
 				C1AFE0E41C40D38D001858C8 /* tree.cpp */,
