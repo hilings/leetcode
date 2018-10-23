@@ -35,6 +35,30 @@ public:
         }
         return reachables.size() == numCourses ? reachables : vector<int> {};
     }
+
+    vector<int> findOrder2(int numCourses, vector<pair<int, int>>& prerequisites) {
+        vector<int> pending (numCourses, 0);
+        vector<vector<int>> blocking (numCourses, vector<int> {});
+        for (auto p: prerequisites) {
+            pending[p.first]++;
+            blocking[p.second].push_back(p.first);
+        }
+        vector<int> r;
+        for (int i = 0; i < numCourses; i++) {
+            if (pending[i] == 0) {
+                r.push_back(i);
+            }
+        }
+        for (int i = 0; i < r.size(); i++) {
+            for (int b: blocking[r[i]]) {
+                pending[b]--;
+                if (pending[b] == 0) {
+                    r.push_back(b);
+                }
+            }
+        }
+        return r.size() == numCourses ? r : vector<int> {};
+    }
 };
 
 int main(int arg, char *argv[]) {
@@ -56,5 +80,11 @@ int main(int arg, char *argv[]) {
     }
     cout << '\n';
     
+    vector<int> r2 = sol.findOrder2(numCourses, prerequisites);
+    for (auto a: r2) {
+        cout << a << ' ';
+    }
+    cout << '\n';
+
     return 0;
 }

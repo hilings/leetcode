@@ -22,11 +22,13 @@ public:
         for (int i = 0; i < numCourses; i++) {
             if (pres[i].empty())
                 reachables.push_back(i);
+            /*
             cout << i << ": { ";
             for (int a: pres[i]) {
                 cout << a << ' ';
             }
             cout << "}\n";
+             */
         }
         for (int i = 0; i < reachables.size(); i++) {
             int cur = reachables[i];
@@ -39,29 +41,6 @@ public:
         for (int i = 0; i < numCourses; i++) {
             if (!pres[i].empty())
                 return false;
-        }
-        return true;
-    }
-
-    bool canFinish1(int numCourses, vector<pair<int, int>>& prerequisites) {
-        vector<int> pres (numCourses, 0);
-        vector<bool> reachables (numCourses, false);
-        for (pair<int,int> p: prerequisites) {
-            pres[p.first]++;    // number of prerequisites
-        }
-        for (int i = 0; i < numCourses; i++) {
-            if (pres[i] == 0)
-                reachables[i] = true;   // finishable
-        }
-        for (int i = (int)prerequisites.size()-1, j; i >= 0; i--) {
-            for (j = i; j >= 0 && reachables[prerequisites[j].second] == false; j--)
-                ;
-            if (j < 0)
-                return false;
-            swap(prerequisites[j], prerequisites[i]);
-            int k = prerequisites[i].first;
-            if (--pres[k] == 0)
-                reachables[k] = true;
         }
         return true;
     }
@@ -90,6 +69,34 @@ public:
             }
         }
         return reachables.size() == numCourses;
+    }
+
+    bool canFinish2(int numCourses, vector<pair<int, int>>& prerequisites) {
+        vector<int> pending (numCourses, 0);
+        vector<vector<int>> blocking (numCourses, vector<int> {});
+        for (auto p: prerequisites) {
+            pending[p.first]++;
+            blocking[p.second].push_back(p.first);
+        }
+        vector<int> q;
+        for (int i = 0; i < numCourses; i++) {
+            if (pending[i] == 0) {
+                q.push_back(i);
+            }
+        }
+        int count = 0;
+        while (!q.empty()) {
+            int cur = q.back();
+            q.pop_back();
+            count++;
+            for (int b: blocking[cur]) {
+                pending[b]--;
+                if (pending[b] == 0) {
+                    q.push_back(b);
+                }
+            }
+        }
+        return count == numCourses;
     }
 };
 
@@ -257,6 +264,9 @@ int main(int arg, char *argv[]) {
 
     bool r = sol.canFinish0(numCourses, prerequisites);
     cout << (r ? "true" : "false") << '\n';
+
+    bool r2 = sol.canFinish2(numCourses, prerequisites);
+    cout << (r2 ? "true" : "false") << '\n';
 
     return 0;
 }
