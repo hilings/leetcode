@@ -58,7 +58,6 @@ public:
         }
         return r;
     }
-
 };
 
 int main(int arg, char *argv[]) {
@@ -105,5 +104,6 @@ int main(int arg, char *argv[]) {
     for (string s: r) {
         cout << s << '\n';
     }
+
     return 0;
 }
