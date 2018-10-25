@@ -101,6 +101,10 @@
 		C125C4E81D3DF1DC0042AB49 /* 326.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 326.cpp; sourceTree = "<group>"; };
 		C12647C62168A2B900828AD4 /* 529_Minesweeper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 529_Minesweeper.cpp; sourceTree = "<group>"; };
 		C1266A661ADA6F8200F4137E /* 006.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 006.cpp; sourceTree = "<group>"; };
+		C1287A5A218154D9008F4CDF /* 647_Palindromic_Substrings.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 647_Palindromic_Substrings.cpp; sourceTree = "<group>"; };
+		C1287A5C218160A8008F4CDF /* 648_Replace_Words.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 648_Replace_Words.cpp; sourceTree = "<group>"; };
+		C1287A5E218178A3008F4CDF /* 649_Dota2_Senate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 649_Dota2_Senate.cpp; sourceTree = "<group>"; };
+		C1287A60218192A1008F4CDF /* 650_2_Keys_Keyboard.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 650_2_Keys_Keyboard.cpp; sourceTree = "<group>"; };
 		C129C6541C2268F000765FEC /* 060.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 060.cpp; sourceTree = "<group>"; };
 		C129C6561C22696D00765FEC /* 060.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 060.c; sourceTree = "<group>"; };
 		C12C2AE01EDA951D00C4C4B9 /* 387.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 387.cpp; sourceTree = "<group>"; };
@@ -152,6 +156,10 @@
 		C1438A6E20CB526600F846CE /* 495_Teemo_Attacking.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 495_Teemo_Attacking.cpp; sourceTree = "<group>"; };
 		C1438A7020CB571C00F846CE /* 496_Next_Greater_Element_I.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 496_Next_Greater_Element_I.cpp; sourceTree = "<group>"; };
 		C144EAB51C47529000463012 /* 101.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 101.cpp; sourceTree = "<group>"; };
+		C146731821801C25008D5BC7 /* 641_Design_Circular_Deque.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 641_Design_Circular_Deque.cpp; sourceTree = "<group>"; };
+		C146731A2180235B008D5BC7 /* 643_Maximum_Average_Subarray_I.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 643_Maximum_Average_Subarray_I.cpp; sourceTree = "<group>"; };
+		C146731C21802575008D5BC7 /* 645_Set_Mismatch.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 645_Set_Mismatch.cpp; sourceTree = "<group>"; };
+		C146731E21805D8E008D5BC7 /* 646_Maximum_Length_of_Pair_Chain.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 646_Maximum_Length_of_Pair_Chain.cpp; sourceTree = "<group>"; };
 		C1479A391AFAF62700A4936D /* 030.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 030.cpp; sourceTree = "<group>"; tabWidth = 4; wrapsLines = 1; };
 		C149A0911C40A601009DDEBD /* 085.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 085.cpp; sourceTree = "<group>"; };
 		C149A0931C40A61D009DDEBD /* 086.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 086.cpp; sourceTree = "<group>"; };
@@ -1144,6 +1152,14 @@
 				C184B7B4217F1070009E32F9 /* 638_Shopping_Offers.cpp */,
 				C14AF1C3217F340D00D3AC1B /* 639_Decode_Ways_II.cpp */,
 				C1233457217F66F900867A56 /* 640_Solve_the_Equation.cpp */,
+				C146731821801C25008D5BC7 /* 641_Design_Circular_Deque.cpp */,
+				C146731A2180235B008D5BC7 /* 643_Maximum_Average_Subarray_I.cpp */,
+				C146731C21802575008D5BC7 /* 645_Set_Mismatch.cpp */,
+				C146731E21805D8E008D5BC7 /* 646_Maximum_Length_of_Pair_Chain.cpp */,
+				C1287A5A218154D9008F4CDF /* 647_Palindromic_Substrings.cpp */,
+				C1287A5C218160A8008F4CDF /* 648_Replace_Words.cpp */,
+				C1287A5E218178A3008F4CDF /* 649_Dota2_Senate.cpp */,
+				C1287A60218192A1008F4CDF /* 650_2_Keys_Keyboard.cpp */,
 				C113E7CE1EDAA0240010356B /* dp.cpp */,
 				C1A85B341C49E0A8005BF9C6 /* list.cpp */,
 				C1AFE0E41C40D38D001858C8 /* tree.cpp */,

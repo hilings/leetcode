@@ -9,6 +9,9 @@
 #include <iostream>
 #include <vector>
 #include <unordered_set>
+#include <unordered_map>
+#include <queue>
+#include <deque>
 using namespace std;
 
 class Solution {
@@ -58,11 +61,86 @@ public:
         }
         return r;
     }
+
+    vector<string> paginate2(int resultsPerPage, vector<string> results) {
+        unordered_map<int,deque<int>> um;   // host_id => [indices]
+        for (int i = 0; i < results.size(); i++) {
+            string::size_type pos = results[i].find(',');
+            int id = stoi(results[i].substr(0, pos));
+            if (um.find(id) == um.end()) {
+                um[id] = deque<int> {};
+            }
+            um[id].push_back(i);
+        }
+        vector<string> r;
+
+        auto cmp = [&um] (const int& id1, const int& id2) {
+            return um[id1][0] > um[id2][0];
+        };
+        while (!um.empty()) {
+            if (um.size() >= resultsPerPage) {  // enough unique host_id for one page
+                priority_queue<int,vector<int>, decltype(cmp)> cand (cmp);    // heap of host_ids, sorted by their first index
+                for (auto p: um) {
+                    cand.push(p.first);
+                }
+                for (int i = 0; i < resultsPerPage; i++) {
+                    int id = cand.top(); // host whose first index is smallest
+                    cand.pop();     // no refill
+                    r.push_back(results[um[id][0]]);
+                    um[id].pop_front();
+                    if (um[id].empty()) {
+                        um.erase(id);
+                    }
+                }
+            } else {    // not enough unique host_id for one page,
+                priority_queue<int,vector<int>, decltype(cmp)> cand (cmp);    // heap of host_ids, sorted by their first index
+
+                // first step, pick one for each unique host
+                for (auto p: um) {
+                    cand.push(p.first);
+                }
+                while (!cand.empty()) {
+                    int id = cand.top();
+                    cand.pop();     // no refill
+                    r.push_back(results[um[id][0]]);
+                    um[id].pop_front();
+                    if (um[id].empty()) {
+                        um.erase(id);
+                    }
+                }
+
+                // second step, pad with duplicated host
+                for (auto p: um) {
+                    cand.push(p.first);
+                }
+                while (r.size() % (resultsPerPage+1) < resultsPerPage && !cand.empty()) {
+                    int id = cand.top();
+                    cand.pop();
+                    r.push_back(results[um[id][0]]);
+                    um[id].pop_front();
+                    if (!um[id].empty()) {
+                        cand.push(id);  // keep refill
+                    } else {
+                        um.erase(id);
+                    }
+                }
+            }
+
+            if (!um.empty()) {  // there will be next page
+                r.push_back("");
+            }
+        }
+        return r;
+    }
 };
 
 int main(int arg, char *argv[]) {
     // insert code here...
     cout << "LeetCode 000 XXX, C++ ...\n\n";
+    /*
+     try to fill [resultsPerPage] lines the page with unique host_id
+     if not enough unique host_id, then fill page with duplicated host
+     */
     Solution sol;
 
     int resultsPerPage = 5;
@@ -102,6 +180,12 @@ int main(int arg, char *argv[]) {
 
     vector<string> r = sol.paginate(resultsPerPage, results);
     for (string s: r) {
+        cout << s << '\n';
+    }
+    cout << '\n';
+
+    vector<string> r2 = sol.paginate2(resultsPerPage, results);
+    for (string s: r2) {
         cout << s << '\n';
     }
 
