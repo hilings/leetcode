@@ -27,6 +27,9 @@ class Solution {
 public:
     TreeNode* build(vector<int> nodes) {
         // build tree from serialization
+        if (nodes.empty()) {
+            return NULL;
+        }
         TreeNode *root = new TreeNode(nodes[0]);
         deque<TreeNode*> q {root};
         int i = 1;
@@ -50,6 +53,10 @@ public:
 
     void printT(TreeNode *root) {
     // print serialized tree
+        if (!root) {
+            cout << "#\n";
+            return;
+        }
         deque<TreeNode*> q;
         q.push_back(root);
         vector<int> v;
@@ -60,13 +67,13 @@ public:
                 q.push_back(p->left);
                 q.push_back(p->right);
             } else
-                v.push_back(0);
+                v.push_back(INT_MIN);
             q.pop_front();
         }
-        while (v.back() == 0)
+        while (v.back() == INT_MIN)
             v.pop_back();
         for (auto a: v) {
-            if (a != 0)
+            if (a != INT_MIN)
                 cout << a;
             else
                 cout << '#';
