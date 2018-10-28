@@ -32,15 +32,15 @@ public:
         }
         TreeNode *root = new TreeNode(nodes[0]);
         deque<TreeNode*> q {root};
-        int i = 1;
+        int i = 1, NaN = -1;   // flag of NULL
         while (i < nodes.size()) {
-            if (nodes[i] != -1) {
+            if (nodes[i] != NaN) {
                 TreeNode* left = new TreeNode(nodes[i]);
                 q.front()->left = left;
                 q.push_back(left);
             }
             i++;
-            if (i < nodes.size() && nodes[i] != -1) {
+            if (i < nodes.size() && nodes[i] != NaN) {
                 TreeNode* right = new TreeNode(nodes[i]);
                 q.front()->right = right;
                 q.push_back(right);

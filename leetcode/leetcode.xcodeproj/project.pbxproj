@@ -112,6 +112,9 @@
 		C12F5BE51F045D9900BF67CB /* 406_queue_reconstruction_by_height.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 406_queue_reconstruction_by_height.cpp; sourceTree = "<group>"; };
 		C12F80441C8E71B9000B6810 /* 164.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 164.cpp; sourceTree = "<group>"; };
 		C12F80461C8E71D2000B6810 /* 165.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 165.cpp; sourceTree = "<group>"; };
+		C12F893D2183502A00F27516 /* 664_Strange_Printer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 664_Strange_Printer.cpp; sourceTree = "<group>"; };
+		C12F893F21840A9F00F27516 /* 665_Non-decreasing_Array.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "665_Non-decreasing_Array.cpp"; sourceTree = "<group>"; };
+		C12F894121841BE000F27516 /* 667_Beautiful_Arrangement_II.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 667_Beautiful_Arrangement_II.cpp; sourceTree = "<group>"; };
 		C13202801CDB0B0F008F6D24 /* 217.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 217.cpp; sourceTree = "<group>"; };
 		C13202821CDB0B2D008F6D24 /* 218.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 218.cpp; sourceTree = "<group>"; };
 		C13202841CDB0B46008F6D24 /* 219.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 219.cpp; sourceTree = "<group>"; };
@@ -361,8 +364,13 @@
 		C1A1B35F1C192B9400607E16 /* 055.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 055.c; sourceTree = "<group>"; };
 		C1A1E78B2069B60400C43F7D /* 459_Repeated_Substring_Pattern.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 459_Repeated_Substring_Pattern.cpp; sourceTree = "<group>"; };
 		C1A2179F1C3B9B950095874E /* 075.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 075.cpp; sourceTree = "<group>"; };
+		C1A3114F21854D2D00FE7235 /* 668_Kth_Smallest_Number_in_Multiplication_Table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 668_Kth_Smallest_Number_in_Multiplication_Table.cpp; sourceTree = "<group>"; };
+		C1A3115121855A6F00FE7235 /* 669_Trim_a_Binary_Search_Tree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 669_Trim_a_Binary_Search_Tree.cpp; sourceTree = "<group>"; };
+		C1A3115421855D6100FE7235 /* 670_Maximum_Swap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 670_Maximum_Swap.cpp; sourceTree = "<group>"; };
 		C1A360D91C226D3C00E145E3 /* 061.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 061.cpp; sourceTree = "<group>"; };
 		C1A360DB1C226E9C00E145E3 /* 061.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 061.c; sourceTree = "<group>"; };
+		C1A37251218310C100221CE8 /* 661_Image_Smoother.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 661_Image_Smoother.cpp; sourceTree = "<group>"; };
+		C1A372532183169700221CE8 /* 662_Maximum_Width_of_Binary_Tree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 662_Maximum_Width_of_Binary_Tree.cpp; sourceTree = "<group>"; };
 		C1A3BC69205C775A00E20095 /* 443_String_Compression.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 443_String_Compression.cpp; sourceTree = "<group>"; };
 		C1A3F1061ADF477E00461CE0 /* 010.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 010.cpp; sourceTree = "<group>"; };
 		C1A480651C7827C40099C3FE /* 133.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 133.cpp; sourceTree = "<group>"; };
@@ -1174,6 +1182,14 @@
 				C15CCCBE2182F68600600E51 /* 657_Robot_Return_to_Origin.cpp */,
 				C15CCCC02182F7D400600E51 /* 658_Find_K_Closest_Elements.cpp */,
 				C15CCCC22182FDEA00600E51 /* 659_Split_Array_into_Consecutive_Subsequences.cpp */,
+				C1A37251218310C100221CE8 /* 661_Image_Smoother.cpp */,
+				C1A372532183169700221CE8 /* 662_Maximum_Width_of_Binary_Tree.cpp */,
+				C12F893D2183502A00F27516 /* 664_Strange_Printer.cpp */,
+				C12F893F21840A9F00F27516 /* 665_Non-decreasing_Array.cpp */,
+				C12F894121841BE000F27516 /* 667_Beautiful_Arrangement_II.cpp */,
+				C1A3114F21854D2D00FE7235 /* 668_Kth_Smallest_Number_in_Multiplication_Table.cpp */,
+				C1A3115121855A6F00FE7235 /* 669_Trim_a_Binary_Search_Tree.cpp */,
+				C1A3115421855D6100FE7235 /* 670_Maximum_Swap.cpp */,
 				C113E7CE1EDAA0240010356B /* dp.cpp */,
 				C1A85B341C49E0A8005BF9C6 /* list.cpp */,
 				C1AFE0E41C40D38D001858C8 /* tree.cpp */,
