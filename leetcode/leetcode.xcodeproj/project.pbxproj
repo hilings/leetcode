@@ -38,6 +38,8 @@
 		C10AD4AD1C48C621005070B3 /* 104.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 104.cpp; sourceTree = "<group>"; };
 		C10AD4AF1C48C63F005070B3 /* 105.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 105.cpp; sourceTree = "<group>"; };
 		C10B1E681C4DD30A004CE4D6 /* 121.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 121.cpp; sourceTree = "<group>"; };
+		C10CD523218598D000E37A99 /* 671_Second_Minimum_Node_In_a_Binary_Tree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 671_Second_Minimum_Node_In_a_Binary_Tree.cpp; sourceTree = "<group>"; };
+		C10CD5252185A45E00E37A99 /* 672_Bulb_Switcher_II.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 672_Bulb_Switcher_II.cpp; sourceTree = "<group>"; };
 		C10D87421CF144BF00D88852 /* 257.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 257.cpp; sourceTree = "<group>"; };
 		C10D87461CF145B000D88852 /* 258.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 258.cpp; sourceTree = "<group>"; };
 		C10D87481CF1462D00D88852 /* 260.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 260.cpp; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 		C149A0971C40A698009DDEBD /* 088.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 088.cpp; sourceTree = "<group>"; };
 		C149A0991C40A6DA009DDEBD /* 089.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 089.cpp; sourceTree = "<group>"; };
 		C149A09B1C40A6FE009DDEBD /* 090.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 090.cpp; sourceTree = "<group>"; };
+		C14AB7F021882155007CCF53 /* 675_Cut_Off_Trees_for_Golf_Event.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 675_Cut_Off_Trees_for_Golf_Event.cpp; sourceTree = "<group>"; };
 		C14AF1C3217F340D00D3AC1B /* 639_Decode_Ways_II.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 639_Decode_Ways_II.cpp; sourceTree = "<group>"; };
 		C14C23272174911B002C8E59 /* 598_Range_Addition_II.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 598_Range_Addition_II.cpp; sourceTree = "<group>"; };
 		C14C54E91CAE366E00070554 /* 203.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 203.cpp; sourceTree = "<group>"; };
@@ -232,6 +235,7 @@
 		C163E7941C48CDB400296202 /* 106.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 106.cpp; sourceTree = "<group>"; };
 		C16406941AF7468C003887C1 /* 029.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 029.cpp; sourceTree = "<group>"; };
 		C16593E1217D6E4B00F79043 /* 20181022_airbnb_host.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 20181022_airbnb_host.cpp; sourceTree = "<group>"; };
+		C166223B2186B5430050D6F7 /* 20181029_airbnb2_nestedarray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 20181029_airbnb2_nestedarray.cpp; sourceTree = "<group>"; };
 		C166500C1C915FDE00D858C7 /* 171.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 171.cpp; sourceTree = "<group>"; };
 		C166500E1C915FF500D858C7 /* 172.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 172.cpp; sourceTree = "<group>"; };
 		C1687DD21CA10443004A7FA5 /* 188.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 188.cpp; sourceTree = "<group>"; };
@@ -316,10 +320,14 @@
 		C18C5C491C2902F800A48BA3 /* 068.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 068.cpp; sourceTree = "<group>"; };
 		C18C5C4B1C29037000A48BA3 /* 068.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 068.c; sourceTree = "<group>"; };
 		C18E021D20C0BB3A00AF5360 /* 481_Magical_String.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 481_Magical_String.cpp; sourceTree = "<group>"; };
+		C18EDC5B218848A60055738C /* 676_Implement_Magic_Dictionary.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 676_Implement_Magic_Dictionary.cpp; sourceTree = "<group>"; };
+		C18EDC5D21884CBC0055738C /* 677_Map_Sum_Pairs.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 677_Map_Sum_Pairs.cpp; sourceTree = "<group>"; };
 		C18EEDC61D46FD27005F7725 /* 327.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 327.cpp; sourceTree = "<group>"; };
 		C18EEDC81D46FD57005F7725 /* 328.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 328.cpp; sourceTree = "<group>"; };
 		C18F496B1C386F5500FE5E8D /* 074.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 074.cpp; sourceTree = "<group>"; };
 		C19058D71AD64F5F0096FC85 /* 004.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 004.c; sourceTree = "<group>"; };
+		C19154D02186FB00006F0BE6 /* 673_Number_of_Longest_Increasing_Subsequence.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 673_Number_of_Longest_Increasing_Subsequence.cpp; sourceTree = "<group>"; };
+		C19154D2218710FB006F0BE6 /* 674_Longest_Continuous_Increasing_Subsequence.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 674_Longest_Continuous_Increasing_Subsequence.cpp; sourceTree = "<group>"; };
 		C192A8A22172D2510004B426 /* 587_Erect_the_Fence.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 587_Erect_the_Fence.cpp; sourceTree = "<group>"; };
 		C19332831F1558910077897F /* 419_battleships_in_a_board.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 419_battleships_in_a_board.cpp; sourceTree = "<group>"; };
 		C19332851F1558B40077897F /* 420_strong_password_checker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 420_strong_password_checker.cpp; sourceTree = "<group>"; };
@@ -374,6 +382,9 @@
 		C1A3BC69205C775A00E20095 /* 443_String_Compression.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 443_String_Compression.cpp; sourceTree = "<group>"; };
 		C1A3F1061ADF477E00461CE0 /* 010.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 010.cpp; sourceTree = "<group>"; };
 		C1A480651C7827C40099C3FE /* 133.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 133.cpp; sourceTree = "<group>"; };
+		C1A48F5E21889E2A000FEBE8 /* 678_Valid_Parenthesis_String.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 678_Valid_Parenthesis_String.cpp; sourceTree = "<group>"; };
+		C1A48F60218955C0000FEBE8 /* 679_24_Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 679_24_Game.cpp; sourceTree = "<group>"; };
+		C1A48F6221899055000FEBE8 /* 680_Valid_Palindrome_II.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 680_Valid_Palindrome_II.cpp; sourceTree = "<group>"; };
 		C1A5C540217C737D007AA050 /* 622_Design_Circular_Queue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 622_Design_Circular_Queue.cpp; sourceTree = "<group>"; };
 		C1A5C542217C7FDF007AA050 /* 623_Add_One_Row_to_Tree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 623_Add_One_Row_to_Tree.cpp; sourceTree = "<group>"; };
 		C1A7830E1EDE4ADA00CE97F0 /* 389.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 389.cpp; sourceTree = "<group>"; };
@@ -1190,6 +1201,17 @@
 				C1A3114F21854D2D00FE7235 /* 668_Kth_Smallest_Number_in_Multiplication_Table.cpp */,
 				C1A3115121855A6F00FE7235 /* 669_Trim_a_Binary_Search_Tree.cpp */,
 				C1A3115421855D6100FE7235 /* 670_Maximum_Swap.cpp */,
+				C10CD523218598D000E37A99 /* 671_Second_Minimum_Node_In_a_Binary_Tree.cpp */,
+				C10CD5252185A45E00E37A99 /* 672_Bulb_Switcher_II.cpp */,
+				C166223B2186B5430050D6F7 /* 20181029_airbnb2_nestedarray.cpp */,
+				C19154D02186FB00006F0BE6 /* 673_Number_of_Longest_Increasing_Subsequence.cpp */,
+				C19154D2218710FB006F0BE6 /* 674_Longest_Continuous_Increasing_Subsequence.cpp */,
+				C14AB7F021882155007CCF53 /* 675_Cut_Off_Trees_for_Golf_Event.cpp */,
+				C18EDC5B218848A60055738C /* 676_Implement_Magic_Dictionary.cpp */,
+				C18EDC5D21884CBC0055738C /* 677_Map_Sum_Pairs.cpp */,
+				C1A48F5E21889E2A000FEBE8 /* 678_Valid_Parenthesis_String.cpp */,
+				C1A48F60218955C0000FEBE8 /* 679_24_Game.cpp */,
+				C1A48F6221899055000FEBE8 /* 680_Valid_Palindrome_II.cpp */,
 				C113E7CE1EDAA0240010356B /* dp.cpp */,
 				C1A85B341C49E0A8005BF9C6 /* list.cpp */,
 				C1AFE0E41C40D38D001858C8 /* tree.cpp */,
