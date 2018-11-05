@@ -117,6 +117,9 @@
 		C12F893D2183502A00F27516 /* 664_Strange_Printer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 664_Strange_Printer.cpp; sourceTree = "<group>"; };
 		C12F893F21840A9F00F27516 /* 665_Non-decreasing_Array.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "665_Non-decreasing_Array.cpp"; sourceTree = "<group>"; };
 		C12F894121841BE000F27516 /* 667_Beautiful_Arrangement_II.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 667_Beautiful_Arrangement_II.cpp; sourceTree = "<group>"; };
+		C130DAE0218FDED70068745D /* 688_Knight_Probability_in_Chessboard.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 688_Knight_Probability_in_Chessboard.cpp; sourceTree = "<group>"; };
+		C130DAE2218FEE510068745D /* 689_Maximum_Sum_of_3_Non-Overlapping_Subarrays.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "689_Maximum_Sum_of_3_Non-Overlapping_Subarrays.cpp"; sourceTree = "<group>"; };
+		C130DAE4219031850068745D /* 690_Employee_Importance.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 690_Employee_Importance.cpp; sourceTree = "<group>"; };
 		C13202801CDB0B0F008F6D24 /* 217.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 217.cpp; sourceTree = "<group>"; };
 		C13202821CDB0B2D008F6D24 /* 218.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 218.cpp; sourceTree = "<group>"; };
 		C13202841CDB0B46008F6D24 /* 219.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 219.cpp; sourceTree = "<group>"; };
@@ -247,6 +250,8 @@
 		C16A835F1E1C9A8D005C865B /* 374.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 374.cpp; sourceTree = "<group>"; };
 		C16ABFA01CEC21A0008FADC4 /* 239.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 239.cpp; sourceTree = "<group>"; };
 		C16ABFA21CEC21BC008FADC4 /* 240.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 240.cpp; sourceTree = "<group>"; };
+		C16AD2272189994E002DCA8B /* 682_Baseball_Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 682_Baseball_Game.cpp; sourceTree = "<group>"; };
+		C16AD2292189BCDF002DCA8B /* 684_Redundant_Connection.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 684_Redundant_Connection.cpp; sourceTree = "<group>"; };
 		C16B02651C756C540036113C /* 131.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 131.cpp; sourceTree = "<group>"; };
 		C16BAA4F214C9AA200B24EB1 /* 458_Poor_Pigs.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 458_Poor_Pigs.cpp; sourceTree = "<group>"; };
 		C16BAA51214CA3D600B24EB1 /* 470_Implement_Rand10()_Using_Rand7().cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "470_Implement_Rand10()_Using_Rand7().cpp"; sourceTree = "<group>"; };
@@ -260,12 +265,15 @@
 		C172B0041AE9D8E100882FED /* 017.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 017.c; sourceTree = "<group>"; };
 		C172DCD21F04339600CAF3FF /* 404_sum_of_left_leaves.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 404_sum_of_left_leaves.cpp; sourceTree = "<group>"; };
 		C172DCD61F0433D100CAF3FF /* 405_convert_a_number_to_hexadecimal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 405_convert_a_number_to_hexadecimal.cpp; sourceTree = "<group>"; };
+		C1749302218AF03500254892 /* 687_Longest_Univalue_Path.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 687_Longest_Univalue_Path.cpp; sourceTree = "<group>"; };
 		C174CAF71F05A9C7002E3088 /* 407_trapping_rain_water_II.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 407_trapping_rain_water_II.cpp; sourceTree = "<group>"; };
 		C175E65020CA33D700DD4517 /* 494_Target_Sum.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 494_Target_Sum.cpp; sourceTree = "<group>"; };
 		C175E65220CA3EA200DD4517 /* 474_Ones_and_Zeroes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 474_Ones_and_Zeroes.cpp; sourceTree = "<group>"; };
 		C178B95E1CE58F020050AF53 /* 229.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 229.cpp; sourceTree = "<group>"; };
 		C178B9601CE58F400050AF53 /* 230.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 230.cpp; sourceTree = "<group>"; };
 		C17925021EFC8FE2003BEB2B /* 401_binary_watch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 401_binary_watch.cpp; sourceTree = "<group>"; };
+		C1796484218C2625002FA2ED /* 20181102_airbnb3_slider.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 20181102_airbnb3_slider.cpp; sourceTree = "<group>"; };
+		C1796486218C3734002FA2ED /* 20181102_airbnb3_cidr.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 20181102_airbnb3_cidr.cpp; sourceTree = "<group>"; };
 		C179B5001C2B93F7006D5746 /* 069.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 069.cpp; sourceTree = "<group>"; };
 		C179B5021C2B9449006D5746 /* 069.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 069.c; sourceTree = "<group>"; };
 		C179B5041C2B94C1006D5746 /* 070.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 070.cpp; sourceTree = "<group>"; };
@@ -426,6 +434,8 @@
 		C1B4B1761E0CE6F200A402DE /* 367.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 367.cpp; sourceTree = "<group>"; };
 		C1B4D35D206AC69B00220FDD /* 460_LFU_Cache.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 460_LFU_Cache.cpp; sourceTree = "<group>"; };
 		C1B52F282168AFDD00D1F38E /* 530_Minimum_Absolute_Difference_in_BST.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 530_Minimum_Absolute_Difference_in_BST.cpp; sourceTree = "<group>"; };
+		C1B6FD70218AA2F9008C5C44 /* 685_Redundant_Connection_II.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 685_Redundant_Connection_II.cpp; sourceTree = "<group>"; };
+		C1B6FD72218AB173008C5C44 /* 686_Repeated_String_Match.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 686_Repeated_String_Match.cpp; sourceTree = "<group>"; };
 		C1BA53651E0BA5E700829BC8 /* 363.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 363.cpp; sourceTree = "<group>"; };
 		C1BB1DCC1AD9D29A00FB8C70 /* 005.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 005.c; sourceTree = "<group>"; };
 		C1BBA72D1CE19F9E007F8AEF /* 224.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 224.cpp; sourceTree = "<group>"; };
@@ -1212,6 +1222,16 @@
 				C1A48F5E21889E2A000FEBE8 /* 678_Valid_Parenthesis_String.cpp */,
 				C1A48F60218955C0000FEBE8 /* 679_24_Game.cpp */,
 				C1A48F6221899055000FEBE8 /* 680_Valid_Palindrome_II.cpp */,
+				C16AD2272189994E002DCA8B /* 682_Baseball_Game.cpp */,
+				C16AD2292189BCDF002DCA8B /* 684_Redundant_Connection.cpp */,
+				C1B6FD70218AA2F9008C5C44 /* 685_Redundant_Connection_II.cpp */,
+				C1B6FD72218AB173008C5C44 /* 686_Repeated_String_Match.cpp */,
+				C1749302218AF03500254892 /* 687_Longest_Univalue_Path.cpp */,
+				C1796484218C2625002FA2ED /* 20181102_airbnb3_slider.cpp */,
+				C1796486218C3734002FA2ED /* 20181102_airbnb3_cidr.cpp */,
+				C130DAE0218FDED70068745D /* 688_Knight_Probability_in_Chessboard.cpp */,
+				C130DAE2218FEE510068745D /* 689_Maximum_Sum_of_3_Non-Overlapping_Subarrays.cpp */,
+				C130DAE4219031850068745D /* 690_Employee_Importance.cpp */,
 				C113E7CE1EDAA0240010356B /* dp.cpp */,
 				C1A85B341C49E0A8005BF9C6 /* list.cpp */,
 				C1AFE0E41C40D38D001858C8 /* tree.cpp */,
