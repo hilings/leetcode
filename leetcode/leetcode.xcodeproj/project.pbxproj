@@ -263,6 +263,8 @@
 		C16BBC2B2075499800D47E52 /* 480_Sliding_Window_Median.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 480_Sliding_Window_Median.cpp; sourceTree = "<group>"; };
 		C16DF832216F56EE00EA42A4 /* 561_Array_Partition_I.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 561_Array_Partition_I.cpp; sourceTree = "<group>"; };
 		C16DF834216F5E6400EA42A4 /* 563_Binary_Tree_Tilt.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 563_Binary_Tree_Tilt.cpp; sourceTree = "<group>"; };
+		C16F63AE22BE4AA2007FE1BD /* 715_Range_Module.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 715_Range_Module.cpp; sourceTree = "<group>"; };
+		C170006822B3E74500E45B5B /* 713_Subarray_Product_Less_Than_K.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 713_Subarray_Product_Less_Than_K.cpp; sourceTree = "<group>"; };
 		C170341D1CF1572200DCCCE1 /* 279.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 279.cpp; sourceTree = "<group>"; };
 		C17228EA1C1937AF0030DD4A /* 056.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 056.cpp; sourceTree = "<group>"; };
 		C17262661EF35F8E00A89E39 /* 394_decode_string.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 394_decode_string.cpp; sourceTree = "<group>"; };
@@ -273,6 +275,8 @@
 		C174CAF71F05A9C7002E3088 /* 407_trapping_rain_water_II.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 407_trapping_rain_water_II.cpp; sourceTree = "<group>"; };
 		C175E65020CA33D700DD4517 /* 494_Target_Sum.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 494_Target_Sum.cpp; sourceTree = "<group>"; };
 		C175E65220CA3EA200DD4517 /* 474_Ones_and_Zeroes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 474_Ones_and_Zeroes.cpp; sourceTree = "<group>"; };
+		C1764A4522B64D2900F3E0A2 /* 714_Best_Time_to_Buy_and_Sell_Stock_with_Transaction_Fee.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 714_Best_Time_to_Buy_and_Sell_Stock_with_Transaction_Fee.cpp; sourceTree = "<group>"; };
+		C177BFB32446023000012696 /* 719_Find_K-th_Smallest_Pair_Distance.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "719_Find_K-th_Smallest_Pair_Distance.cpp"; sourceTree = "<group>"; };
 		C178B95E1CE58F020050AF53 /* 229.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 229.cpp; sourceTree = "<group>"; };
 		C178B9601CE58F400050AF53 /* 230.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 230.cpp; sourceTree = "<group>"; };
 		C17925021EFC8FE2003BEB2B /* 401_binary_watch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 401_binary_watch.cpp; sourceTree = "<group>"; };
@@ -368,6 +372,7 @@
 		C198DA0921465472005A74CF /* 429_N-ary_Tree_Level_Order_Traversal.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "429_N-ary_Tree_Level_Order_Traversal.cpp"; sourceTree = "<group>"; };
 		C198DA0B21465B60005A74CF /* 430_Flatten_a_Multilevel_Doubly_Linked_List.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 430_Flatten_a_Multilevel_Doubly_Linked_List.cpp; sourceTree = "<group>"; };
 		C198EF6920C203290066D020 /* 482_License_Key_Formatting.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 482_License_Key_Formatting.cpp; sourceTree = "<group>"; };
+		C19A205822C11501005C1359 /* 717_1-bit_and_2-bit_Characters.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "717_1-bit_and_2-bit_Characters.cpp"; sourceTree = "<group>"; };
 		C19A5EF41C80082700DD6B23 /* 136.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 136.cpp; sourceTree = "<group>"; };
 		C19A5EF61C80085600DD6B23 /* 137.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 137.cpp; sourceTree = "<group>"; };
 		C19A5EF81C80088C00DD6B23 /* 138.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 138.cpp; sourceTree = "<group>"; };
@@ -399,6 +404,7 @@
 		C1A48F6221899055000FEBE8 /* 680_Valid_Palindrome_II.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 680_Valid_Palindrome_II.cpp; sourceTree = "<group>"; };
 		C1A5C540217C737D007AA050 /* 622_Design_Circular_Queue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 622_Design_Circular_Queue.cpp; sourceTree = "<group>"; };
 		C1A5C542217C7FDF007AA050 /* 623_Add_One_Row_to_Tree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 623_Add_One_Row_to_Tree.cpp; sourceTree = "<group>"; };
+		C1A5DAFE24475BB900E87E2B /* 720_Longest_Word_in_Dictionary.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 720_Longest_Word_in_Dictionary.cpp; sourceTree = "<group>"; };
 		C1A7830E1EDE4ADA00CE97F0 /* 389.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 389.cpp; sourceTree = "<group>"; };
 		C1A783101EDE4DD600CE97F0 /* 390.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 390.cpp; sourceTree = "<group>"; };
 		C1A85B2C1C49DFC2005BF9C6 /* 107.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 107.cpp; sourceTree = "<group>"; };
@@ -511,6 +517,7 @@
 		C1D136D71ADB71C400FA2BF9 /* 008.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 008.cpp; sourceTree = "<group>"; };
 		C1D1B5A020D2EEE4005F6AB5 /* 502_IPO.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 502_IPO.cpp; sourceTree = "<group>"; };
 		C1D1D1461B02E2FC007DCF14 /* 037.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 037.cpp; sourceTree = "<group>"; };
+		C1D27083243EFA0D00F020F2 /* 718_Maximum_Length_of_Repeated_Subarray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 718_Maximum_Length_of_Repeated_Subarray.cpp; sourceTree = "<group>"; };
 		C1D2869C1C473AED0054CDFF /* 100.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 100.cpp; sourceTree = "<group>"; };
 		C1D326E31C75A5AC00404558 /* 132.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 132.cpp; sourceTree = "<group>"; };
 		C1D4A7B42162249B00FCE300 /* 515_Find_Largest_Value_in_Each_Tree_Row.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 515_Find_Largest_Value_in_Each_Tree_Row.cpp; sourceTree = "<group>"; };
@@ -579,6 +586,7 @@
 		C1E783121C896C610019869C /* 155.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 155.cpp; sourceTree = "<group>"; };
 		C1E7FDA222A3F9EF008D77BE /* 706_Design_HashMap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 706_Design_HashMap.cpp; sourceTree = "<group>"; };
 		C1E7FDA422A4041E008D77BE /* 707_Design_Linked_List.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 707_Design_Linked_List.cpp; sourceTree = "<group>"; };
+		C1E832FD22B28924004B2FEE /* 712. Minimum ASCII Delete Sum for Two Strings 712.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "712. Minimum ASCII Delete Sum for Two Strings 712.cpp"; sourceTree = "<group>"; };
 		C1E86C011C741CAE00B8ABEF /* 128.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 128.cpp; sourceTree = "<group>"; };
 		C1E86C031C741CE100B8ABEF /* 129.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 129.cpp; sourceTree = "<group>"; };
 		C1E86C051C742A1400B8ABEF /* 130.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 130.cpp; sourceTree = "<group>"; };
@@ -1270,6 +1278,14 @@
 				C1E7FDA422A4041E008D77BE /* 707_Design_Linked_List.cpp */,
 				C13768AE22A42344005C9DD5 /* 709_To_Lower_Case.cpp */,
 				C1C963B122AFE9BC00C30EF8 /* 710_Random_Pick_with_Blacklist.cpp */,
+				C1E832FD22B28924004B2FEE /* 712. Minimum ASCII Delete Sum for Two Strings 712.cpp */,
+				C170006822B3E74500E45B5B /* 713_Subarray_Product_Less_Than_K.cpp */,
+				C1764A4522B64D2900F3E0A2 /* 714_Best_Time_to_Buy_and_Sell_Stock_with_Transaction_Fee.cpp */,
+				C16F63AE22BE4AA2007FE1BD /* 715_Range_Module.cpp */,
+				C19A205822C11501005C1359 /* 717_1-bit_and_2-bit_Characters.cpp */,
+				C1D27083243EFA0D00F020F2 /* 718_Maximum_Length_of_Repeated_Subarray.cpp */,
+				C177BFB32446023000012696 /* 719_Find_K-th_Smallest_Pair_Distance.cpp */,
+				C1A5DAFE24475BB900E87E2B /* 720_Longest_Word_in_Dictionary.cpp */,
 				C113E7CE1EDAA0240010356B /* dp.cpp */,
 				C1A85B341C49E0A8005BF9C6 /* list.cpp */,
 				C1AFE0E41C40D38D001858C8 /* tree.cpp */,

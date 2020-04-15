@@ -2,8 +2,8 @@
 //  template.cpp
 //  leetcode
 //
-//  Created by Hang Zhang on 3/14/17.
-//  Copyright © 2017 Hilings Studio. All rights reserved.
+//  Created by Hang Zhang on 4/14/20.
+//  Copyright © 2020 Hilings Studio. All rights reserved.
 //
 
 #include <iostream>
