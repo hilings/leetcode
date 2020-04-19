@@ -219,6 +219,7 @@
 		C159020E1C827F15008A633C /* 141.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 141.cpp; sourceTree = "<group>"; };
 		C15902101C827FC8008A633C /* 142.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 142.cpp; sourceTree = "<group>"; };
 		C15902121C828018008A633C /* 143.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 143.cpp; sourceTree = "<group>"; };
+		C1598F5B244B449E00EA7CBD /* 722_Remove_Comments.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 722_Remove_Comments.cpp; sourceTree = "<group>"; };
 		C15A3B34216C417D007BA781 /* 539_Minimum_Time_Difference.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 539_Minimum_Time_Difference.cpp; sourceTree = "<group>"; };
 		C15A3B36216C5278007BA781 /* 540_Single_Element_in_a_Sorted_Array.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 540_Single_Element_in_a_Sorted_Array.cpp; sourceTree = "<group>"; };
 		C15AA5B31F05D04900EEBE5A /* 409_longest_palindrome.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 409_longest_palindrome.cpp; sourceTree = "<group>"; };
@@ -1288,6 +1289,7 @@
 				C177BFB32446023000012696 /* 719_Find_K-th_Smallest_Pair_Distance.cpp */,
 				C1A5DAFE24475BB900E87E2B /* 720_Longest_Word_in_Dictionary.cpp */,
 				C136EF5424489672006EC11B /* 721_Accounts_Merge.cpp */,
+				C1598F5B244B449E00EA7CBD /* 722_Remove_Comments.cpp */,
 				C113E7CE1EDAA0240010356B /* dp.cpp */,
 				C1A85B341C49E0A8005BF9C6 /* list.cpp */,
 				C1AFE0E41C40D38D001858C8 /* tree.cpp */,
