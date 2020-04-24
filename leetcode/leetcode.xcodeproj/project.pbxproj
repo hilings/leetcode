@@ -375,6 +375,7 @@
 		C196C4F4244DDF7700DA04F9 /* 726_Number_of_Atoms.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 726_Number_of_Atoms.cpp; sourceTree = "<group>"; };
 		C196C4F6244EC83800DA04F9 /* 728_Self_Dividing_Numbers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 728_Self_Dividing_Numbers.cpp; sourceTree = "<group>"; };
 		C196C4F8244ED1F600DA04F9 /* 729_My_Calendar_I.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 729_My_Calendar_I.cpp; sourceTree = "<group>"; };
+		C196C4FB24503A6700DA04F9 /* 730_Count_Different_Palindromic_Subsequences.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 730_Count_Different_Palindromic_Subsequences.cpp; sourceTree = "<group>"; };
 		C198DA0921465472005A74CF /* 429_N-ary_Tree_Level_Order_Traversal.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "429_N-ary_Tree_Level_Order_Traversal.cpp"; sourceTree = "<group>"; };
 		C198DA0B21465B60005A74CF /* 430_Flatten_a_Multilevel_Doubly_Linked_List.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 430_Flatten_a_Multilevel_Doubly_Linked_List.cpp; sourceTree = "<group>"; };
 		C198EF6920C203290066D020 /* 482_License_Key_Formatting.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 482_License_Key_Formatting.cpp; sourceTree = "<group>"; };
@@ -1300,6 +1301,7 @@
 				C196C4F4244DDF7700DA04F9 /* 726_Number_of_Atoms.cpp */,
 				C196C4F6244EC83800DA04F9 /* 728_Self_Dividing_Numbers.cpp */,
 				C196C4F8244ED1F600DA04F9 /* 729_My_Calendar_I.cpp */,
+				C196C4FB24503A6700DA04F9 /* 730_Count_Different_Palindromic_Subsequences.cpp */,
 				C113E7CE1EDAA0240010356B /* dp.cpp */,
 				C1A85B341C49E0A8005BF9C6 /* list.cpp */,
 				C1AFE0E41C40D38D001858C8 /* tree.cpp */,
