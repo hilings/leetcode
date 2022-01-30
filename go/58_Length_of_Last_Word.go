@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -12,10 +11,10 @@ func lengthOfLastWord(s string) int {
 	return len(s3)
 }
 
-func main() {
-	fmt.Println("LeetCode 58. Length of Last Word ...")
+// func main() {
+// 	fmt.Println("LeetCode 58. Length of Last Word ...")
 
-	s := "Hello World"
-	r := lengthOfLastWord(s)
-	fmt.Println(r)
-}
+// 	s := "Hello World"
+// 	r := lengthOfLastWord(s)
+// 	fmt.Println(r)
+// }
