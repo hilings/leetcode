@@ -3,6 +3,6 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("LeetCode XXX. ABCDEFG ...")
+	fmt.Printf("LeetCode XXX. ABCDEFG ...\n\n")
 
 }

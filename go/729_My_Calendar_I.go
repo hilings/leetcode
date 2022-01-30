@@ -4,12 +4,12 @@ type MyCalendar struct {
 	Books [][]int
 }
 
-func Constructor() MyCalendar {
-	mc := MyCalendar{
-		Books: [][]int{},
-	}
-	return mc
-}
+// func Constructor() MyCalendar {
+// 	mc := MyCalendar{
+// 		Books: [][]int{},
+// 	}
+// 	return mc
+// }
 
 func (this *MyCalendar) Book(start int, end int) bool {
 	for _, book := range this.Books {
@@ -29,15 +29,18 @@ func (this *MyCalendar) Book(start int, end int) bool {
  */
 
 // func main() {
-// 	fmt.Println("LeetCode 729. My Calendar I ...")
+// 	fmt.Printf("LeetCode 729. My Calendar I ...\n\n")
 
 // 	mc := Constructor()
-// 	r := mc.Book(10, 20)
-// 	fmt.Println(r)
 
-// 	r = mc.Book(15, 25)
-// 	fmt.Println(r)
+// 	books := [][]int{
+// 		{10, 20},
+// 		{15, 25},
+// 		{20, 30},
+// 	}
 
-// 	r = mc.Book(20, 30)
-// 	fmt.Println(r)
+// 	for _, book := range books {
+// 		r := mc.Book(book[0], book[1])
+// 		fmt.Println(r)
+// 	}
 // }
