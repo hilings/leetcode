@@ -5,13 +5,13 @@ type MyCalendarTwo struct {
 	DoubleBooks [][]int
 }
 
-func Constructor() MyCalendarTwo {
-	mc := MyCalendarTwo{
-		Books:       [][]int{},
-		DoubleBooks: [][]int{},
-	}
-	return mc
-}
+// func Constructor() MyCalendarTwo {
+// 	mc := MyCalendarTwo{
+// 		Books:       [][]int{},
+// 		DoubleBooks: [][]int{},
+// 	}
+// 	return mc
+// }
 
 func (this *MyCalendarTwo) Book(start int, end int) bool {
 	for _, db := range this.DoubleBooks {
@@ -33,17 +33,17 @@ func (this *MyCalendarTwo) Book(start int, end int) bool {
 	return true
 }
 
-func overlap(start1 int, end1 int, start2 int, end2 int) []int {
-	start, end := start1, end1
-	if start1 < start2 {
-		start = start2
-	}
-	if end1 > end2 {
-		end = end2
-	}
+// func overlap(start1 int, end1 int, start2 int, end2 int) []int {
+// 	start, end := start1, end1
+// 	if start1 < start2 {
+// 		start = start2
+// 	}
+// 	if end1 > end2 {
+// 		end = end2
+// 	}
 
-	return []int{start, end}
-}
+// 	return []int{start, end}
+// }
 
 /**
  * Your MyCalendarTwo object will be instantiated and called as such:
