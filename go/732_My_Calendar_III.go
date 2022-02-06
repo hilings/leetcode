@@ -10,14 +10,14 @@ type MyCalendarThree struct {
 	Mkeys []int       // keys of map
 }
 
-func Constructor() MyCalendarThree {
-	mc := MyCalendarThree{
-		Books: [][][]int{},
-		M:     map[int]int{},
-		Mkeys: []int{},
-	}
-	return mc
-}
+// func Constructor() MyCalendarThree {
+// 	mc := MyCalendarThree{
+// 		Books: [][][]int{},
+// 		M:     map[int]int{},
+// 		Mkeys: []int{},
+// 	}
+// 	return mc
+// }
 
 func (this *MyCalendarThree) Book(start int, end int) int {
 	for i := len(this.Books) - 1; i >= 0; i-- {
