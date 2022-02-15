@@ -1,8 +1,6 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func openLock(deadends []string, target string) int {
 	dp := map[string]int{
@@ -46,7 +44,7 @@ func nextList(target string) []string {
 	for wheel := range []int{0, 1, 2, 3} {
 		for _, step := range []int{1, -1} {
 			digit := (int(target[wheel]-'0') + step + 10) % 10
-			next := target[:wheel] + string('0'+digit) + target[wheel+1:]
+			next := target[:wheel] + fmt.Sprintf("%c", '0'+digit) + target[wheel+1:]
 			l = append(l, next)
 		}
 	}
@@ -54,55 +52,55 @@ func nextList(target string) []string {
 	return l
 }
 
-func main() {
-	fmt.Printf("LeetCode 752. Open the Lock ...\n\n")
+// func main() {
+// 	fmt.Printf("LeetCode 752. Open the Lock ...\n\n")
 
-	type args struct {
-		deadends []string
-		target   string
-	}
-	tests := []struct {
-		args args
-		want int
-	}{
-		{
-			args: args{
-				deadends: []string{"0201", "0101", "0102", "1212", "2002"},
-				target:   "0202",
-			},
-			want: 0,
-		},
-		{
-			args: args{
-				deadends: []string{"8888"},
-				target:   "0009",
-			},
-			want: 1,
-		},
-		{
-			args: args{
-				deadends: []string{"8887", "8889", "8878", "8898", "8788", "8988", "7888", "9888"},
-				target:   "8888",
-			},
-			want: -1,
-		},
-		{
-			args: args{
-				deadends: []string{"0000"},
-				target:   "8888",
-			},
-			want: -1,
-		},
-		{
-			args: args{
-				deadends: []string{"0201", "0101", "0102", "1212", "2002"},
-				target:   "0000",
-			},
-			want: -1,
-		},
-	}
-	for _, tt := range tests {
-		r := openLock(tt.args.deadends, tt.args.target)
-		fmt.Println(r)
-	}
-}
+// 	type args struct {
+// 		deadends []string
+// 		target   string
+// 	}
+// 	tests := []struct {
+// 		args args
+// 		want int
+// 	}{
+// 		{
+// 			args: args{
+// 				deadends: []string{"0201", "0101", "0102", "1212", "2002"},
+// 				target:   "0202",
+// 			},
+// 			want: 6,
+// 		},
+// 		{
+// 			args: args{
+// 				deadends: []string{"8888"},
+// 				target:   "0009",
+// 			},
+// 			want: 1,
+// 		},
+// 		{
+// 			args: args{
+// 				deadends: []string{"8887", "8889", "8878", "8898", "8788", "8988", "7888", "9888"},
+// 				target:   "8888",
+// 			},
+// 			want: -1,
+// 		},
+// 		{
+// 			args: args{
+// 				deadends: []string{"0000"},
+// 				target:   "8888",
+// 			},
+// 			want: -1,
+// 		},
+// 		{
+// 			args: args{
+// 				deadends: []string{"0201", "0101", "0102", "1212", "2002"},
+// 				target:   "0000",
+// 			},
+// 			want: 0,
+// 		},
+// 	}
+// 	for _, tt := range tests {
+// 		r := openLock(tt.args.deadends, tt.args.target)
+// 		fmt.Println(r)
+// 	}
+// }
