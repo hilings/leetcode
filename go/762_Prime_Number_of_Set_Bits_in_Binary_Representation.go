@@ -1,9 +1,5 @@
 package main
 
-import (
-	"fmt"
-)
-
 func countPrimeSetBits(left int, right int) int {
 	bitmapPrime := 0b10100010100010101100	// 2,3,5,7,11,13,17,19 bit set
 	count := 0
