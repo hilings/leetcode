@@ -1,36 +1,34 @@
 package main
 
-import "fmt"
-
-func maxChunksToSorted(arr []int) int {
-	fmt.Println(arr)
-	count := 0
-	for i, right := 0, 0; i < len(arr); i = right + 1 {
-		max := arr[i]
-		needScan := true
-		right = i // right most index < max
-		for needScan {
-			needScan = false
-			for j := len(arr) - 1; j > i; j-- {
-				if arr[j] < max {
-					right = j
-					fmt.Printf("\tfound smaller arr[%d] = %d\n", j, arr[j])
-					break
-				}
-			}
-			for j := right - 1; j > i; j-- {
-				if arr[j] > max {
-					max = arr[j]
-					needScan = true
-					fmt.Printf("\tfound bigger arr[%d] = %d\n", j, arr[j])
-				}
-			}
-		}
-		count++
-		fmt.Printf("partition = %v\n", arr[i:right+1])
-	}
-	return count
-}
+// func maxChunksToSorted(arr []int) int {
+// 	fmt.Println(arr)
+// 	count := 0
+// 	for i, right := 0, 0; i < len(arr); i = right + 1 {
+// 		max := arr[i]
+// 		needScan := true
+// 		right = i // right most index < max
+// 		for needScan {
+// 			needScan = false
+// 			for j := len(arr) - 1; j > i; j-- {
+// 				if arr[j] < max {
+// 					right = j
+// 					fmt.Printf("\tfound smaller arr[%d] = %d\n", j, arr[j])
+// 					break
+// 				}
+// 			}
+// 			for j := right - 1; j > i; j-- {
+// 				if arr[j] > max {
+// 					max = arr[j]
+// 					needScan = true
+// 					fmt.Printf("\tfound bigger arr[%d] = %d\n", j, arr[j])
+// 				}
+// 			}
+// 		}
+// 		count++
+// 		fmt.Printf("partition = %v\n", arr[i:right+1])
+// 	}
+// 	return count
+// }
 
 // func main() {
 // 	fmt.Printf("LeetCode 768. Max Chunks To Make Sorted II ...\n\n")
