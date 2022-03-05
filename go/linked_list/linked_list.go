@@ -8,8 +8,7 @@ type ListNode struct {
 	Next *ListNode
 }
 
-// BuildList ...
-func BuildList(l []int) *ListNode {
+func buildList(l []int) *ListNode {
 	origin := &ListNode{}
 	cur := origin
 	for _, val := range l {
@@ -30,8 +29,7 @@ func BuildList(l []int) *ListNode {
 	return origin.Next
 }
 
-// PrintList ...
-func PrintList(head *ListNode) {
+func printList(head *ListNode) {
 	for cur := head; cur != nil; cur = cur.Next {
 		fmt.Printf("%d -> ", cur.Val)
 	}
