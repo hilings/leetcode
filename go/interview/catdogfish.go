@@ -57,9 +57,9 @@ func fish(ch chan struct{}, chnext chan struct{}, wg *sync.WaitGroup) {
 	return
 }
 
-func main() {
-	fmt.Printf("cat dog fish ...\n\n")
+// func main() {
+// 	fmt.Printf("cat dog fish ...\n\n")
 
-	catdogfish()
+// 	catdogfish()
 
-}
+// }
