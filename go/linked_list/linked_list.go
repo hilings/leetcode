@@ -29,3 +29,11 @@ func BuildList(l []int) *ListNode {
 
 	return origin.Next
 }
+
+// PrintList ...
+func PrintList(head *ListNode) {
+	for cur := head; cur != nil; cur = cur.Next {
+		fmt.Printf("%d -> ", cur.Val)
+	}
+	fmt.Printf("null\n")
+}
