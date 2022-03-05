@@ -5,10 +5,10 @@ import (
 )
 
 // ListNode ...
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
+// type ListNode struct {
+// 	Val  int
+// 	Next *ListNode
+// }
 
 func reverseBetween(head *ListNode, left int, right int) *ListNode {
 	prevLeft := head
@@ -44,33 +44,33 @@ func reverseBetween(head *ListNode, left int, right int) *ListNode {
 	return head
 }
 
-func buildList(l []int) *ListNode {
-	origin := &ListNode{}
-	cur := origin
-	for _, val := range l {
-		node := &ListNode{
-			Val: val,
-		}
-		cur.Next = node
-		cur = cur.Next
-	}
+// func buildList(l []int) *ListNode {
+// 	origin := &ListNode{}
+// 	cur := origin
+// 	for _, val := range l {
+// 		node := &ListNode{
+// 			Val: val,
+// 		}
+// 		cur.Next = node
+// 		cur = cur.Next
+// 	}
 
-	cur = origin.Next
-	for cur != nil {
-		fmt.Printf("%d -> ", cur.Val)
-		cur = cur.Next
-	}
-	fmt.Printf("null\n")
+// 	cur = origin.Next
+// 	for cur != nil {
+// 		fmt.Printf("%d -> ", cur.Val)
+// 		cur = cur.Next
+// 	}
+// 	fmt.Printf("null\n")
 
-	return origin.Next
-}
+// 	return origin.Next
+// }
 
-func printList(head *ListNode) {
-	for cur := head; cur != nil; cur = cur.Next {
-		fmt.Printf("%d -> ", cur.Val)
-	}
-	fmt.Printf("null\n")
-}
+// func printList(head *ListNode) {
+// 	for cur := head; cur != nil; cur = cur.Next {
+// 		fmt.Printf("%d -> ", cur.Val)
+// 	}
+// 	fmt.Printf("null\n")
+// }
 
 // func main() {
 // 	fmt.Printf("LeetCode 92. Reverse Linked List II ...\n\n")
