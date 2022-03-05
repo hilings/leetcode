@@ -1,14 +1,10 @@
 package main
 
-import (
-	"fmt"
-)
-
 // ListNode ...
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
+// type ListNode struct {
+// 	Val  int
+// 	Next *ListNode
+// }
 
 func detectCycle(head *ListNode) *ListNode {
 	if head == nil {
@@ -34,26 +30,26 @@ func detectCycle(head *ListNode) *ListNode {
 	return slow
 }
 
-func buildList(l []int) *ListNode {
-	origin := &ListNode{}
-	cur := origin
-	for _, val := range l {
-		node := &ListNode{
-			Val: val,
-		}
-		cur.Next = node
-		cur = cur.Next
-	}
+// func buildList(l []int) *ListNode {
+// 	origin := &ListNode{}
+// 	cur := origin
+// 	for _, val := range l {
+// 		node := &ListNode{
+// 			Val: val,
+// 		}
+// 		cur.Next = node
+// 		cur = cur.Next
+// 	}
 
-	cur = origin.Next
-	for cur != nil {
-		fmt.Printf("%d -> ", cur.Val)
-		cur = cur.Next
-	}
-	fmt.Printf("null\n")
+// 	cur = origin.Next
+// 	for cur != nil {
+// 		fmt.Printf("%d -> ", cur.Val)
+// 		cur = cur.Next
+// 	}
+// 	fmt.Printf("null\n")
 
-	return origin.Next
-}
+// 	return origin.Next
+// }
 
 // func main() {
 // 	fmt.Printf("LeetCode 142. Linked List Cycle II ...\n\n")
