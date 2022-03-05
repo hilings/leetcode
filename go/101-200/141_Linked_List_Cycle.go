@@ -1,12 +1,10 @@
 package main
 
-import "fmt"
-
 // ListNode Definition for singly-linked list.
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
+// type ListNode struct {
+// 	Val  int
+// 	Next *ListNode
+// }
 
 func hasCycle(head *ListNode) bool {
 	fast, slow := head, head
@@ -23,26 +21,26 @@ func hasCycle(head *ListNode) bool {
 	return false
 }
 
-func buildList(l []int) *ListNode {
-	origin := &ListNode{}
-	cur := origin
-	for _, val := range l {
-		node := &ListNode{
-			Val: val,
-		}
-		cur.Next = node
-		cur = cur.Next
-	}
+// func buildList(l []int) *ListNode {
+// 	origin := &ListNode{}
+// 	cur := origin
+// 	for _, val := range l {
+// 		node := &ListNode{
+// 			Val: val,
+// 		}
+// 		cur.Next = node
+// 		cur = cur.Next
+// 	}
 
-	cur = origin.Next
-	for cur != nil {
-		fmt.Printf("%d -> ", cur.Val)
-		cur = cur.Next
-	}
-	fmt.Printf("null\n")
+// 	cur = origin.Next
+// 	for cur != nil {
+// 		fmt.Printf("%d -> ", cur.Val)
+// 		cur = cur.Next
+// 	}
+// 	fmt.Printf("null\n")
 
-	return origin.Next
-}
+// 	return origin.Next
+// }
 
 // func main() {
 // 	fmt.Printf("LeetCode 141. Linked List Cycle ...\n\n")
