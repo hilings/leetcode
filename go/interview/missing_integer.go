@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"sort"
 )
 
@@ -42,33 +41,33 @@ func missingInteger2(A []int) int {
 	return x
 }
 
-func main() {
-	fmt.Printf("Codility Missing Integer ...\n\n")
+// func main() {
+// 	fmt.Printf("Codility Missing Integer ...\n\n")
 
-	type args struct {
-		A []int
-	}
-	tests := []struct {
-		args args
-		want int
-	}{
-		{
-			args: args{
-				A: []int{1, 2, 3, 4, 6},
-			},
-			want: 5,
-		},
-		{
-			args: args{
-				A: []int{-1, -3},
-			},
-			want: 1,
-		},
-	}
-	for _, tt := range tests {
-		r := missingInteger1(tt.args.A)
-		fmt.Println(r)
-		r = missingInteger2(tt.args.A)
-		fmt.Println(r)
-	}
-}
+// 	type args struct {
+// 		A []int
+// 	}
+// 	tests := []struct {
+// 		args args
+// 		want int
+// 	}{
+// 		{
+// 			args: args{
+// 				A: []int{1, 2, 3, 4, 6},
+// 			},
+// 			want: 5,
+// 		},
+// 		{
+// 			args: args{
+// 				A: []int{-1, -3},
+// 			},
+// 			want: 1,
+// 		},
+// 	}
+// 	for _, tt := range tests {
+// 		r := missingInteger1(tt.args.A)
+// 		fmt.Println(r)
+// 		r = missingInteger2(tt.args.A)
+// 		fmt.Println(r)
+// 	}
+// }
