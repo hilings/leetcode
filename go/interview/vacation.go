@@ -62,37 +62,37 @@ func dfs(A []int, left int, right int, m map[int]int) int {
 	return trimRight
 }
 
-func main() {
-	fmt.Printf("Codility Vacation minimal window ...\n\n")
+// func main() {
+// 	fmt.Printf("Codility Vacation minimal window ...\n\n")
 
-	type args struct {
-		A []int
-	}
-	tests := []struct {
-		args args
-		want int
-	}{
-		{
-			args: args{
-				A: []int{7, 3, 7, 3, 1, 3, 4, 1}, // 2 ~ 6
-			},
-			want: 5,
-		},
-		{
-			args: args{
-				A: []int{2, 1, 1, 3, 2, 1, 1, 3}, // 2 ~ 4
-			},
-			want: 3,
-		},
-		{
-			args: args{
-				A: []int{7, 5, 2, 7, 2, 7, 4, 7}, // 1 ~ 6
-			},
-			want: 6,
-		},
-	}
-	for _, tt := range tests {
-		r := Solution(tt.args.A)
-		fmt.Println(r)
-	}
-}
+// 	type args struct {
+// 		A []int
+// 	}
+// 	tests := []struct {
+// 		args args
+// 		want int
+// 	}{
+// 		{
+// 			args: args{
+// 				A: []int{7, 3, 7, 3, 1, 3, 4, 1}, // 2 ~ 6
+// 			},
+// 			want: 5,
+// 		},
+// 		{
+// 			args: args{
+// 				A: []int{2, 1, 1, 3, 2, 1, 1, 3}, // 2 ~ 4
+// 			},
+// 			want: 3,
+// 		},
+// 		{
+// 			args: args{
+// 				A: []int{7, 5, 2, 7, 2, 7, 4, 7}, // 1 ~ 6
+// 			},
+// 			want: 6,
+// 		},
+// 	}
+// 	for _, tt := range tests {
+// 		r := Solution(tt.args.A)
+// 		fmt.Println(r)
+// 	}
+// }
