@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"sort"
 	"strings"
 )
@@ -26,15 +25,15 @@ func solution(file []string) []string {
 	return r
 }
 
-func main() {
-	file := []string{
-		"songj123 100",
-		"sj 23",
-		"sj 445",
-		"ritu 56",
-	}
-	r := solution(file)
-	for _, row := range r {
-		fmt.Println(row)
-	}
-}
+// func main() {
+// 	file := []string{
+// 		"songj123 100",
+// 		"sj 23",
+// 		"sj 445",
+// 		"ritu 56",
+// 	}
+// 	r := solution(file)
+// 	for _, row := range r {
+// 		fmt.Println(row)
+// 	}
+// }
