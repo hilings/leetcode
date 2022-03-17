@@ -63,7 +63,7 @@ func dfs(A []int, left int, right int, m map[int]int) int {
 }
 
 // func main() {
-// 	fmt.Printf("Codility Vacation minimal window ...\n\n")
+// 	fmt.Printf("Codility Vacation minimal window, with Tesla, R0 ...\n\n")
 
 // 	type args struct {
 // 		A []int

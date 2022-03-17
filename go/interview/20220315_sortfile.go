@@ -26,6 +26,8 @@ func solution(file []string) []string {
 }
 
 // func main() {
+// 	fmt.Printf("sort file, with Didi, R1 ...\n\n")
+
 // 	file := []string{
 // 		"songj123 100",
 // 		"sj 23",
