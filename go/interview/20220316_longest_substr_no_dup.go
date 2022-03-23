@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func longestSubstrWODup(s string) int {
 	set := map[byte]bool{}
 	r := 0
@@ -39,37 +37,37 @@ func longestSubstrWODup(s string) int {
 	return r
 }
 
-func main() {
-	fmt.Printf("Longest substring without duplicate, with ByteDance, R1 ...\n\n")
+// func main() {
+// 	fmt.Printf("Longest substring without duplicate, with ByteDance, R1 ...\n\n")
 
-	type args struct {
-		s string
-	}
-	tests := []struct {
-		args args
-		want int
-	}{
-		{
-			args: args{
-				s: "abcabcbb",
-			},
-			want: 0,
-		},
-		{
-			args: args{
-				s: "abaa",
-			},
-			want: 0,
-		},
-		{
-			args: args{
-				s: "bbbbb",
-			},
-			want: 0,
-		},
-	}
-	for _, tt := range tests {
-		r := longestSubstrWODup(tt.args.s)
-		fmt.Println(r)
-	}
-}
+// 	type args struct {
+// 		s string
+// 	}
+// 	tests := []struct {
+// 		args args
+// 		want int
+// 	}{
+// 		{
+// 			args: args{
+// 				s: "abcabcbb",
+// 			},
+// 			want: 0,
+// 		},
+// 		{
+// 			args: args{
+// 				s: "abaa",
+// 			},
+// 			want: 0,
+// 		},
+// 		{
+// 			args: args{
+// 				s: "bbbbb",
+// 			},
+// 			want: 0,
+// 		},
+// 	}
+// 	for _, tt := range tests {
+// 		r := longestSubstrWODup(tt.args.s)
+// 		fmt.Println(r)
+// 	}
+// }
