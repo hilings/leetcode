@@ -1,9 +1,5 @@
 package main
 
-import (
-	"fmt"
-)
-
 func isIdealPermutation0(nums []int) bool {
 	global, local := 0, 0
 	for i := 0; i < len(nums)-1; i++ {
