@@ -16,6 +16,6 @@ package main
 // 	}
 // 	for _, tt := range tests {
 // 		r := tt.args
-// 		fmt.Println(r)
+// 		fmt.Printf("got = %v, expect = %v\n", r, tt.want)
 // 	}
 // }
