@@ -47,37 +47,37 @@ func printList(head *ListNode) {
 	fmt.Printf("null\n")
 }
 
-func main() {
-	fmt.Printf("LeetCode 206. Reverse Linked List ...\n\n")
+// func main() {
+// 	fmt.Printf("LeetCode 206. Reverse Linked List ...\n\n")
 
-	type args struct {
-		head *ListNode
-	}
-	tests := []struct {
-		args args
-		want *ListNode
-	}{
-		{
-			args: args{
-				head: buildList([]int{1, 2, 3, 4, 5}),
-			},
-			want: nil,
-		},
-		{
-			args: args{
-				head: buildList([]int{1, 2}),
-			},
-			want: nil,
-		},
-		{
-			args: args{
-				head: buildList([]int{}),
-			},
-			want: nil,
-		},
-	}
-	for _, tt := range tests {
-		r := reverseList(tt.args.head)
-		printList(r)
-	}
-}
+// 	type args struct {
+// 		head *ListNode
+// 	}
+// 	tests := []struct {
+// 		args args
+// 		want *ListNode
+// 	}{
+// 		{
+// 			args: args{
+// 				head: buildList([]int{1, 2, 3, 4, 5}),
+// 			},
+// 			want: nil,
+// 		},
+// 		{
+// 			args: args{
+// 				head: buildList([]int{1, 2}),
+// 			},
+// 			want: nil,
+// 		},
+// 		{
+// 			args: args{
+// 				head: buildList([]int{}),
+// 			},
+// 			want: nil,
+// 		},
+// 	}
+// 	for _, tt := range tests {
+// 		r := reverseList(tt.args.head)
+// 		printList(r)
+// 	}
+// }
