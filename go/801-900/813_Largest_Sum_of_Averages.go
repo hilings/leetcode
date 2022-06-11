@@ -1,9 +1,5 @@
 package main
 
-import (
-	"fmt"
-)
-
 func largestSumOfAverages(nums []int, k int) float64 {
 	m := make(map[[2]int]float64)
 	sums := []int{0} // sums[i] == sum of first i elements in nums
@@ -34,47 +30,47 @@ func dp813(sums []int, k int, i int, m map[[2]int]float64) float64 {
 	return max
 }
 
-func main() {
-	fmt.Printf("LeetCode 813. Largest Sum of Averages ...\n\n")
+// func main() {
+// 	fmt.Printf("LeetCode 813. Largest Sum of Averages ...\n\n")
 
-	type args struct {
-		nums []int
-		k    int
-	}
-	tests := []struct {
-		args args
-		want float64
-	}{
-		{
-			args: args{
-				nums: []int{
-					9, 1, 2, 3, 9,
-				},
-				k: 3,
-			},
-			want: 20,
-		},
-		{
-			args: args{
-				nums: []int{
-					1, 2, 3, 4, 5, 6, 7,
-				},
-				k: 4,
-			},
-			want: 20.5,
-		},
-		{
-			args: args{
-				nums: []int{
-					4, 1, 7, 5, 6, 2, 3,
-				},
-				k: 4,
-			},
-			want: 18.16667,
-		},
-	}
-	for _, tt := range tests {
-		r := largestSumOfAverages(tt.args.nums, tt.args.k)
-		fmt.Printf("got = %v, want = %v\n\n", r, tt.want)
-	}
-}
+// 	type args struct {
+// 		nums []int
+// 		k    int
+// 	}
+// 	tests := []struct {
+// 		args args
+// 		want float64
+// 	}{
+// 		{
+// 			args: args{
+// 				nums: []int{
+// 					9, 1, 2, 3, 9,
+// 				},
+// 				k: 3,
+// 			},
+// 			want: 20,
+// 		},
+// 		{
+// 			args: args{
+// 				nums: []int{
+// 					1, 2, 3, 4, 5, 6, 7,
+// 				},
+// 				k: 4,
+// 			},
+// 			want: 20.5,
+// 		},
+// 		{
+// 			args: args{
+// 				nums: []int{
+// 					4, 1, 7, 5, 6, 2, 3,
+// 				},
+// 				k: 4,
+// 			},
+// 			want: 18.16667,
+// 		},
+// 	}
+// 	for _, tt := range tests {
+// 		r := largestSumOfAverages(tt.args.nums, tt.args.k)
+// 		fmt.Printf("got = %v, want = %v\n\n", r, tt.want)
+// 	}
+// }
