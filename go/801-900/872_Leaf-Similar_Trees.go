@@ -1,53 +1,42 @@
 package main
 
+/**
+ * Definition for a binary tree node.
+ */
 // type TreeNode struct {
 // 	Val   int
 // 	Left  *TreeNode
 // 	Right *TreeNode
 // }
 
-func distanceK(root *TreeNode, target *TreeNode, k int) []int {
-	if k == 0 {
-		return []int{target.Val}
+func leafSimilar(root1 *TreeNode, root2 *TreeNode) bool {
+	seq1, seq2 := leafSeq(root1), leafSeq(root2)
+	if len(seq1) != len(seq2) {
+		return false
 	}
-
-	q := []*TreeNode{root}
-	mp := map[*TreeNode]*TreeNode{root: nil} // parent pointers
-	for i := 0; i < len(q); i++ {            // bfs
-		cur := q[i]
-		if cur.Left != nil {
-			mp[cur.Left] = cur
-			q = append(q, cur.Left)
-		}
-		if cur.Right != nil {
-			mp[cur.Right] = cur
-			q = append(q, cur.Right)
+	for i := 0; i < len(seq1); i++ {
+		if seq1[i] != seq2[i] {
+			return false
 		}
 	}
+	return true
+}
 
-	dis := map[*TreeNode]int{target: 0}
-	q = []*TreeNode{target}
+func leafSeq(root1 *TreeNode) []int {
 	r := []int{}
-	for i := 0; i < len(q); i++ {
-		cur := q[i]
-		neighbors := []*TreeNode{
-			cur.Left,
-			cur.Right,
-			mp[cur],
+	stk := []*TreeNode{}
+	for cur := root1; cur != nil || len(stk) > 0; {
+		if cur != nil {
+			stk = append(stk, cur)
+			cur = cur.Left
+			continue
 		}
-		for _, nb := range neighbors {
-			if nb == nil {
-				continue
-			}
-			if _, ok := dis[nb]; ok {
-				continue
-			}
-			q = append(q, nb)
-			dis[nb] = dis[cur] + 1
-			if dis[nb] == k {
-				r = append(r, nb.Val)
-			}
+		top := stk[len(stk)-1]
+		stk = stk[:len(stk)-1]
+		if top.Left == nil && top.Right == nil {
+			r = append(r, top.Val)
 		}
+		cur = top.Right
 	}
 	return r
 }
@@ -109,43 +98,33 @@ func distanceK(root *TreeNode, target *TreeNode, k int) []int {
 // }
 
 // func main() {
-// 	fmt.Printf("LeetCode 863. All Nodes Distance K in Binary Tree ...\n\n")
+// 	fmt.Printf("LeetCode 872. Leaf-Similar Trees ...\n\n")
 
 // 	type args struct {
-// 		root   *TreeNode
-// 		target *TreeNode
-// 		k      int
+// 		root1 *TreeNode
+// 		root2 *TreeNode
 // 	}
-
-// 	root1 := buildT([]int{
-// 		3, 5, 1, 6, 2, 0, 8, null, null, 7, 4,
-// 	})
-
-// 	root2 := buildT([]int{1})
-
 // 	tests := []struct {
 // 		args args
-// 		want []int
+// 		want bool
 // 	}{
 // 		{
 // 			args: args{
-// 				root:   root1,
-// 				target: root1.Left,
-// 				k:      2,
+// 				root1: buildT([]int{3, 5, 1, 6, 2, 9, 8, null, null, 7, 4}),
+// 				root2: buildT([]int{3, 5, 1, 6, 7, 4, 2, null, null, null, null, null, null, 9, 8}),
 // 			},
-// 			want: []int{7, 4, 1},
+// 			want: true,
 // 		},
 // 		{
 // 			args: args{
-// 				root:   root2,
-// 				target: root2,
-// 				k:      3,
+// 				root1: buildT([]int{1, 2, 3}),
+// 				root2: buildT([]int{1, 3, 2}),
 // 			},
-// 			want: []int{},
+// 			want: false,
 // 		},
 // 	}
 // 	for _, tt := range tests {
-// 		r := distanceK(tt.args.root, tt.args.target, tt.args.k)
+// 		r := leafSimilar(tt.args.root1, tt.args.root2)
 // 		fmt.Printf("got = %v, want = %v\n\n", r, tt.want)
 // 	}
 // }

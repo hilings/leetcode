@@ -1,11 +1,11 @@
 package main
 
 // TreeNode ...
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
+// type TreeNode struct {
+// 	Val   int
+// 	Left  *TreeNode
+// 	Right *TreeNode
+// }
 
 func pruneTree(root *TreeNode) *TreeNode {
 	if root == nil {

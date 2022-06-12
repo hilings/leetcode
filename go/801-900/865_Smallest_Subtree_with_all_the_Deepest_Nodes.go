@@ -1,15 +1,13 @@
 package main
 
-import "fmt"
-
 /**
  * Definition for a binary tree node.
  */
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
+// type TreeNode struct {
+// 	Val   int
+// 	Left  *TreeNode
+// 	Right *TreeNode
+// }
 
 func subtreeWithAllDeepest(root *TreeNode) *TreeNode {
 	m := map[int]map[*TreeNode]bool{} // depth -> set of node
@@ -52,61 +50,61 @@ func scan(root *TreeNode, d int, m map[int]map[*TreeNode]bool, p map[*TreeNode]*
 	return depth
 }
 
-const null = -1
+// const null = -1
 
-func buildT(nodes []int) *TreeNode {
-	if len(nodes) == 0 {
-		return nil
-	}
+// func buildT(nodes []int) *TreeNode {
+// 	if len(nodes) == 0 {
+// 		return nil
+// 	}
 
-	root := &TreeNode{Val: nodes[0]}
-	q := []*TreeNode{root}
-	for i, p := 1, 0; i < len(nodes); p++ {
-		if nodes[i] != null {
-			left := &TreeNode{Val: nodes[i]}
-			q[p].Left = left
-			q = append(q, left)
-		}
-		i++
+// 	root := &TreeNode{Val: nodes[0]}
+// 	q := []*TreeNode{root}
+// 	for i, p := 1, 0; i < len(nodes); p++ {
+// 		if nodes[i] != null {
+// 			left := &TreeNode{Val: nodes[i]}
+// 			q[p].Left = left
+// 			q = append(q, left)
+// 		}
+// 		i++
 
-		if i < len(nodes) && nodes[i] != null {
-			right := &TreeNode{Val: nodes[i]}
-			q[p].Right = right
-			q = append(q, right)
-		}
-		i++
-	}
-	return root
-}
+// 		if i < len(nodes) && nodes[i] != null {
+// 			right := &TreeNode{Val: nodes[i]}
+// 			q[p].Right = right
+// 			q = append(q, right)
+// 		}
+// 		i++
+// 	}
+// 	return root
+// }
 
-func printT(root *TreeNode) {
-	// pre-order traverse
-	q := []*TreeNode{root}
-	for i := 0; i < len(q); i++ {
-		cur := q[i]
-		if cur != nil {
-			q = append(q, cur.Left, cur.Right)
-		}
-	}
+// func printT(root *TreeNode) {
+// 	// pre-order traverse
+// 	q := []*TreeNode{root}
+// 	for i := 0; i < len(q); i++ {
+// 		cur := q[i]
+// 		if cur != nil {
+// 			q = append(q, cur.Left, cur.Right)
+// 		}
+// 	}
 
-	// trim all nulls in the end
-	n := len(q)
-	for i := n - 1; i >= 0 && q[i] == nil; i-- {
-		n--
-	}
-	q = q[:n]
+// 	// trim all nulls in the end
+// 	n := len(q)
+// 	for i := n - 1; i >= 0 && q[i] == nil; i-- {
+// 		n--
+// 	}
+// 	q = q[:n]
 
-	// print
-	fmt.Printf("[ ")
-	for _, node := range q {
-		if node != nil {
-			fmt.Printf("%d ", node.Val)
-		} else {
-			fmt.Printf("null ")
-		}
-	}
-	fmt.Println("]")
-}
+// 	// print
+// 	fmt.Printf("[ ")
+// 	for _, node := range q {
+// 		if node != nil {
+// 			fmt.Printf("%d ", node.Val)
+// 		} else {
+// 			fmt.Printf("null ")
+// 		}
+// 	}
+// 	fmt.Println("]")
+// }
 
 // func main() {
 // 	fmt.Printf("LeetCode 865. Smallest Subtree with all the Deepest Nodes ...\n\n")
