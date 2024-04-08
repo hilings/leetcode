@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "873. Length of Longest Fibo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "874. Walking Robot Simulation", "874. Walking Robot Simulation\874. Walking Robot Simulation.csproj", "{24A1ED8D-E371-4318-88A8-DD0E1D740AD5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "875. Koko Eating Bananas", "875. Koko Eating Bananas\875. Koko Eating Bananas.csproj", "{FA366BEE-81D1-4103-B1EE-EFBC465616AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{24A1ED8D-E371-4318-88A8-DD0E1D740AD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24A1ED8D-E371-4318-88A8-DD0E1D740AD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24A1ED8D-E371-4318-88A8-DD0E1D740AD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA366BEE-81D1-4103-B1EE-EFBC465616AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA366BEE-81D1-4103-B1EE-EFBC465616AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA366BEE-81D1-4103-B1EE-EFBC465616AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA366BEE-81D1-4103-B1EE-EFBC465616AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
