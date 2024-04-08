@@ -1,7 +1,0 @@
-C:\Users\hangzhang\source\repos\leetcode\cs\800-899\876. Middle of the Linked List\obj\Debug\876. Middle of the Linked List.csproj.AssemblyReference.cache
-C:\Users\hangzhang\source\repos\leetcode\cs\800-899\876. Middle of the Linked List\obj\Debug\876. Middle of the Linked List.csproj.CoreCompileInputs.cache
-C:\Users\hangzhang\source\repos\leetcode\cs\800-899\876. Middle of the Linked List\bin\Debug\_876.Middle_of_the_Linked_List.exe.config
-C:\Users\hangzhang\source\repos\leetcode\cs\800-899\876. Middle of the Linked List\bin\Debug\_876.Middle_of_the_Linked_List.exe
-C:\Users\hangzhang\source\repos\leetcode\cs\800-899\876. Middle of the Linked List\bin\Debug\_876.Middle_of_the_Linked_List.pdb
-C:\Users\hangzhang\source\repos\leetcode\cs\800-899\876. Middle of the Linked List\obj\Debug\_876.Middle_of_the_Linked_List.exe
-C:\Users\hangzhang\source\repos\leetcode\cs\800-899\876. Middle of the Linked List\obj\Debug\_876.Middle_of_the_Linked_List.pdb
