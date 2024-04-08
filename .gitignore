@@ -1,2 +1,6 @@
 .DS_Store
 a.out
+
+cs/**/.vs/
+cs/**/bin/Debug/
+cs/**/obj/Debug/
