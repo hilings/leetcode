@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "875. Koko Eating Bananas", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "801. Minimum Swaps To Make Sequences Increasing", "801. Minimum Swaps To Make Sequences Increasing\801. Minimum Swaps To Make Sequences Increasing.csproj", "{2B293CA4-40B2-4CA8-9AD6-768E2A36F474}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "877. Stone Game", "877. Stone Game\877. Stone Game.csproj", "{38AEC6C9-F42E-46D5-8F58-3BE88C7A40A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{2B293CA4-40B2-4CA8-9AD6-768E2A36F474}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B293CA4-40B2-4CA8-9AD6-768E2A36F474}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B293CA4-40B2-4CA8-9AD6-768E2A36F474}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38AEC6C9-F42E-46D5-8F58-3BE88C7A40A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38AEC6C9-F42E-46D5-8F58-3BE88C7A40A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38AEC6C9-F42E-46D5-8F58-3BE88C7A40A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38AEC6C9-F42E-46D5-8F58-3BE88C7A40A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
