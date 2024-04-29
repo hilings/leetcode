@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "881. Boats to Save People",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "883. Projection Area of 3D Shapes", "883. Projection Area of 3D Shapes\883. Projection Area of 3D Shapes.csproj", "{F1B63C8A-4D5B-4531-98BD-AC54B563E725}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "884. Uncommon Words from Two Sentences", "884. Uncommon Words from Two Sentences\884. Uncommon Words from Two Sentences.csproj", "{82D24015-A715-4153-8280-BEC68D110DDA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{F1B63C8A-4D5B-4531-98BD-AC54B563E725}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1B63C8A-4D5B-4531-98BD-AC54B563E725}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1B63C8A-4D5B-4531-98BD-AC54B563E725}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82D24015-A715-4153-8280-BEC68D110DDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82D24015-A715-4153-8280-BEC68D110DDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82D24015-A715-4153-8280-BEC68D110DDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82D24015-A715-4153-8280-BEC68D110DDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
