@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "885. Spiral Matrix III", "8
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "886. Possible Bipartition", "886. Possible Bipartition\886. Possible Bipartition.csproj", "{142D5B6B-4F93-4383-A1BF-AE48C2223B3B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "888. Fair Candy Swap", "888. Fair Candy Swap\888. Fair Candy Swap.csproj", "{FC56B7D6-6810-46C8-8BD6-797B0E62C957}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{142D5B6B-4F93-4383-A1BF-AE48C2223B3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{142D5B6B-4F93-4383-A1BF-AE48C2223B3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{142D5B6B-4F93-4383-A1BF-AE48C2223B3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC56B7D6-6810-46C8-8BD6-797B0E62C957}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC56B7D6-6810-46C8-8BD6-797B0E62C957}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC56B7D6-6810-46C8-8BD6-797B0E62C957}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC56B7D6-6810-46C8-8BD6-797B0E62C957}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
