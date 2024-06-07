@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "886. Possible Bipartition",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "888. Fair Candy Swap", "888. Fair Candy Swap\888. Fair Candy Swap.csproj", "{FC56B7D6-6810-46C8-8BD6-797B0E62C957}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "889. Construct Binary Tree from Preorder and Postorder Traversal", "889. Construct Binary Tree from Preorder and Postorder Traversal\889. Construct Binary Tree from Preorder and Postorder Traversal.csproj", "{56F2EBE2-90A1-4E37-9E03-DBFD6988C139}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{FC56B7D6-6810-46C8-8BD6-797B0E62C957}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC56B7D6-6810-46C8-8BD6-797B0E62C957}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC56B7D6-6810-46C8-8BD6-797B0E62C957}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56F2EBE2-90A1-4E37-9E03-DBFD6988C139}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56F2EBE2-90A1-4E37-9E03-DBFD6988C139}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56F2EBE2-90A1-4E37-9E03-DBFD6988C139}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56F2EBE2-90A1-4E37-9E03-DBFD6988C139}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
