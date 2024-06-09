@@ -2,5 +2,5 @@
 a.out
 
 cs/**/.vs/
-cs/**/bin/Debug/
-cs/**/obj/Debug/
+cs/**/bin/
+cs/**/obj/
