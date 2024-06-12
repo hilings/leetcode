@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "889. Construct Binary Tree 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "890. Find and Replace Pattern", "890. Find and Replace Pattern\890. Find and Replace Pattern.csproj", "{D9458BE9-3C8F-45DB-B8BF-7455341A9069}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "882. Reachable Nodes In Subdivided Graph", "882. Reachable Nodes In Subdivided Graph\882. Reachable Nodes In Subdivided Graph.csproj", "{9B637172-F50C-4B02-8912-52906474FCB0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{D9458BE9-3C8F-45DB-B8BF-7455341A9069}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9458BE9-3C8F-45DB-B8BF-7455341A9069}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9458BE9-3C8F-45DB-B8BF-7455341A9069}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B637172-F50C-4B02-8912-52906474FCB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B637172-F50C-4B02-8912-52906474FCB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B637172-F50C-4B02-8912-52906474FCB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B637172-F50C-4B02-8912-52906474FCB0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
