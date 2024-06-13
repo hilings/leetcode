@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "882. Reachable Nodes In Sub
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "892. Surface Area of 3D Shapes", "892. Surface Area of 3D Shapes\892. Surface Area of 3D Shapes.csproj", "{94B9FEA7-4B6A-4439-BCBF-F8BEF3E7CC08}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "893. Groups of Special-Equivalent Strings", "893. Groups of Special-Equivalent Strings\893. Groups of Special-Equivalent Strings.csproj", "{9CF566C8-F37E-4806-AC61-2951ADF4A10A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{94B9FEA7-4B6A-4439-BCBF-F8BEF3E7CC08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94B9FEA7-4B6A-4439-BCBF-F8BEF3E7CC08}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94B9FEA7-4B6A-4439-BCBF-F8BEF3E7CC08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CF566C8-F37E-4806-AC61-2951ADF4A10A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CF566C8-F37E-4806-AC61-2951ADF4A10A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CF566C8-F37E-4806-AC61-2951ADF4A10A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CF566C8-F37E-4806-AC61-2951ADF4A10A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
