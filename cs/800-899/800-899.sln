@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "893. Groups of Special-Equi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "894. All Possible Full Binary Trees", "894. All Possible Full Binary Trees\894. All Possible Full Binary Trees.csproj", "{9CAA3C59-50C0-4759-BB93-FB0047E8C650}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "896. Monotonic Array", "896. Monotonic Array\896. Monotonic Array.csproj", "{54A45FB0-172F-4FA2-83BC-54DFAD34C9CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{9CAA3C59-50C0-4759-BB93-FB0047E8C650}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CAA3C59-50C0-4759-BB93-FB0047E8C650}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CAA3C59-50C0-4759-BB93-FB0047E8C650}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54A45FB0-172F-4FA2-83BC-54DFAD34C9CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54A45FB0-172F-4FA2-83BC-54DFAD34C9CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54A45FB0-172F-4FA2-83BC-54DFAD34C9CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54A45FB0-172F-4FA2-83BC-54DFAD34C9CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
