@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "894. All Possible Full Bina
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "896. Monotonic Array", "896. Monotonic Array\896. Monotonic Array.csproj", "{54A45FB0-172F-4FA2-83BC-54DFAD34C9CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "897. Increasing Order Search Tree", "897. Increasing Order Search Tree\897. Increasing Order Search Tree.csproj", "{BCB968F5-BE2A-4E5A-AE88-0C0E0B733A5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,10 @@ Global
 		{54A45FB0-172F-4FA2-83BC-54DFAD34C9CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54A45FB0-172F-4FA2-83BC-54DFAD34C9CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54A45FB0-172F-4FA2-83BC-54DFAD34C9CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCB968F5-BE2A-4E5A-AE88-0C0E0B733A5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCB968F5-BE2A-4E5A-AE88-0C0E0B733A5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCB968F5-BE2A-4E5A-AE88-0C0E0B733A5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCB968F5-BE2A-4E5A-AE88-0C0E0B733A5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
